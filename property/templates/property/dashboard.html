@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Supreme Leader Veto Panel</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Presentation / Folder Name</th>
+                <th>Link</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for prop in properties %}
+            <tr>
+                <td><strong>{{ prop.presentation_date_context }}</strong></td>
+                <td><a href="{{ prop.ppt_link }}" target="_blank">Open PPT</a></td>
+                <td>
+                    {% if prop.status == 'PENDING' %}
+                    <form action="{% url 'veto_action' prop.id %}" method="post">
+                        {% csrf_token %}
+                        <button name="decision" value="APPROVE" class="btn btn-approve">APPROVE</button>
+                        <button name="decision" value="DROP" class="btn btn-drop">DROP</button>
+                    </form>
+                    {% else %}
+                    <span class="badge status-{{ prop.status }}">{{ prop.status }}</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
