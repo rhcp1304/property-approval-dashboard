@@ -1,96 +1,85 @@
 import time
-import re
 from django.core.management.base import BaseCommand
 from django.db import transaction
-from geopy.distance import geodesic
+from shapely.geometry import Point
+from shapely import wkt
 from catchment.models import Catchment
 from store.models import LenskartStore
 
 
 class Command(BaseCommand):
-    help = 'Maps LenskartStore records to their closest Catchment centroid handling WKT POINT format.'
-
-    def _parse_wkt_point(self, wkt_string):
-        """
-        Extracts coordinates from 'POINT (Longitude Latitude)' format.
-        Returns (Latitude, Longitude) for geopy.
-        """
-        try:
-            # Regex to extract numbers from POINT (85.8204 20.3208)
-            match = re.search(r'POINT\s*\((?P<lon>[\d\.-]+)\s+(?P<lat>[\d\.-]+)\)', wkt_string)
-            if match:
-                # IMPORTANT: Geopy expects (Lat, Lon), WKT is (Lon, Lat)
-                return float(match.group('lat')), float(match.group('lon'))
-        except Exception:
-            return None
-        return None
+    help = 'Maps LenskartStore to Catchment based on physical boundary containment in wkt_geometry.'
 
     def handle(self, *args, **options):
-        self.stdout.write(self.style.NOTICE("Starting spatial join with WKT support..."))
+        self.stdout.write(self.style.NOTICE("Starting Point-in-Polygon mapping..."))
         start_time = time.time()
 
-        # 1. Pre-process Catchments
-        catchments_with_coords = {}
-        valid_catchments = Catchment.objects.exclude(centroid__isnull=True).exclude(centroid__exact='')
+        # 1. Load Catchment Polygons from wkt_geometry
+        # We exclude empty or null geometries to avoid errors
+        catchments = Catchment.objects.exclude(wkt_geometry__isnull=True).exclude(wkt_geometry__exact='')
 
-        for catchment in valid_catchments:
-            centroid_str = str(catchment.centroid)
+        spatial_index = []
+        for c in catchments:
+            try:
+                # Convert the text string into a real Polygon object
+                poly = wkt.loads(str(c.wkt_geometry))
 
-            # Check if it's WKT format 'POINT (Lon Lat)' or old 'Lat, Lon' format
-            if 'POINT' in centroid_str:
-                coords = self._parse_wkt_point(centroid_str)
-            else:
-                try:
-                    lat, lon = centroid_str.split(',')
-                    coords = (float(lat.strip()), float(lon.strip()))
-                except ValueError:
-                    coords = None
+                # GIS Best Practice: Fix "Self-intersecting" polygons by adding a 0-width buffer
+                if not poly.is_valid:
+                    poly = poly.buffer(0)
 
-            if coords:
-                catchments_with_coords[catchment.id] = coords
-            else:
-                self.stderr.write(
-                    self.style.WARNING(f"Skipping ID {catchment.market_id}: Invalid format '{centroid_str}'"))
+                spatial_index.append({
+                    'id': c.id,
+                    'name': c.market_name,
+                    'poly': poly
+                })
+            except Exception as e:
+                self.stderr.write(f"Skipping Catchment {c.market_name} (ID: {c.id}): Invalid WKT - {e}")
 
-        if not catchments_with_coords:
-            self.stderr.write(self.style.ERROR("No valid centroids found."))
+        if not spatial_index:
+            self.stderr.write(self.style.ERROR("No valid wkt_geometry found in Catchment table."))
             return
 
-        self.stdout.write(f"Loaded {len(catchments_with_coords)} market centroids.")
+        self.stdout.write(f"Successfully loaded {len(spatial_index)} market boundaries.")
 
-        # 2. Iterate through stores
+        # 2. Process Stores
         stores_to_update = []
         stores = LenskartStore.objects.exclude(latitude__isnull=True).exclude(longitude__isnull=True)
 
-        self.stdout.write(f"Processing {stores.count()} stores...")
+        total_stores = stores.count()
+        self.stdout.write(f"Checking {total_stores} stores against boundaries...")
 
         for store in stores:
-            closest_catchment_id = None
-            min_distance = float('inf')
-
             try:
-                store_coords = (float(store.latitude), float(store.longitude))
+                # IMPORTANT: Shapely Point takes (Longitude, Latitude)
+                store_point = Point(float(store.longitude), float(store.latitude))
 
-                for catchment_id, catchment_coords in catchments_with_coords.items():
-                    # geodesic expects (Lat, Lon)
-                    distance = geodesic(store_coords, catchment_coords).km
+                matched_catchment_id = None
 
-                    if distance < min_distance:
-                        min_distance = distance
-                        closest_catchment_id = catchment_id
+                # Check which polygon contains the point
+                for item in spatial_index:
+                    if item['poly'].contains(store_point):
+                        matched_catchment_id = item['id']
+                        break  # Stop at the first match
 
-                if closest_catchment_id and store.catchment_id != closest_catchment_id:
-                    store.catchment_id = closest_catchment_id
+                # Update the store object if the catchment has changed
+                if matched_catchment_id and store.catchment_id != matched_catchment_id:
+                    store.catchment_id = matched_catchment_id
                     stores_to_update.append(store)
 
             except Exception as e:
-                self.stderr.write(self.style.ERROR(f"Error store {store.store_code}: {e}"))
+                self.stderr.write(
+                    self.style.ERROR(f"Error processing store {getattr(store, 'store_code', store.id)}: {e}"))
 
-        # 3. Bulk Update
+        # 3. Bulk Update the Database
         if stores_to_update:
             with transaction.atomic():
-                # Note: 'catchment' is usually the field name if it's a ForeignKey
+                # Note: 'catchment' is the field name in LenskartStore pointing to Catchment model
                 LenskartStore.objects.bulk_update(stores_to_update, ['catchment'])
+            self.stdout.write(self.style.SUCCESS(f"Updated {len(stores_to_update)} stores."))
+        else:
+            self.stdout.write(self.style.WARNING("No updates required; all stores are correctly mapped."))
 
         self.stdout.write(self.style.SUCCESS(
-            f"✅ Mapping complete. Updated {len(stores_to_update)} stores in {time.time() - start_time:.2f}s"))
+            f"✅ Complete. Total time: {time.time() - start_time:.2f}s"
+        ))
