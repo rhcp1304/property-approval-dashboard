@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 p-8">
+    <div class="max-w-5xl mx-auto">
+        <nav class="flex justify-between items-center mb-8">
+            <a href="{% url 'approved_list' %}" class="text-sm font-semibold text-gray-600 hover:text-black">← Back to All Approved Stores</a>
+            <div class="flex gap-3">
+                <span class="px-3 py-1 bg-green-100 text-green-700 rounded text-xs font-bold uppercase tracking-widest">{{ property.kissflow_status }}</span>
+            </div>
+        </nav>
+
+        <div class="bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+            <div class="bg-slate-900 p-10 text-white">
+                <h1 class="text-4xl font-extrabold mb-2">{{ property.property_name }}</h1>
+                <p class="text-slate-400 text-lg max-w-2xl">{{ property.property_address }}</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div class="p-8 border-r border-gray-100 bg-slate-50/50 space-y-8">
+                    <div>
+                        <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3">Survey Metadata</h4>
+                        <div class="space-y-4">
+                            <div>
+                                <p class="text-xs text-slate-500">Created By</p>
+                                <p class="text-sm font-semibold">{{ property.property_created_by_info }}</p>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500">Market IDs</p>
+                                <p class="text-sm font-mono text-blue-600">{{ property.market_id }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% if property.ppt_url_raw %}
+                    <div class="pt-6 border-t border-gray-200">
+                        <a href="{{ property.ppt_url_raw }}" target="_blank" class="flex items-center justify-center w-full bg-blue-600 text-white py-3 rounded-xl font-bold hover:bg-blue-700 transition shadow-lg shadow-blue-200">
+                            Download PPT View
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+
+                <div class="lg:col-span-2 p-8 lg:p-12">
+                    <h3 class="text-xl font-bold text-slate-800 mb-8 border-b pb-4">Physical Specifications</h3>
+
+                    <div class="grid grid-cols-2 gap-x-12 gap-y-10">
+                        <section>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">Store Size</p>
+                            <p class="text-lg font-medium text-slate-700">{{ property.store_size|default:"--" }}</p>
+                        </section>
+                        <section>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">Frontage</p>
+                            <p class="text-lg font-medium text-slate-700">{{ property.frontage|default:"--" }}</p>
+                        </section>
+                        <section>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">Proposed Rent</p>
+                            <p class="text-lg font-bold text-green-600 leading-tight">{{ property.proposed_rent|default:"--" }}</p>
+                        </section>
+                        <section>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">GeoIQ Projected Revenue</p>
+                            <p class="text-lg font-bold text-blue-600 leading-tight">{{ property.geoiq_projected_revenue|default:"--" }}</p>
+                        </section>
+                        <section class="col-span-2">
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">Signage Dimensions (W x H)</p>
+                            <p class="text-lg font-medium text-slate-700">{{ property.signage_width }} x {{ property.signage_height }}</p>
+                        </section>
+                        <section>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">Ceiling Height</p>
+                            <p class="text-lg font-medium text-slate-700">{{ property.ceiling_height|default:"--" }}</p>
+                        </section>
+                        <section>
+                            <p class="text-xs font-bold text-slate-400 uppercase mb-1">Beam Bottom Height</p>
+                            <p class="text-lg font-medium text-slate-700">{{ property.height_from_beam_bottom|default:"--" }}</p>
+                        </section>
+                    </div>
+
+                    <div class="mt-12 p-6 bg-slate-50 rounded-xl border border-slate-100">
+                        <h4 class="text-xs font-bold text-slate-400 uppercase mb-2">Catchment Description</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed italic">
+                            {{ property.market_name|default:"No description provided." }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

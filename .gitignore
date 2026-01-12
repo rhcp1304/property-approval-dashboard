@@ -31,3 +31,4 @@ staticfiles/
 *.sql
 *.dump
 /bdstorage_credentials.json
+/approved_stores/

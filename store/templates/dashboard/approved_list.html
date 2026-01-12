@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen p-8">
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-10">
+            <h1 class="text-3xl font-bold text-gray-900">Approved Store Pipeline</h1>
+            <p class="text-gray-500">View-only access to vetted property locations.</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for property in properties %}
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded uppercase tracking-wider">
+                            ID: {{ property.property_id }}
+                        </span>
+                        <span class="text-xs font-medium text-gray-500 italic">{{ property.latest_approval_date|date:"M Y" }}</span>
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-800 truncate mb-1">{{ property.property_name|default:"Unnamed Location" }}</h2>
+                    <p class="text-gray-500 text-sm h-10 overflow-hidden mb-4">{{ property.property_address }}</p>
+
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-100">
+                        <div class="text-sm">
+                            <span class="text-gray-400 block uppercase text-[10px]">Proj. Revenue</span>
+                            <span class="font-bold text-green-600">{{ property.geoiq_projected_revenue|default:"N/A" }}</span>
+                        </div>
+                        <a href="{% url 'approved_detail' property.pk %}" class="bg-gray-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-black">
+                            View Specs
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

@@ -53,31 +53,55 @@ class LenskartStore(models.Model):
 
 
 class ApprovedLenskartStore(models.Model):
-    """Stores data for potential store locations approved by Kissflow/Survey."""
-
+    """
+    Stores data for potential store locations approved by Kissflow/Survey.
+    Complete mapping of all GeoIQ API response fields.
+    """
+    # --- Identification ---
     property_id = models.IntegerField(unique=True, verbose_name="Property ID")
-    property_name = models.CharField(max_length=255, verbose_name="Property Name", null=True, blank=True)
-    property_address = models.TextField(verbose_name="Address", null=True, blank=True)
+    property_name = models.CharField(max_length=255, null=True, blank=True)
+    property_address = models.TextField(null=True, blank=True)
 
-    # Coordinates for spatial analysis
-    latitude = models.DecimalField(max_digits=12, decimal_places=8, null=True, blank=True, verbose_name="Latitude")
-    longitude = models.DecimalField(max_digits=12, decimal_places=8, null=True, blank=True, verbose_name="Longitude")
+    # --- Geo Data ---
+    latitude = models.DecimalField(max_digits=12, decimal_places=8, null=True, blank=True)
+    longitude = models.DecimalField(max_digits=12, decimal_places=8, null=True, blank=True)
 
-    # Raw string field to store the original semicolon-separated Market IDs from the CSV
-    market_ids_raw = models.TextField(verbose_name="Raw Market IDs (CSV)", null=True, blank=True)
+    # --- Market / Catchment Info ---
+    market_id = models.CharField(max_length=255, null=True, blank=True, help_text="Raw Market IDs (e.g. 33441; 33442)")
+    market_name = models.TextField(null=True, blank=True, help_text="Full path of the market/catchment")
 
-    kissflow_status = models.CharField(max_length=50, verbose_name="Kissflow Status")
+    # --- Status & Timing ---
+    kissflow_status = models.CharField(max_length=100, null=True, blank=True)
+    latest_approval_date = models.DateTimeField(null=True, blank=True)
 
-    # Many-to-Many relationship with Catchment
-    catchments = models.ManyToManyField(
-        'catchment.Catchment',
-        related_name='approved_lenskart_stores',
-        verbose_name="Mapped Catchments"
-    )
+    # --- People Info ---
+    property_created_by_info = models.CharField(max_length=255, null=True, blank=True)
+    survey_filled_by_info = models.CharField(max_length=255, null=True, blank=True)
 
-    def __str__(self):
-        return f"Approved Store {self.property_id}: {self.property_name or self.property_address}"
+    # --- File Handling ---
+    ppt_url_raw = models.URLField(max_length=2000, null=True, blank=True)
+    ppt_file = models.FileField(upload_to='approved_stores/ppts/%Y/%m/', null=True, blank=True)
+
+    # --- NEW FIELDS (Extracted from PPT) ---
+    store_size = models.CharField(max_length=255, null=True, blank=True)
+    frontage = models.CharField(max_length=255, null=True, blank=True)
+    signage_width = models.CharField(max_length=255, null=True, blank=True)
+    signage_height = models.CharField(max_length=255, null=True, blank=True)
+    ceiling_height = models.CharField(max_length=255, null=True, blank=True)
+    height_from_beam_bottom = models.CharField(max_length=255, null=True, blank=True)
+    trade_area = models.CharField(max_length=255, null=True, blank=True)
+    proposed_rent = models.CharField(max_length=255, null=True, blank=True)
+    geoiq_projected_revenue = models.CharField(max_length=255, null=True, blank=True)
+
+    # --- Internal Timestamps ---
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
     class Meta:
         db_table = 'approved_lenskart_store'
+        verbose_name = "Approved Lenskart Store"
         verbose_name_plural = "Approved Lenskart Stores"
+        ordering = ['-property_id']
+
+    def __str__(self):
+        return f"[{self.property_id}] {self.property_name or 'Unnamed Property'}"
