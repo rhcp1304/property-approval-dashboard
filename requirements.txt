@@ -14,11 +14,13 @@ google-auth==2.41.1
 google-auth-httplib2==0.3.0
 google-auth-oauthlib==1.2.3
 googleapis-common-protos==1.72.0
+gunicorn==23.0.0
 httplib2==0.31.0
 idna==3.11
 lxml==6.0.2
 numpy==2.4.1
 oauthlib==3.3.1
+packaging==25.0
 pandas==2.3.3
 pdfminer.six==20260107
 pillow==12.1.0
@@ -41,4 +43,5 @@ typing_extensions==4.15.0
 tzdata==2025.3
 uritemplate==4.2.0
 urllib3==2.6.3
+whitenoise==6.11.0
 xlsxwriter==3.2.9
