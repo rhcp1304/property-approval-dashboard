@@ -1,0 +1,482 @@
+[
+{
+  "model": "property.propertyrecord",
+  "pk": 20778,
+  "fields": {
+    "property_id": "7838",
+    "presentation_date_context": "BD_Presentation_Deepu_Property_Vijaypur_Jammu",
+    "ppt_link": "https://docs.google.com/presentation/d/1fRG7lhq0-GvtvjjYDFTvSuAJHDfcBHfk/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1v1Qj39lLN7_b9jF7Es-QNG04Elz9M0d8/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1E7QADpMiUtSj3K2w-wyVoUXi0Kp2AIGF/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPPwhlXP2_0C1EAHgwW-iBvexBsb71Kq7vFoQTbvVFViB8GkofxDIAO-49TtD1IJGxPLfYrQjbti8aCUHCBzlwSRxcqmwNxrYFO-E84yPbdgNWE=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:56:08.391Z",
+    "updated_at": "2026-01-13T11:56:08.391Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20779,
+  "fields": {
+    "property_id": "7798",
+    "presentation_date_context": "Add_North 2_Bareilly (14/35)_Roorkee(1/1)_Nehru Nagar",
+    "ppt_link": "https://docs.google.com/presentation/d/1hAEiBDqdQsxVDEqncUPHJyed2AeKeABB/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1hciBpLlU92b1AnzBt3jd7Y-XOUyqey8n/view?usp=drivesdk",
+    "recording_link": null,
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOv568kSxI33bz8SxLSBWkX3XoThuh94XEp0ouinXRTC1D04gaQHDPgYXo6zTUXSJXvl9zOWV0udgUQx2Otdrq8PQMm2Ey7OIlpNY27Co6mpXzz=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:56:19.323Z",
+    "updated_at": "2026-01-13T11:56:19.323Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20780,
+  "fields": {
+    "property_id": "7696",
+    "presentation_date_context": "South 2_Salem (19/19)_Tirupathur (1/1)_Krishnagiri Road",
+    "ppt_link": "https://docs.google.com/presentation/d/17tpS6tPMahefn4vItdjaMRd0BpPGIu8Q/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/17JNiXamikQ--Dn7CCqF2dLhNdibxriNf/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/16sAICRjfqVf5YgCohZrhfNVyeGr064rI/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN3ruiAMBIqnOZaXm7lZ7oTTkYDUnqhKcDGqn-7DlGYyYLb0l5ySaH5nPiZ27wAWfIhnPXzsC9rBEi6bmUVSEWAB8nxebXZuP7jp-piOgI1jSwm=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:56:29.707Z",
+    "updated_at": "2026-01-13T11:56:29.707Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20781,
+  "fields": {
+    "property_id": "7718",
+    "presentation_date_context": "BD-NCT of Delhi-New Delhi-Om Vihar, Uttam Nagar",
+    "ppt_link": "https://docs.google.com/presentation/d/1OIfzygN7frLKcRS385ikAo47xYCd6kY6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1pyGX00qst3XfAX_Ktu8S7zfvOuQ1bLk6/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1SLSJh7S5N4yccBQryiKdgAEN10nZmtbc/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMoHtivs2ibMTMCo2dYUmhQxZJXV5_m57oheTjlCwAVZZ_nMRMSjvGum5kElehoq795neqU5ri1JxESjCAI4prgAmJF3sXplJe-cE3Wn8KNIJh3=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:56:41.787Z",
+    "updated_at": "2026-01-13T11:56:41.787Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20782,
+  "fields": {
+    "property_id": "7637",
+    "presentation_date_context": "Add_North 3_Amritsar (16/21)_Jalandhar (5/5)_66ft",
+    "ppt_link": "https://docs.google.com/presentation/d/1L4fwHWePvEGRxjO-cusRiIfHZKw_HjYv/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1keXPFDwSRxlES0FEaTBnfw5aHhnMyoDF/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1Idd9cpUJS_C_SrEVEzcobvzg4V-mZus-/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMkodj7TZxOxAyld2p10t_Mhzv0JWsIB8_VU21UlttmlnDuAJQlDWUA1W-UalIM1p3cClznCWA9ftSKq02c8t12kr45pR3AeNIltn6blyDjRREh=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:56:51.038Z",
+    "updated_at": "2026-01-13T11:56:51.038Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20783,
+  "fields": {
+    "property_id": "7823",
+    "presentation_date_context": "East 1_Guwahati (32/78)_Guwahati (13/33)_Lokhra",
+    "ppt_link": "https://docs.google.com/presentation/d/1Xk3J2gOhwqUGv_OL93O4QOEjBEqpjk7G/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1g0ql8FyWCugtH8XbG7YbOWi7uZEc_dk1/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1toZKdti0xqoHCoVDgiJRTDSYft5B-v4z/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPMFscwV0hu3EWqyF71O5-P319-k4r8aJq7p1BB1ORGKgm8Tp2j-_L8fJO2Jdrexvqyv87N5k0tHa5iyDyzjzqXxrDIPzEz0JKPezjsCqsqtkXbVA=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:57:02.410Z",
+    "updated_at": "2026-01-13T11:57:02.410Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20784,
+  "fields": {
+    "property_id": null,
+    "presentation_date_context": "MMZ",
+    "ppt_link": "https://docs.google.com/presentation/d/1tjdrRmkLX69NXb9dRCx0T6qSb4DllXRP/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1pXdfgcgu0b_-xLrpzSfAodFq5kvGPODL/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1soA9PkgzDdnMcv3fXGaa68fhCXk1lNdn/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPhSxgZSiDWyEXl2m4TaPVd0zB_NidhKtJweY6p_1CkQdUF3wCD6N0vT6N1UoNuyK2p2vyVZhfm2EZSCmAVqvIGylatyAoonl-jKnN3C4DP-vUp=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:57:07.824Z",
+    "updated_at": "2026-01-13T11:57:07.825Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20785,
+  "fields": {
+    "property_id": "7807",
+    "presentation_date_context": "East 1_Guwahati (42/78)_Jowai (2/3)_Lumpariat Rd Ladthalobah",
+    "ppt_link": "https://docs.google.com/presentation/d/1_QnotxYIGObJxethdxVUiKi2O0hqeGeQ/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/11QfQhuuGtCgrrJmFGGl2ula_DzpMjr28/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1PhYuNSAUl7tvHtaKxJ6ZExp6lwlOVdp_/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNxJ3Hg0RL0rF2GERliD0duhDu43-DhITRFnYbupWLWUq72AZC84EIx4WkFh1iombIU6kCRUJdRaumAUq1c0W2wf5RyjqYqncqjzHenY-L-bjEP=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:57:16.415Z",
+    "updated_at": "2026-01-13T11:57:16.415Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20786,
+  "fields": {
+    "property_id": "7842",
+    "presentation_date_context": "South 2_Coimbatore (10/35)_Coimbatore (5/11)_Sundarapuram Pollachi Main road",
+    "ppt_link": "https://docs.google.com/presentation/d/1CZErNHaSquGYa1_AigsrULXcjYAVrXZ_/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1SDtfP1R37aPLuuWgxCnb7ztcG8yfiIkA/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1n86HqlZ-CZ7Yx_WKTLZdDzQZjEmOK_wd/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOfa20Q18eAhSre7vWyqsK37fipZrVUncmouZuB0BrYqta4EB7-XlPJOq7294797NnY-F71cpJ7N6iUJKtQNRx7kYop2e2uKEVO8Gbsm1CxTd5l=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:57:26.889Z",
+    "updated_at": "2026-01-13T11:57:26.889Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20787,
+  "fields": {
+    "property_id": "7810",
+    "presentation_date_context": "Add_North 2_Varanasi (32/43)_Varanasi (14/16)_azamgarh road",
+    "ppt_link": "https://docs.google.com/presentation/d/1an3n0oFf9svivYmAu4chTNBn7AkXAcq6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1lK3fF6OJ4PfjkLWxROI_xmK8AHyRRtdT/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/18bPpvqkDSAMHTzRS8BWQE9E8tgE-7E9V/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMDF8okJks8WglP5VSIU7kF3bF73lVFIhF33NCvnYG0cggmv3-d67615yhNb5xMxwoqv6wP0KLfHbFjjihHOqp4K8X_eINlVxw46Ml_6GWa29J0=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:57:36.401Z",
+    "updated_at": "2026-01-13T11:57:36.402Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20788,
+  "fields": {
+    "property_id": "4914",
+    "presentation_date_context": "West 1_Mumbai (35/201)_Mumbai (33/168)_Sion Circle Sion West",
+    "ppt_link": "https://docs.google.com/presentation/d/1MZIhSvQn_h34yZ61XsRnDlv3ytFtwkEf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1a0hmYTtMMu-jK_ll4LNEvI1XisbsDEKt/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1b633BNFTi_kTn8xQQlAC9MYauExZXPei/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOMhkLD_zDfhKLzvoqNTkLDR-4fctm6IsbxzFtbQj1t-RhtfKl_LPFGQ_qt_P9AKcXpGoGUan_QjvQKdwrWl33IpTMH2TAYqKc4LeWuVU_C0-jY=s1000",
+    "status": "Conditionally Approved",
+    "created_at": "2026-01-13T11:57:51.022Z",
+    "updated_at": "2026-01-13T11:57:51.022Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20789,
+  "fields": {
+    "property_id": "7833",
+    "presentation_date_context": "West 1_Mumbai (20/201)_Mumbai (20/168)_Linking Road Santacruz (West)",
+    "ppt_link": "https://docs.google.com/presentation/d/1ZivSnSD59AwL4o5LL0uwhyrRlVnufRC-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1U5nZOkoDTPL4JZmeqmmYwV9-hE4Hje7T/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1OP1VyOPQXxxbLmosD6lb5suvZDINRxnv/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNLv20qXa7Bk_HOR7CMuk7N44wYrI2lkjnX6vsVIhDBnBy5DBuBKywkS4cY5pLsmi33vRhZ_dHYeI_E6EZ_OhClsg4N3V3ZmTk7E1dsbfNAleux=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:58:05.802Z",
+    "updated_at": "2026-01-13T11:58:05.802Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20790,
+  "fields": {
+    "property_id": "7780",
+    "presentation_date_context": "West 1_Mumbai (24/201)_Mumbai (24/168)_Kirtikar Market Dadar West",
+    "ppt_link": "https://docs.google.com/presentation/d/1B7G0iSDV46tIsRrMBvv4lU5xfONQbrRi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1iyo3tyzishm-RRCh7uj_tMHd8FM5Ak5J/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/19uapDBuRVwSzrqme9kLZHgMu5lMBYPjo/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPSiyXPrjv6G2RTR_YFzQ-uB4vEPGWM3NQ0yiw0sClPIX-szeaq4Wd3q4cAtOmBHgge0DIw_ACvU2zYJs4o9Yp0ynTpYUl_8Jbvi1cL7Z8uiGNpPA=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:58:18.036Z",
+    "updated_at": "2026-01-13T11:58:18.036Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20791,
+  "fields": {
+    "property_id": "7796",
+    "presentation_date_context": "West 1_Mumbai (192/201)_Mumbai (160/168)_Kalbadevi Road Marine Lines East",
+    "ppt_link": "https://docs.google.com/presentation/d/1aHw3KQGlCmstMKUDBKC7VS1WZzHRpDdO/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/10Lw8dIXvWt5pGRNVt7-EDTFXqP7bAqp8/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1CdSwPQIPspf8x3DPlxDi_fDAt2-RAbAa/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNepcsAs5tgYWWGA5IB9cIYAkxMiyp_wEJJ9VuAX1S5D29Iau0Lrb3W1lIC_f7EE75jFQ6Ab_FvZXVgYZxBDiQ_u6m7F3fFHVA4GSQwgqf6dWwM=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:58:28.677Z",
+    "updated_at": "2026-01-13T11:58:28.677Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20792,
+  "fields": {
+    "property_id": "7690",
+    "presentation_date_context": "West 1_Mumbai (119/201)_Mumbai (101/168)_Devidas Lane Borivali West",
+    "ppt_link": "https://docs.google.com/presentation/d/114EVk6-dE91sEbstwWxAOPpJvy4Ht4R5/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1dfCdohfui1hqC3aU2wn7mX3i_rTm1k9A/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1CJT412YfeYbDW0Bv4TF0_m3q-26xYQb-/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBON0vRJ_RaDOXEvG7xZS1oMIGB6KQl-HySMrJpMpvksb9oHl07-k2Bq1JTEn6VIftdZu5Spomw7ceWcmD8ssTqZqw_CnUTpLS0iOPOa0Du9eLco=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:58:40.341Z",
+    "updated_at": "2026-01-13T11:58:40.341Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20793,
+  "fields": {
+    "property_id": "7801",
+    "presentation_date_context": "South 2_Chennai (128/134)_Chennai (117/123)_Thiruverkadu",
+    "ppt_link": "https://docs.google.com/presentation/d/1pnJkHXiHrGe67KInUqVBxk10OUFpJ1e-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1BaXYjClv9RjnqmTnvctqG_pN60nNuxfB/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1o4fszngFHHNDxFHiF5uhuNtYV6GuRrMW/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNgutQXLqlMvhy9k74c0A9vHOK7E7W_FhqnfoLTJqrPp99ZjOrU1mxhw3pA-QR2QyKfjSO4fEG0VRtrs-hOnRiVlDBydQtxw7A0ckNlALQbdtqI=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:58:53.245Z",
+    "updated_at": "2026-01-13T11:58:53.245Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20794,
+  "fields": {
+    "property_id": "7765",
+    "presentation_date_context": "South 4_Calicut (9/30)_Malappuram (1/1)_Changaramkulam",
+    "ppt_link": "https://docs.google.com/presentation/d/1_u4uubBuPgSIJjExKlvXD0LSjnMrwE2c/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1KWR8YkCEeZVxbmGvbUWVVGKzpDWsNIXw/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1WtScEjU_JgUM7wXj2pv2afqrGWtpz7_K/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMQsY5Hdczzj7OC6J9XzOoHI3UTmK7qtVYyO7E5E8VnXYyxQsdYVbfhlm7QseRO-o9osGchtYrntZ87dPWGsL-cQZBnOt9LyKhaHhlJcIa9zoSv=s1000",
+    "status": "Conditionally Approved",
+    "created_at": "2026-01-13T11:59:04.511Z",
+    "updated_at": "2026-01-13T11:59:04.511Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20795,
+  "fields": {
+    "property_id": "7811",
+    "presentation_date_context": "East 2_Patna (14/94)_Siwan (1/5)_Rajendra Path",
+    "ppt_link": "https://docs.google.com/presentation/d/1mAIKbjW3xxVzf6dECmb8Y2aWI1ZEE6SQ/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1DiTPHIfcBYfeCTvUNwO0iPb8Tu1VChsT/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1POw0m1I3fk5IsCRz7Orj6R2yk8uHTY-o/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPxPiPQr8ZufbhDKyB_ewfY1gwFyTdK2U2Cha3fC5SuUewJ3ji15FNwmSEBfK2u-vmcseL8iSEesdLU5cXk-JgWAztyvmJJM5WpUFuxNQL78EUt=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T11:59:10.776Z",
+    "updated_at": "2026-01-13T11:59:10.776Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20796,
+  "fields": {
+    "property_id": "7832",
+    "presentation_date_context": "East 2_Bhubaneswar (6/101)_Baripada (1/3)_Station Road",
+    "ppt_link": "https://docs.google.com/presentation/d/1sStSpqyAwGS1Qz8wTDRjHIgDEjJz8ltW/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1ekRkCZMPLlzocbRd9SJRwEsk_e2VJkA7/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1ExS3xZbFsTiS6dR3NR9L8kIzgQZtFnz_/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNe1INNA_syV_ezVgt-eNySVeINCOQmrJHnJrGBH1DkATDBemqDchOYdr1oPhziU4qsG_C4QMuGGhoDtvJl3Vqd-RizN3Vcv0WTcEbfagS4TJaE=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:59:20.437Z",
+    "updated_at": "2026-01-13T11:59:20.437Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20797,
+  "fields": {
+    "property_id": "7335",
+    "presentation_date_context": "South 3_Hyderabad (170/290)_Medak (1/3)_Ramdas Chowrasta Fatehnagar",
+    "ppt_link": "https://docs.google.com/presentation/d/16N_vMc0eunBopuvgQl-4cgu95mYu33j2/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/15dSXXQYMnZC_tbS67F2RA9ncQYyG42cE/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/133HwjgNRUJmbQS2srWGmiHU5fUWm-g7k/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP9Kyl9fyId-Jm46eFyfHmkJU1tNhovqPFj-WhZmWPJqW_KUAigPxegPtHy0wJ2447zavuanc8791VdcosVn6TSpSUQgVooVLS_tmh1Hk1cHnFb=s1000",
+    "status": "Conditionally Approved",
+    "created_at": "2026-01-13T11:59:30.935Z",
+    "updated_at": "2026-01-13T11:59:30.935Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20798,
+  "fields": {
+    "property_id": "7831",
+    "presentation_date_context": "East 1_Kolkata (170/202)_Kolkata (85/112)_Dakshineswar",
+    "ppt_link": "https://docs.google.com/presentation/d/1JoyF9AlPjetMcv4CqlImOAFZZEW3iOBI/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1wQutm-nKsaHoyv2jyIQhFkFMpr_m8Zr2/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1I8wS2gsx8GNX9htJp1m43GYMBtnh7mov/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPNvBVR3zt_jrZmuAFyyDL70EnsW7PD-_US7i5WyDMd7FkrgoLdfuP06fHkl7qVCAMizX5aEoXndb3V0GHhFE9jrqn5gk8_OTqQoEmUki3kAkXl=s1000",
+    "status": "Hold",
+    "created_at": "2026-01-13T11:59:41.940Z",
+    "updated_at": "2026-01-13T11:59:41.941Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20799,
+  "fields": {
+    "property_id": "7676",
+    "presentation_date_context": "North 2_Agra (28/29)_Aligarh (3/3)_ Marris Road Aligarh",
+    "ppt_link": "https://docs.google.com/presentation/d/1c22Qwd7XRO_3eoDNbbkHgbQ75GzQ8PRf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1v3eanNHoZdRSomLPJ-2iHJbUvh-mibmq/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/19a045piE1PHe34ovlDQsCb-QhzcLaq5I/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPeyw7dOHvwzsx6zjUid8emB6q3RFxY8czcNxqaRoMWCnvhUVJShZ6orXR5W5aDdL9HoSOkiaV5DgKVHdsniS6c9zUqIq0psJdUTMvhNnQqopXT=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T11:59:51.542Z",
+    "updated_at": "2026-01-13T11:59:51.542Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20800,
+  "fields": {
+    "property_id": "7535",
+    "presentation_date_context": "South 1_Bengaluru (63/159)_Bengaluru (47/137)_Electronic City Phase 1",
+    "ppt_link": "https://docs.google.com/presentation/d/1aI2_j0G9HGxk0S_nYF-ljpc3uFgLaU90/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1xE-tO0KzsJjf0OjvSiENC6OAv1EH8aBe/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1j13oGsEG-zBWaEnXxyNRwCPiFljcGKYX/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNxJKWp2L_4vsyvTN-1sx1UgYRXBqJ0QwuIdj0z3qHbxrS3qelvyR-b9CaOmsnIy0HZeuc83bwMXVNV59x3Vnu7VeotM_f-oKJQZQG--4IfyR1gtQ=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T12:00:06.309Z",
+    "updated_at": "2026-01-13T12:00:06.309Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20801,
+  "fields": {
+    "property_id": "7789",
+    "presentation_date_context": "BD-Telangana-Unknown City-Choutuppal",
+    "ppt_link": "https://docs.google.com/presentation/d/15dwqebtmSu_9FPTsC6c0yIQ8wKjUkbRW/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1IbhMWSuVcwfXnQtCkwpLP_VjNHFUEFy9/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/13Q-SDF9QCTIeLNbzToS4fyoIibCSmwby/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNjpVuIJi9OrIYXaQB930hvqSoZEpwz8gsVsR0iJMusH18nKUs7EX28Q0hJNW2iyNsxg8hTBlJMLp_ekS8yIDQ4q9MPTae-jECM0KDqMlOlrqqQ=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T12:00:17.616Z",
+    "updated_at": "2026-01-13T12:00:17.616Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20802,
+  "fields": {
+    "property_id": "7618",
+    "presentation_date_context": "West 3_Surat (9/84)_Surat (7/60)_Gujarat Gas Circle, Adajan",
+    "ppt_link": "https://docs.google.com/presentation/d/1c3wSAvEzDqHdw9_9QXh3rkSPxA9LEO-7/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1xDrQdz5kC8jthW0kvD7PmQDImdqHKRDh/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1hFCL-pQqHuK_EJALrRKYxKomWzUjALQM/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM-iJS4Oob6JsO30mUxvSU_5Cho8A6bPrOL-xn0g74I50DiVSE-ly6o3s94QlHq3MdZuPiIIjcWtzEGOx1pfRP8VXf2xn8ETMK0V4sMEXNl8USF=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T12:00:29.023Z",
+    "updated_at": "2026-01-13T12:00:29.023Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20803,
+  "fields": {
+    "property_id": "7846",
+    "presentation_date_context": "Add_West 3_Rajkot (29/45)_Jetpur (1/1)_Junagadh Rd",
+    "ppt_link": "https://docs.google.com/presentation/d/1XxfPBBij3BOV84QKzLgAaDZUqJN4GHIw/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1JXsdPQxZDYssAtUBNY32f-Y3DCQK1Bx2/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1NLvDYyJu-J9PpHohOzr5b_VBnRbKqfvI/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBO-LKAm2Fvh5v2Bsm6plVGHF1QPLsKtz2mNJGUtJLg2DiUMvk4q1kwVlawfG3dgqR-ufpmnTwVd1Jqws9u0JEpS8F494UZdDHwTa2eALmYgiRy6=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T12:00:41.979Z",
+    "updated_at": "2026-01-13T12:00:41.979Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20804,
+  "fields": {
+    "property_id": "7830",
+    "presentation_date_context": "BD-Chhattisgarh-Raipur-Great Eastern Rd, Raipur",
+    "ppt_link": "https://docs.google.com/presentation/d/1gyG6GfI4TYLjnRyIY_lr7A_Wn9q8z0bL/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1P0ZLXnu4SusGT09x5hbwNUaJwqWDG9WF/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1WbQbg3xLN34ecoR6cQ_Of1wGPjA9kaDI/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNPLgWihe2vAaMVMG-XrGPAEisFKocG5EaozW1yWOu2fpOCfRH6f7B5O7bjl5gFkfrlH-4yRUZOD2YjFRKFXs_dGLoFcA_2cMv_VmiF07aI-Czn=s1000",
+    "status": "Conditionally Approved",
+    "created_at": "2026-01-13T12:00:54.883Z",
+    "updated_at": "2026-01-13T12:00:54.883Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20805,
+  "fields": {
+    "property_id": "7820",
+    "presentation_date_context": "West 2_Pune (13/112)_Pune (11/89)_Gera Imperium Oasis, Morewadi, Pimpri Colony",
+    "ppt_link": "https://docs.google.com/presentation/d/1bYfANYzTrjYXWhJ2qkS2xPyn8czTO0NN/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1q9h9xSsRHxg6_o1NkPGiCwx4E41J33OP/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1zt7MIWHY06ZSQY-CTDW_9YP_xdszXLNx/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOmf_1DfH8cCzArAicmyyXLXoPxNi2xKX_H_qGLDub2EwUvBCVh2zG6fMMOKL1oEUCII6yK19ffgVzatshnmwFwlMC7Cgbh2jrxSQZ5SGId8Hj6=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T12:01:05.910Z",
+    "updated_at": "2026-01-13T12:01:05.910Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20806,
+  "fields": {
+    "property_id": "7735",
+    "presentation_date_context": "BD-Maharashtra-Pune-Hinjawadi Phase II",
+    "ppt_link": "https://docs.google.com/presentation/d/1MLU21z_WIaENI9bNMXK3fQLlnRCy1dVp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1TM0ekSDJLYppeU7QTjqCf2DRYx-BJ7Ca/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1m2sxf00QE22KmjV6KNsdg_tn3aMitUWl/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMlJYIfox-zR2tyIVH9cvH1NImAguIvpmdDzoslDqTf4CVHukCtRLtrP0oqY5gCNteuf0WXqi4EzCIbavknW-ZWRKXzWnidjsCOVpgLMZ1BlgBJ=s1000",
+    "status": "Approved",
+    "created_at": "2026-01-13T12:01:17.717Z",
+    "updated_at": "2026-01-13T12:01:17.717Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20807,
+  "fields": {
+    "property_id": "7814",
+    "presentation_date_context": "West 3_Ahmedabad (102/115)_Ahmedabad (74/85)_Sardar Patel Ring Road, Zundal",
+    "ppt_link": "https://docs.google.com/presentation/d/1sGZPt_tDsJWjzsV8p4pblRoYO6ajlIJt/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1cbWR7vHuDVdHX5ikTzBNn9kuTv-hJp1c/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1yYESuGd5KZ4wx3jB9b-8vBTbagPbZEnT/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOPclUNP6IJG4TMi8nvb9-I8ZFuE59c9XYKZEtA-iXkJ3uf-Q1bJ6wbRX7o8mUNM88oz7KhkDDOG9mIQPVa9seZH_u2xnxdARx2a3gCk1c_nFqj=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T12:01:33.011Z",
+    "updated_at": "2026-01-13T12:01:33.011Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20808,
+  "fields": {
+    "property_id": "7813",
+    "presentation_date_context": "Add_West 3_Ahmedabad (91/115)_Ahmedabad (65/85)_Narayan Nagar",
+    "ppt_link": "https://docs.google.com/presentation/d/1GGUFkQQN4dcRU-cxZr_cyKIaqu-MwzDE/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1ZZ1VaqF4J4I4YRavMgKSxvKjUdSWBH28/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1AGAk9e3r--zAyOtFrSnO_2C410HodGFX/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPOy0H1PLwpKqVfrMzX_wN9AjnrpVTzA0GG2gpCTkobt3qA7Enf4k654I9qpc06HidJMN0AmncsTRHe-D40DC8mrE9mD_yvZs_-aFUcLoAet5tm=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T12:01:46.826Z",
+    "updated_at": "2026-01-13T12:01:46.826Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 20809,
+  "fields": {
+    "property_id": "7770",
+    "presentation_date_context": "East 2_Patna (69/94)_Patna (22/32)_Kanti Factory Road",
+    "ppt_link": "https://docs.google.com/presentation/d/1pwVn_4b08rm_tEQVn2zflbCfg-w1pefp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1bxeaYVIFPJJO2YWEpgu6jw-rpedD3yOt/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1dB9gCnUyLS6DXb11VzkWpEldstWYqZj4/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOh4zIXrA7-rE-iEjPkD6uqKPj_cHLFMkRjDcQKDyKKiQBRymu4_Dv1Xa2pu4Ck-fmsT5qUDuGKtCUJVpaOaxFqAsrsVkt1k_jzNMnL6KbDQRDx=s1000",
+    "status": "Dropped/Rejected",
+    "created_at": "2026-01-13T12:01:57.348Z",
+    "updated_at": "2026-01-13T12:01:57.348Z"
+  }
+}
+]
