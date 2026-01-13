@@ -52,7 +52,7 @@
                     <thead>
                         <tr>
                             <th class="ps-4">Preview (Click to Open PPT)</th>
-                            <th>Property ID & Context</th>
+                            <th>Market Name</th>
                             <th>Status</th>
                             <th>Other Resources</th>
                         </tr>
@@ -78,9 +78,7 @@
                             </td>
 
                             <td>
-                                <div class="fs-5 fw-bold text-primary">{{ property.property_id|default:"(No ID)" }}</div>
-                                <div class="text-muted small fw-medium">{{ property.presentation_date_context }}</div>
-                                <div class="text-muted" style="font-size: 0.75rem;">Added: {{ property.created_at|date:"M d, Y" }}</div>
+                                <div class="fs-6 fw-bold text-dark">{{ property.presentation_date_context|default:"Presentation Context" }}</div>
                             </td>
 
                             <td>
