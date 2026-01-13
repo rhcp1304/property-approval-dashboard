@@ -5,82 +5,115 @@
     <title>Property Approval Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body { background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .slide-container {
+            position: relative;
+            width: 180px;
+            transition: transform 0.2s;
+        }
+        .slide-container:hover {
+            transform: scale(1.03);
+            cursor: pointer;
+        }
         .slide-preview {
-            width: 160px;
-            height: 90px;
+            width: 100%;
+            height: 100px;
             object-fit: cover;
+            border-radius: 6px;
+            border: 2px solid #eaeeef;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .ppt-overlay-hint {
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+            background: rgba(220, 53, 69, 0.9);
+            color: white;
+            font-size: 10px;
+            padding: 2px 6px;
             border-radius: 4px;
-            border: 1px solid #ddd;
-            display: block;
+            font-weight: bold;
         }
-        .link-btn {
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin: 2px;
-        }
+        .table thead { background-color: #212529; color: white; }
+        .badge-hold { background-color: #6c757d; color: white; }
+        .badge-conditional { background-color: #17a2b8; color: white; }
     </style>
 </head>
-<body class="bg-light">
+<body>
 
 <div class="container-fluid py-5">
-    <div class="card shadow border-0">
-        <div class="card-header bg-dark text-white">
-            <h5 class="mb-0">Property Records Inventory</h5>
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-white py-3 border-bottom">
+            <h4 class="mb-0 fw-bold text-dark">Property Approval Inventory</h4>
         </div>
         <div class="card-body p-0">
             <div class="table-responsive">
                 <table class="table table-hover align-middle mb-0">
-                    <thead class="table-light">
+                    <thead>
                         <tr>
-                            <th class="ps-4">First Slide Preview</th>
-                            <th>Property ID / Context</th>
+                            <th class="ps-4">Preview (Click to Open PPT)</th>
+                            <th>Property ID & Context</th>
                             <th>Status</th>
-                            <th>Resources</th>
+                            <th>Other Resources</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for property in properties %}
                         <tr>
                             <td class="ps-4">
-                                {% if property.first_slide_image_url %}
-                                    <img src="{{ property.first_slide_image_url }}" class="slide-preview" alt="Slide Thumbnail">
-                                {% else %}
-                                    <div class="slide-preview bg-secondary d-flex align-items-center justify-content-center text-white small">No Preview</div>
-                                {% endif %}
-                            </td>
-
-                            <td>
-                                <div class="fw-bold">{{ property.property_id|default:"N/A" }}</div>
-                                <div class="text-muted small">{{ property.presentation_date_context }}</div>
-                            </td>
-
-                            <td>
-                                <span class="badge
-                                    {% if property.status == 'Approved' %}bg-success
-                                    {% elif property.status == 'pending' %}bg-warning text-dark
-                                    {% elif property.status == 'Dropped/Rejected' %}bg-danger
-                                    {% else %}bg-info text-dark{% endif %}">
-                                    {{ property.status }}
-                                </span>
-                            </td>
-
-                            <td>
                                 {% if property.ppt_link %}
-                                    <a href="{{ property.ppt_link }}" target="_blank" class="btn btn-sm btn-outline-danger link-btn">PPT</a>
+                                    <a href="{{ property.ppt_link }}" target="_blank" class="text-decoration-none">
+                                        <div class="slide-container">
+                                            {% if property.first_slide_image_url %}
+                                                <img src="{{ property.first_slide_image_url }}" class="slide-preview" alt="PPT Preview">
+                                            {% else %}
+                                                <div class="slide-preview bg-secondary d-flex align-items-center justify-content-center text-white small text-center px-2">No Slide Image</div>
+                                            {% endif %}
+                                            <span class="ppt-overlay-hint">OPEN PPT</span>
+                                        </div>
+                                    </a>
+                                {% else %}
+                                    <div class="slide-preview bg-light border d-flex align-items-center justify-content-center text-muted small">No PPT Link</div>
                                 {% endif %}
+                            </td>
 
-                                {% if property.ai_summary_link %}
-                                    <a href="{{ property.ai_summary_link }}" target="_blank" class="btn btn-sm btn-outline-primary link-btn">AI Summary</a>
-                                {% endif %}
+                            <td>
+                                <div class="fs-5 fw-bold text-primary">{{ property.property_id|default:"(No ID)" }}</div>
+                                <div class="text-muted small fw-medium">{{ property.presentation_date_context }}</div>
+                                <div class="text-muted" style="font-size: 0.75rem;">Added: {{ property.created_at|date:"M d, Y" }}</div>
+                            </td>
 
-                                {% if property.recording_link %}
-                                    <a href="{{ property.recording_link }}" target="_blank" class="btn btn-sm btn-outline-success link-btn">Recording</a>
+                            <td>
+                                {% if property.status == 'Approved' %}
+                                    <span class="badge rounded-pill bg-success px-3 py-2">Approved</span>
+                                {% elif property.status == 'pending' %}
+                                    <span class="badge rounded-pill bg-warning text-dark px-3 py-2">Pending</span>
+                                {% elif property.status == 'Dropped/Rejected' %}
+                                    <span class="badge rounded-pill bg-danger px-3 py-2">Dropped</span>
+                                {% elif property.status == 'Conditionally Approved' %}
+                                    <span class="badge rounded-pill badge-conditional px-3 py-2">Cond. Approved</span>
+                                {% elif property.status == 'Hold' %}
+                                    <span class="badge rounded-pill badge-hold px-3 py-2">On Hold</span>
+                                {% else %}
+                                    <span class="badge rounded-pill bg-secondary px-3 py-2">{{ property.status }}</span>
                                 {% endif %}
+                            </td>
+
+                            <td>
+                                <div class="btn-group gap-2">
+                                    {% if property.ai_summary_link %}
+                                        <a href="{{ property.ai_summary_link }}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">AI Summary</a>
+                                    {% endif %}
+
+                                    {% if property.recording_link %}
+                                        <a href="{{ property.recording_link }}" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3">Recording</a>
+                                    {% endif %}
+                                </div>
                             </td>
                         </tr>
                         {% empty %}
                         <tr>
-                            <td colspan="4" class="text-center py-5">No records found.</td>
+                            <td colspan="4" class="text-center py-5 text-muted">No property records available.</td>
                         </tr>
                         {% endfor %}
                     </tbody>
