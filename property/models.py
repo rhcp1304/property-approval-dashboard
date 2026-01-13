@@ -1,8 +1,8 @@
-# property/models.py
 from django.db import models
 
+
 class PropertyRecord(models.Model):
-    # Allow null/blank if RetailIQ link is missing or broken
+    # Allowed to be null if the link is missing
     property_id = models.CharField(max_length=50, null=True, blank=True)
 
     presentation_date_context = models.CharField(max_length=255)
@@ -10,7 +10,9 @@ class PropertyRecord(models.Model):
     ai_summary_link = models.URLField(max_length=500, null=True, blank=True)
     recording_link = models.URLField(max_length=500, null=True, blank=True)
 
-    # Updated Status Choices
+    # NEW: Stores the Google-hosted thumbnail URL
+    first_slide_image_url = models.URLField(max_length=1000, null=True, blank=True)
+
     STATUS_CHOICES = [
         ('pending', 'Pending'),
         ('Approved', 'Approved'),
@@ -18,14 +20,10 @@ class PropertyRecord(models.Model):
         ('Conditionally Approved', 'Conditionally Approved'),
         ('Hold', 'Hold'),
     ]
-    status = models.CharField(
-        max_length=50,
-        choices=STATUS_CHOICES,
-        default='pending'
-    )
+    status = models.CharField(max_length=50, choices=STATUS_CHOICES, default='pending')
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return f"{self.property_id or 'Unknown ID'} - {self.presentation_date_context}"
+        return f"{self.property_id or 'No ID'} - {self.presentation_date_context}"

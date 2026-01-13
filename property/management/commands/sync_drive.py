@@ -2,21 +2,27 @@ import os.path
 import io
 import re
 from urllib.parse import urlparse, parse_qs
+
+# Lightweight libraries
 from pptx import Presentation
 from pdfminer.high_level import extract_text
+
+# Django imports
 from django.core.management.base import BaseCommand
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaIoBaseDownload
+
+# Local models
 from property.models import PropertyRecord
 
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 
 class Command(BaseCommand):
-    help = "Syncs all properties; Status is derived from the last two lines of the AI PDF"
+    help = "Syncs properties; captures Google Drive thumbnail links and status from PDF tail."
 
     def handle(self, *args, **options):
         # 1. Google Drive Authentication
@@ -38,7 +44,7 @@ class Command(BaseCommand):
         self.stdout.write(self.style.WARNING("Wiping PropertyRecord table for fresh sync..."))
         PropertyRecord.objects.all().delete()
 
-        # 3. Fetch Items (2025 onwards)
+        # 3. Fetch Items (Requesting thumbnailLink specifically)
         q = (
             "trashed = false and "
             "createdTime > '2025-01-01T00:00:00Z' and ("
@@ -58,7 +64,7 @@ class Command(BaseCommand):
                     'name': item['name'],
                     'ppt_id': None, 'ppt_link': None,
                     'pdf_id': None, 'pdf_link': None,
-                    'mp4_link': None
+                    'mp4_link': None, 'thumb_link': None
                 }
 
         for item in all_items:
@@ -66,9 +72,15 @@ class Command(BaseCommand):
             if not parents or parents[0] not in folder_data: continue
             p_id = parents[0]
             name = item.get('name', '').lower()
+
             if 'presentation' in item.get('mimeType', ''):
                 folder_data[p_id]['ppt_id'] = item['id']
                 folder_data[p_id]['ppt_link'] = item.get('webViewLink')
+                # Capture the thumbnail link and force a larger size (=s1000)
+                t_link = item.get('thumbnailLink')
+                if t_link:
+                    folder_data[p_id]['thumb_link'] = t_link.replace('=s220', '=s1000')
+
             elif name == 'ai_summary.pdf':
                 folder_data[p_id]['pdf_id'] = item['id']
                 folder_data[p_id]['pdf_link'] = item.get('webViewLink')
@@ -76,10 +88,11 @@ class Command(BaseCommand):
                 folder_data[p_id]['mp4_link'] = item.get('webViewLink')
 
         # 5. Extraction and Save
-        count = 0
         if not os.path.exists('downloads'): os.makedirs('downloads')
+        count = 0
 
         for f_id, data in folder_data.items():
+            # We process if we have at least a PPT and PDF
             if data['ppt_id'] and data['pdf_id']:
                 safe_name = re.sub(r'[\\/*?:"<>|]', "_", data['name'])
                 local_pptx = os.path.join('downloads', f"{safe_name}.pptx")
@@ -90,57 +103,48 @@ class Command(BaseCommand):
                     self.download_file(service, data['ppt_id'], local_pptx)
                     self.download_file(service, data['pdf_id'], local_pdf)
 
-                    # Extract Property ID (can be NULL)
+                    # A. Data Extraction
                     prop_id = self.get_property_id(self.extract_retail_link(local_pptx))
-
-                    # Extract Status using the Last Two Lines logic
                     extracted_status = self.extract_status_from_pdf(local_pdf)
 
+                    # B. Create Record (Using the Thumbnail URL)
                     PropertyRecord.objects.create(
                         property_id=prop_id,
                         presentation_date_context=data['name'],
                         ppt_link=data['ppt_link'],
                         ai_summary_link=data['pdf_link'],
                         recording_link=data['mp4_link'],
+                        first_slide_image_url=data['thumb_link'],
                         status=extracted_status
                     )
 
                     color = self.style.SUCCESS if "Approved" in extracted_status else self.style.NOTICE
                     self.stdout.write(color(f"  -> Saved | ID: {prop_id or 'NULL'} | Status: {extracted_status}"))
                     count += 1
+
                 except Exception as e:
                     self.stdout.write(self.style.ERROR(f"  -> Error: {e}"))
 
         self.stdout.write(self.style.SUCCESS(f"\nFinished! Processed {count} records."))
 
     def extract_status_from_pdf(self, path):
-        """
-        Fetches the last two non-empty lines and uses a priority
-        check to differentiate between Conditionally Approved and Approved.
-        """
+        """Checks last 2 lines and prioritizes 'Conditionally Approved'."""
         try:
             text = extract_text(path)
-            # Filter for non-empty lines
-            lines = [line.strip() for line in text.split('\n') if line.strip()]
+            lines = [l.strip() for l in text.split('\n') if l.strip()]
+            if not lines: return 'pending'
+            context = " ".join(lines[-2:]).lower()
 
-            if not lines:
-                return 'pending'
-
-            # Get the last two lines and join them for searching
-            last_two_context = " ".join(lines[-2:]).lower()
-
-            # PRIORITY CHECK: Specific phrase first
-            if 'conditionally approved' in last_two_context:
+            if 'conditionally approved' in context:
                 return 'Conditionally Approved'
-            elif 'approved' in last_two_context:
+            elif 'approved' in context:
                 return 'Approved'
-            elif any(word in last_two_context for word in ['rejected', 'dropped', 'not feasible']):
+            elif any(x in context for x in ['rejected', 'dropped', 'not feasible']):
                 return 'Dropped/Rejected'
-            elif 'hold' in last_two_context:
+            elif 'hold' in context:
                 return 'Hold'
-
             return 'pending'
-        except Exception:
+        except:
             return 'pending'
 
     def extract_retail_link(self, path):
@@ -168,8 +172,13 @@ class Command(BaseCommand):
     def get_all_files(self, service, q):
         items, page_token = [], None
         while True:
-            res = service.files().list(q=q, fields="nextPageToken, files(id, name, webViewLink, mimeType, parents)",
-                                       pageToken=page_token, pageSize=1000).execute()
+            # IMPORTANT: Added thumbnailLink to fields
+            res = service.files().list(
+                q=q,
+                fields="nextPageToken, files(id, name, webViewLink, mimeType, parents, thumbnailLink)",
+                pageToken=page_token,
+                pageSize=1000
+            ).execute()
             items.extend(res.get('files', []))
             page_token = res.get('nextPageToken')
             if not page_token: break
