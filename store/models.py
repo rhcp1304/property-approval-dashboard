@@ -67,8 +67,8 @@ class ApprovedLenskartStore(models.Model):
     longitude = models.DecimalField(max_digits=12, decimal_places=8, null=True, blank=True)
 
     # --- Market / Catchment Info ---
-    market_id = models.CharField(max_length=255, null=True, blank=True, help_text="Raw Market IDs (e.g. 33441; 33442)")
-    market_name = models.TextField(null=True, blank=True, help_text="Full path of the market/catchment")
+    market_id = models.CharField(max_length=255, null=True, blank=True, help_text="Raw Market IDs")
+    market_name = models.TextField(null=True, blank=True, help_text="Full path of the market")
 
     # --- Status & Timing ---
     kissflow_status = models.CharField(max_length=100, null=True, blank=True)
@@ -82,7 +82,7 @@ class ApprovedLenskartStore(models.Model):
     ppt_url_raw = models.URLField(max_length=2000, null=True, blank=True)
     ppt_file = models.FileField(upload_to='approved_stores/ppts/%Y/%m/', null=True, blank=True)
 
-    # --- NEW FIELDS (Extracted from PPT) ---
+    # --- PPT Extraction Fields ---
     store_size = models.CharField(max_length=255, null=True, blank=True)
     frontage = models.CharField(max_length=255, null=True, blank=True)
     signage_width = models.CharField(max_length=255, null=True, blank=True)

@@ -32,3 +32,4 @@ staticfiles/
 *.dump
 /bdstorage_credentials.json
 /approved_stores/
+/downloads/

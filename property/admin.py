@@ -1,20 +1,17 @@
 from django.contrib import admin
 from .models import PropertyRecord
 
-
 @admin.register(PropertyRecord)
 class PropertyRecordAdmin(admin.ModelAdmin):
     # Columns to show in the list view
-    list_display = ('presentation_date_context', 'status', 'updated_at')
+    # Added property_id as the first column
+    list_display = ('property_id', 'status', 'updated_at', 'presentation_date_context')
 
-    # Filter sidebar for the Supreme Leader
+    # Filter sidebar
     list_filter = ('status', 'updated_at')
 
-    # Search bar to find specific folders
-    search_fields = ('presentation_date_context',)
+    # Search bar (searching by property ID or folder name)
+    search_fields = ('property_id', 'presentation_date_context')
 
     # Allow changing status directly from the list view
     list_editable = ('status',)
-
-
-
