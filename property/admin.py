@@ -3,15 +3,24 @@ from .models import PropertyRecord
 
 @admin.register(PropertyRecord)
 class PropertyRecordAdmin(admin.ModelAdmin):
-    # Columns to show in the list view
-    # Added property_id as the first column
-    list_display = ('property_id', 'status', 'updated_at', 'presentation_date_context')
+    # Replaced 'market_name' with the new granular fields
+    list_display = (
+        'property_id',
+        'circle',
+        'hub',
+        'hub_rank',
+        'city',
+        'city_rank',
+        'final_market_name',
+        'status',
+        'updated_at'
+    )
 
-    # Filter sidebar
-    list_filter = ('status', 'updated_at')
+    # Added filters for easier navigation
+    list_filter = ('circle', 'hub', 'status', 'zone_name')
 
-    # Search bar (searching by property ID or folder name)
-    search_fields = ('property_id', 'presentation_date_context')
+    # Search by ID or the specific market names
+    search_fields = ('property_id', 'final_market_name', 'hub', 'city')
 
-    # Allow changing status directly from the list view
+    # Allow status editing directly from the list
     list_editable = ('status',)

@@ -1,11 +1,12 @@
 from django.urls import path
-from .views import PropertyDashboardView, slide_proxy
+from .views import PropertyDashboardView, slide_proxy, update_remarks
 
 urlpatterns = [
-    # Your existing dashboard route
+    # Existing routes
     path('dashboard/', PropertyDashboardView.as_view(), name='property_dashboard'),
-
-    # The NEW proxy route for images
-    # This matches the {% url 'slide_proxy' %} tag in your HTML
     path('slide-proxy/', slide_proxy, name='slide_proxy'),
+
+    # NEW: The route to handle the Supreme Leader's remarks
+    # 'pk' is the unique ID of the property being commented on
+    path('update-remarks/<int:pk>/', update_remarks, name='update_remarks'),
 ]

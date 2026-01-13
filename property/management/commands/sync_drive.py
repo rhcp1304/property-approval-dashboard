@@ -6,6 +6,7 @@ from urllib.parse import urlparse, parse_qs
 # Lightweight libraries
 from pptx import Presentation
 from pdfminer.high_level import extract_text
+from pptx.enum.shapes import MSO_SHAPE_TYPE
 
 # Django imports
 from django.core.management.base import BaseCommand
@@ -22,7 +23,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 
 class Command(BaseCommand):
-    help = "Syncs properties; captures Google Drive thumbnail links and status from PDF tail."
+    help = "Syncs properties; captures Google Drive thumbnails, PDF status, and granular Market info."
 
     def handle(self, *args, **options):
         # 1. Google Drive Authentication
@@ -44,7 +45,7 @@ class Command(BaseCommand):
         self.stdout.write(self.style.WARNING("Wiping PropertyRecord table for fresh sync..."))
         PropertyRecord.objects.all().delete()
 
-        # 3. Fetch Items (Requesting thumbnailLink specifically)
+        # 3. Fetch Items
         q = (
             "trashed = false and "
             "createdTime > '2025-01-01T00:00:00Z' and ("
@@ -76,11 +77,9 @@ class Command(BaseCommand):
             if 'presentation' in item.get('mimeType', ''):
                 folder_data[p_id]['ppt_id'] = item['id']
                 folder_data[p_id]['ppt_link'] = item.get('webViewLink')
-                # Capture the thumbnail link and force a larger size (=s1000)
                 t_link = item.get('thumbnailLink')
                 if t_link:
                     folder_data[p_id]['thumb_link'] = t_link.replace('=s220', '=s1000')
-
             elif name == 'ai_summary.pdf':
                 folder_data[p_id]['pdf_id'] = item['id']
                 folder_data[p_id]['pdf_link'] = item.get('webViewLink')
@@ -92,7 +91,6 @@ class Command(BaseCommand):
         count = 0
 
         for f_id, data in folder_data.items():
-            # We process if we have at least a PPT and PDF
             if data['ppt_id'] and data['pdf_id']:
                 safe_name = re.sub(r'[\\/*?:"<>|]', "_", data['name'])
                 local_pptx = os.path.join('downloads', f"{safe_name}.pptx")
@@ -103,38 +101,130 @@ class Command(BaseCommand):
                     self.download_file(service, data['ppt_id'], local_pptx)
                     self.download_file(service, data['pdf_id'], local_pdf)
 
-                    # A. Data Extraction
-                    prop_id = self.get_property_id(self.extract_retail_link(local_pptx))
+                    # A. Logic Extraction
+                    retail_url = self.extract_retail_link(local_pptx)
+                    prop_id = self.get_property_id(retail_url)
                     extracted_status = self.extract_status_from_pdf(local_pdf)
 
-                    # B. Create Record (Using the Thumbnail URL)
+                    # B. PPT Extraction (Now uses 'self' and wrapped in try/except)
+                    try:
+                        ppt_info = self.extract_all_ppt_info(local_pptx)
+                    except Exception as e:
+                        self.stdout.write(self.style.WARNING(f"  -> PPT Data parse failed for {data['name']}"))
+                        ppt_info = {}
+
+                    # C. Create Record (Safely using .get() to avoid KeyErrors)
                     PropertyRecord.objects.create(
                         property_id=prop_id,
-                        presentation_date_context=data['name'],
-                        ppt_link=data['ppt_link'],
-                        ai_summary_link=data['pdf_link'],
-                        recording_link=data['mp4_link'],
-                        first_slide_image_url=data['thumb_link'],
-                        status=extracted_status
+                        circle=ppt_info.get('circle'),
+                        hub=ppt_info.get('hub'),
+                        hub_rank=ppt_info.get('hub_rank'),
+                        city=ppt_info.get('city'),
+                        city_rank=ppt_info.get('city_rank'),
+                        # Fallback to folder name if extraction fails
+                        final_market_name=ppt_info.get('final_market_name') or data['name'],
+                        zone_name=ppt_info.get('zone_name'),
+                        ppt_link=data.get('ppt_link'),
+                        ai_summary_link=data.get('pdf_link'),
+                        recording_link=data.get('mp4_link'),
+                        first_slide_image_url=data.get('thumb_link'),
+                        status=extracted_status,
+                        projected_revenue_lakhs=ppt_info.get('revenue', 'N/A'),
+                        total_rent_maintenance=ppt_info.get('rent', 'N/A')
                     )
 
-                    color = self.style.SUCCESS if "Approved" in extracted_status else self.style.NOTICE
-                    self.stdout.write(color(f"  -> Saved | ID: {prop_id or 'NULL'} | Status: {extracted_status}"))
+                    self.stdout.write(self.style.SUCCESS(f"  -> Saved Successfully."))
                     count += 1
 
                 except Exception as e:
-                    self.stdout.write(self.style.ERROR(f"  -> Error: {e}"))
+                    self.stdout.write(self.style.ERROR(f"  -> CRITICAL Error on {data['name']}: {e}"))
 
         self.stdout.write(self.style.SUCCESS(f"\nFinished! Processed {count} records."))
 
+    def extract_all_ppt_info(self, path):
+        results = {
+            'circle': None, 'hub': None, 'hub_rank': None,
+            'city': None, 'city_rank': None, 'final_market_name': None,
+            'zone_name': None, 'revenue': "N/A", 'rent': "N/A"
+        }
+        try:
+            prs = Presentation(path)
+            if not prs.slides: return results
+
+            # --- 1. SLIDE 1: CONTEXT EXTRACTION ---
+            first_slide = prs.slides[0]
+            slide1_text = ""
+            for shape in first_slide.shapes:
+                if hasattr(shape, "text"):
+                    slide1_text += shape.text + "\n"
+
+            # Zone Extraction
+            zone_match = re.search(r"ZONE\s*:\s*(.*?)(?:\s*STATE|\s*CITY|\s*PIN CODE|$)",
+                                   slide1_text, re.IGNORECASE | re.DOTALL)
+            if zone_match:
+                results['zone_name'] = re.sub(r'\s*\[Image \d+\]\s*', '', zone_match.group(1)).strip()
+
+            # Market Hierarchy Extraction
+            # We look for the pattern containing the parentheses for ranks
+            market_match = re.search(r".*?_.*?\(.*?\)_.*?\(.*?\)_.*", slide1_text, re.IGNORECASE)
+
+            if market_match:
+                full_string = market_match.group(0).strip()
+
+                # Split the string by underscores
+                parts = full_string.split('_')
+
+                # We work backwards from the end to ensure we get the right fields
+                # regardless of how many prefixes (Add_, BD_) are at the start.
+                if len(parts) >= 4:
+                    # The last 3 parts are always: Final Market, City, Hub
+                    results['final_market_name'] = parts[-1].strip()
+
+                    city_part = parts[-2].strip()
+                    c_match = re.search(r"(.*?)\s*\((.*?)\)", city_part)
+                    results['city'] = c_match.group(1).strip() if c_match else city_part
+                    results['city_rank'] = c_match.group(2).strip() if c_match else None
+
+                    hub_part = parts[-3].strip()
+                    h_match = re.search(r"(.*?)\s*\((.*?)\)", hub_part)
+                    results['hub'] = h_match.group(1).strip() if h_match else hub_part
+                    results['hub_rank'] = h_match.group(2).strip() if h_match else None
+
+                    # The Circle is everything before the Hub, but we strip the prefixes
+                    # We take the part exactly before the hub index
+                    circle_raw = parts[-4].strip()
+                    # Strip "Add", "BD", "Presentation", etc.
+                    results['circle'] = re.sub(r'^(Add|BD|Presentation|PPT)\s*', '', circle_raw,
+                                               flags=re.IGNORECASE).strip()
+
+            # --- 2. GLOBAL SCAN: FINANCIALS ---
+            for slide in prs.slides:
+                txt = ""
+                for shape in slide.shapes:
+                    if hasattr(shape, "text"): txt += shape.text + " "
+                    if shape.shape_type == MSO_SHAPE_TYPE.TABLE:
+                        for row in shape.table.rows:
+                            for cell in row.cells: txt += cell.text + " "
+
+                if results['revenue'] == "N/A":
+                    rev_m = re.search(r'GeoIQ Revenue Projection 2025.*?\n?([\d,.]+)', txt, re.IGNORECASE | re.DOTALL)
+                    if rev_m: results['revenue'] = rev_m.group(1).replace(',', '')
+
+                if results['rent'] == "N/A":
+                    rent_m = re.search(r'Total Rent \+ Maintenance.*?\n?([\d,.]+)', txt, re.IGNORECASE | re.DOTALL)
+                    if rent_m: results['rent'] = rent_m.group(1).replace(',', '')
+
+            return results
+        except Exception as e:
+            self.stdout.write(self.style.WARNING(f"    PPT Extraction failed: {e}"))
+            return results
+
     def extract_status_from_pdf(self, path):
-        """Checks last 2 lines and prioritizes 'Conditionally Approved'."""
         try:
             text = extract_text(path)
             lines = [l.strip() for l in text.split('\n') if l.strip()]
             if not lines: return 'pending'
             context = " ".join(lines[-2:]).lower()
-
             if 'conditionally approved' in context:
                 return 'Conditionally Approved'
             elif 'approved' in context:
@@ -172,13 +262,9 @@ class Command(BaseCommand):
     def get_all_files(self, service, q):
         items, page_token = [], None
         while True:
-            # IMPORTANT: Added thumbnailLink to fields
-            res = service.files().list(
-                q=q,
-                fields="nextPageToken, files(id, name, webViewLink, mimeType, parents, thumbnailLink)",
-                pageToken=page_token,
-                pageSize=1000
-            ).execute()
+            res = service.files().list(q=q,
+                                       fields="nextPageToken, files(id, name, webViewLink, mimeType, parents, thumbnailLink)",
+                                       pageToken=page_token, pageSize=1000).execute()
             items.extend(res.get('files', []))
             page_token = res.get('nextPageToken')
             if not page_token: break
@@ -196,5 +282,3 @@ class Command(BaseCommand):
         while not done: _, done = downloader.next_chunk()
         with open(destination, 'wb') as f:
             f.write(fh.getvalue())
-
-            ##
