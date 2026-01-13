@@ -65,8 +65,7 @@
                                     <a href="{{ property.ppt_link }}" target="_blank" class="text-decoration-none">
                                         <div class="slide-container">
                                             {% if property.first_slide_image_url %}
-                                                <img src="{{ property.first_slide_image_url }}" class="slide-preview" alt="PPT Preview">
-                                            {% else %}
+                                                    <img src="{% url 'slide_proxy' %}?url={{ property.ppt_link|urlencode }}" class="slide-preview" alt="PPT Preview">                                            {% else %}
                                                 <div class="slide-preview bg-secondary d-flex align-items-center justify-content-center text-white small text-center px-2">No Slide Image</div>
                                             {% endif %}
                                             <span class="ppt-overlay-hint">OPEN PPT</span>
