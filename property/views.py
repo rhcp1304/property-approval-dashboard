@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404, redirect
 from django.views.decorators.http import require_POST
 from django.contrib import messages  # Added for user feedback assurance
 from .models import PropertyRecord
-
+from django.contrib.auth.decorators import login_required # Add this
 # Google API Imports
 from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
@@ -27,6 +27,7 @@ class PropertyDashboardView(ListView):
 
 
 # --- 2. Remarks Update View (With Assurance Feedback) ---
+@login_required  # <--- ADD THIS LINE
 @require_POST
 def update_remarks(request, pk):
     """

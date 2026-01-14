@@ -23,7 +23,6 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             background-color: #000;
             transition: transform 0.2s ease-in-out;
-            /* Ensures no extra margin interferes with alignment */
             margin-left: 0 !important;
         }
 
@@ -68,9 +67,9 @@
             padding: 10px; border-radius: 4px; min-height: 60px; color: #000;
         }
 
-        /* STRICT COLUMN WIDTHS FOR ALIGNMENT */
+        /* Column Widths */
         .col-sno { width: 60px; text-align: center; }
-        .col-slide { width: 340px; text-align: left; } /* Aligned left with header */
+        .col-slide { width: 340px; text-align: left; }
         .col-market { width: 260px; }
         .col-finance { width: 160px; }
         .col-remarks { width: 280px; }
@@ -96,8 +95,21 @@
     <div class="card shadow-lg border-0">
         <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
             <h4 class="mb-0 fw-bold">Property Approval Inventory</h4>
-            <span class="badge bg-dark rounded-pill px-3" style="color: white !important;">Total: {{ properties.count }}</span>
+
+            <div class="d-flex align-items-center gap-3">
+                <span class="badge bg-dark rounded-pill px-3" style="color: white !important;">Total: {{ properties.count }}</span>
+
+                {% if user.is_authenticated %}
+                    <form action="{% url 'logout' %}" method="post" class="m-0">
+                        {% csrf_token %}
+                        <button type="submit" class="btn btn-sm btn-outline-danger rounded-pill px-3">Logout</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-sm btn-dark rounded-pill px-4 text-white">Login</a>
+                {% endif %}
+            </div>
         </div>
+
         <div class="card-body p-0">
             <div class="table-responsive">
                 <table class="table table-hover mb-0">
@@ -123,7 +135,7 @@
                                         <div class="slide-container">
                                             <img src="{% url 'slide_proxy' %}?url={{ property.ppt_link|urlencode }}"
                                                  class="slide-preview"
-                                                 onerror="this.src='https://placehold.co/320x180?text=Private+Slide';">
+                                                 onerror="this.src='https://placehold.co/320x180?text=Slide+Preview';">
                                             <span class="ppt-overlay-hint">VIEW PPT</span>
                                         </div>
                                     </a>
@@ -156,21 +168,23 @@
                                 <div class="remark-preview mb-2">
                                     {{ property.remarks|default:"<span class='text-muted small italic'>No remarks yet...</span>"|safe }}
                                 </div>
+
+                                {% if user.is_authenticated %}
                                 <button type="button" class="btn btn-dark btn-sm rounded-pill w-100" style="font-weight: 600; font-size: 0.75rem;" data-bs-toggle="modal" data-bs-target="#remarkModal{{ property.pk }}">
-                                    POST REMARK
+                                    EDIT REMARK
                                 </button>
 
                                 <div class="modal fade" id="remarkModal{{ property.pk }}" tabindex="-1" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered">
                                         <div class="modal-content border-0 shadow">
                                             <div class="modal-header bg-dark text-white">
-                                                <h5 class="modal-title">Supreme Leader Remarks</h5>
+                                                <h5 class="modal-title">Founder Remarks Update</h5>
                                                 <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                             </div>
                                             <form action="{% url 'update_remarks' property.pk %}" method="POST">
                                                 {% csrf_token %}
                                                 <div class="modal-body">
-                                                    <p class="text-label">Market: {{ property.final_market_name }}</p>
+                                                    <p class="text-label mb-2">Market: {{ property.final_market_name }}</p>
                                                     <textarea name="remarks" class="form-control border-dark" rows="5" required>{{ property.remarks|default:"" }}</textarea>
                                                 </div>
                                                 <div class="modal-footer">
@@ -181,6 +195,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% endif %}
                             </td>
 
                             <td class="col-status text-center">
