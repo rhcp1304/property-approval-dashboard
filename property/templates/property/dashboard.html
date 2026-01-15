@@ -109,13 +109,14 @@
             .table { table-layout: fixed; width: 100%; border-collapse: collapse; }
             .table thead { background-color: #000000; color: #ffffff; }
             .table th, .table td { padding: 15px 10px; vertical-align: middle; }
-            .col-sno { width: 60px; text-align: center; }
+            .col-sno { width: 70px; text-align: center; }
+            .col-date { width: 160px; }
             .col-slide { width: 340px; }
             .col-market { width: 260px; }
-            .col-finance { width: 160px; }
+            .col-finance { width: 140px; }
             .col-remarks { width: 280px; }
-            .col-status { width: 160px; }
-            .col-resources { width: 180px; }
+            .col-status { width: 150px; }
+            .col-resources { width: 150px; }
         }
     </style>
 </head>
@@ -194,7 +195,8 @@
                 <table class="table table-hover mb-0">
                     <thead>
                         <tr>
-                            <th class="col-sno">#</th>
+                            <th class="col-sno text-center">S.No</th>
+                            <th class="col-date">Presentation Date</th>
                             <th class="col-slide">Slide Preview</th>
                             <th class="col-market">Market Details</th>
                             <th class="col-finance">Financials</th>
@@ -206,9 +208,16 @@
                     <tbody>
                         {% for property in page_obj %}
                         <tr>
-                            <td class="col-sno fw-bold">
-                                <span class="mobile-label" style="color: #aaa;">Item Number</span>
+                            <td class="col-sno text-center fw-bold">
+                                <span class="mobile-label" style="color: #aaa;">S.No</span>
                                 {{ page_obj.start_index|add:forloop.counter0 }}
+                            </td>
+
+                            <td class="col-date">
+                                <span class="mobile-label">Presentation Date</span>
+                                <div class="fw-bold" style="font-size: 1rem;">
+                                    {{ property.presentation_date|date:"d M Y"|default:"-" }}
+                                </div>
                             </td>
 
                             <td class="col-slide">
@@ -228,8 +237,10 @@
                             <td class="col-market">
                                 <span class="mobile-label">Market Details</span>
                                 <div class="market-hierarchy">
-                                    <div class="mb-1"><span class="text-label">Date:</span> <strong>{{ property.presentation_date|date:"d M Y"|default:"-" }}</strong></div>
-                                    <div class="mb-1"><span class="text-label">Zone:</span> <span class="badge bg-light text-dark border-dark">{{ property.zone_name|default:"-" }}</span></div>
+                                    <div class="mb-1">
+                                        <span class="text-label">Zone:</span>
+                                        <span class="badge bg-light text-dark border-dark">{{ property.zone_name|default:"-" }}</span>
+                                    </div>
 
                                     {% if not property.circle and not property.hub and not property.city %}
                                         <div class="mt-2">
@@ -338,7 +349,7 @@
                             </td>
                         </tr>
                         {% empty %}
-                        <tr><td colspan="7" class="text-center py-5">No records found.</td></tr>
+                        <tr><td colspan="8" class="text-center py-5">No records found.</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>

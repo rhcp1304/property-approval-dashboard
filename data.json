@@ -436,7 +436,7 @@
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$1200000$gJGn09kyV2OttZDeT8pU0I$864zzc7PjVRoYo4ZfTLTq5lHEB6jwQuvZOkZHVYcCBQ=",
-    "last_login": "2026-01-14T23:01:41.802Z",
+    "last_login": "2026-01-15T11:26:23.256Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -571,6 +571,14 @@
 },
 {
   "model": "sessions.session",
+  "pk": "6svzeivgmth5fo0iyvrcrb9urfjylibt",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vgKrJ:AYrxQmqdKUb3hS9xg4EzpFfQ4dENDY9FvEY9m9pq7l4",
+    "expire_date": "2026-01-29T10:45:45.800Z"
+  }
+},
+{
+  "model": "sessions.session",
   "pk": "h8a32kol90isjoalan8djisltue51e9f",
   "fields": {
     "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vewAz:OYB_7tcojYlAemzOnZSmMdnsbiZzOdO5MjiRx7OukB8",
@@ -587,10 +595,10 @@
 },
 {
   "model": "sessions.session",
-  "pk": "ja0cmbrr16u197cxkhyvc1xhkcy904m0",
+  "pk": "kuonls1dqo72zg1o3yazprepobgoidqk",
   "fields": {
-    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vg9rx:jP7t4aBb--pXnmrDd0-07fIss1VDEU_j-i54d1w1dZY",
-    "expire_date": "2026-01-28T23:01:41.804Z"
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vgLUd:Wl3bqYeqE0LZCa9Uqbkbri097C5-lBdMl-SnFAls7jc",
+    "expire_date": "2026-01-29T11:26:23.258Z"
   }
 },
 {
@@ -643,7 +651,7 @@
 },
 {
   "model": "property.propertyrecord",
-  "pk": 33,
+  "pk": 100,
   "fields": {
     "property_id": null,
     "presentation_date": "2026-01-14",
@@ -660,15 +668,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1b0n96VxSfgelqwehMjojxNeBk0JlVuKa/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1j62p9tl4NZodQa5sgOmwMDSZ09T2gWy5/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/116omBPzBi-5k5KDzTrtU4CVuImejc5tI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPJ7ewU95M-FBajHTm2QxHg7MvWB8rtMgnk1POXWiAOWSaYtE9yJYuMeh3mXUnCKwRc9JSMyevrRgiD_dywtQd6BAtYkXNwJ-kXe6KIInm3OJxigA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOXuAxCaF1OEyGsgFQbqv3Z_euM3kfRpw1bDvVLWAHNP_M1-NHnZl8AevafVGDTc5hnyhv-fdfjlckcVOLv4GsOZtYvcVlsjVqdhzxiwBtnObGYYg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:30:35.826Z",
-    "updated_at": "2026-01-15T07:30:35.826Z"
+    "created_at": "2026-01-15T11:19:48.427Z",
+    "updated_at": "2026-01-15T11:19:48.427Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 34,
+  "pk": 101,
   "fields": {
     "property_id": null,
     "presentation_date": "2026-01-14",
@@ -685,15 +693,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/14RcXwYowh4v55tRyYRRum5QF5SuHP6Cp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1cBHv9LNoYA9kaVHT-qs2xnxisaVlTVrO/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1X52dk--FaT2KonvydyfJGRKkkY82YsDZ/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPx8MEBWPiJd680lasMjgwrktw7xLF6Mb_XhLnO-bANqqu8WnBqURzivIKfZNV8ZsUjnwMtfZCKpNna-uvu-ELZRpJVegIEMn3ErgYidpl_-VPN4g=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOaqP0vX6iCbq-6a2MvLWop_s92D9it9ntRq2-0GsZ1qhaT1pgdw2Z1ZA3_C90ItOgTcJKwgjogdoT7pTGXsS1oB13F72WRLP_KkslE99kMAX5iFw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:30:42.580Z",
-    "updated_at": "2026-01-15T07:30:42.580Z"
+    "created_at": "2026-01-15T11:19:54.513Z",
+    "updated_at": "2026-01-15T11:19:54.513Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 35,
+  "pk": 102,
   "fields": {
     "property_id": null,
     "presentation_date": "2026-01-14",
@@ -710,15 +718,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1py6U7tN3Rav1cRfliinIKXop3uQx5zct/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1WlH4y6ni8UGlwkAoEtX_9NXWXld7VZfo/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/136uRv9uRjLZFviturqlwNp6YYiIftRNU/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOrfg2puObl9txgyZUp6VLH5Gab9mQqFUb2vmQbcITOd6saaEiJwoCF0vzA51rb80BjsYihmaWVB3zi1Hyq_DaMX5Z1gKKo_1x1uTkn9h2d1QleyA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPZgwbsuxZq92WM_oIqpMTS8KTVyBv56dw2s22CZOmduczYsKEvOGu9U0zwH_uu0UPMPifxd7GxOruLkRDYIiy9qBb4hQhASguMO6krFuVGCu2CnA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:30:48.524Z",
-    "updated_at": "2026-01-15T07:30:48.524Z"
+    "created_at": "2026-01-15T11:19:59.840Z",
+    "updated_at": "2026-01-15T11:19:59.840Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 36,
+  "pk": 103,
   "fields": {
     "property_id": "7936",
     "presentation_date": "2026-01-14",
@@ -735,15 +743,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1lIIx0SXWmzRNzDEW3DV2njvd44pomVHH/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1ENOLmOitCjQH2kKrHTcw9LejoF7kj37H/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1JzRQqRIL4cStWt9Yi4ZghrqsjY4klH85/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN1GCBKqNuxJYrMCMQEN6WO1_JOLNf2BwzHGt5XSeEdF1pw5z1HHwgZrSx7S2m8EaMHHyygFNgMvEAUSzRPzvumpb5zM4AD4hXIPCXqgZCocr3dKg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOTERmxglgIVDMWSglQCm5VhrkZD-jmmMKlmPzDdARu7WtfWhtoIHomseHm_mgZqMfjp-Znd9KZ3QNxLwr9mifG2KAj1Y5XE8GsLzwZLSMzR6qXNQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:31:04.349Z",
-    "updated_at": "2026-01-15T07:31:04.349Z"
+    "created_at": "2026-01-15T11:20:09.201Z",
+    "updated_at": "2026-01-15T11:20:09.201Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 37,
+  "pk": 104,
   "fields": {
     "property_id": "7953",
     "presentation_date": "2026-01-14",
@@ -760,15 +768,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1V2feoadSZmGpzQErmkcvj0x4BSaXHCLq/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1olZ1MyjNNze_x44vd9XReJ-4CUzkZkV5/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/126ZuQagN5zd6Qz7xSaWJeqDywjflf7kJ/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM3bBaWvn_h6mOahpo0cpvoZW9EGagekL_jzKIISL2WflZD00mosb0QCGnCjwQ18WjTKgBEg3pkPO-845scqCRoxchYMPs-Q0ZGrfbVZ0SaBuD97Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNiBrkSU4c4jamhmPoVHxLJ4l-po2RjM2rnlVjSmJT9kIko638GvsqwQnaY9dFrU7onQeg-9q-Z4f-opS5shc2VHd29Vqytr5FfLGZBHEyaZ8s6oA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:31:19.907Z",
-    "updated_at": "2026-01-15T07:31:19.907Z"
+    "created_at": "2026-01-15T11:20:24.242Z",
+    "updated_at": "2026-01-15T11:20:24.242Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 38,
+  "pk": 105,
   "fields": {
     "property_id": "7673",
     "presentation_date": "2026-01-14",
@@ -785,15 +793,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/149LzqR_ytbuKmEzQk1FSRok5Bh7szlvc/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1HSoZelDB_jOfb12v7fIuSwfwQHas5_sr/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1AKWMm0uwbPOfioZo_cPdl2Fj_ui02uCt/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM1FznMjgzK6TWMOT-5jWbShayRcFGwgquxYPNbYjELp4p7ea9N-s_-GRfoqVxKR5Zpg_5O1L2kxRCK-TXvLDu43Ia6dJ6Lb0RQlrFHWDB9pKU1Xg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNdJw2SlHWsDIE8Y5TtE0SRlaGA0DWWQzVqY34TEnEXCm7MBOoox05c7qOBD6gXVx9Ea07szTXj4_IukuPW2MwNv4q-O768xE3yUqdiBvxrY7k5-A=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:31:36.491Z",
-    "updated_at": "2026-01-15T07:31:36.492Z"
+    "created_at": "2026-01-15T11:20:36.745Z",
+    "updated_at": "2026-01-15T11:20:36.745Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 39,
+  "pk": 106,
   "fields": {
     "property_id": "7915",
     "presentation_date": "2026-01-14",
@@ -810,15 +818,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/12hyN9Cwv9r3p9CSNDPur4LhS3h_qluOM/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1OwBZvrwzNGwNPzP05Yp6JkqysfrwHtTn/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1eyk9hXWkyg29JiP_Alh-3M0dHKmKoI1X/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPEscZK1YUcrS3GiZgIefLVY9FiQgwHRMHevkS0OFdf--Vd0RDCd2VPFb2MWRV_EG2H2L-jsomfepz3OgfqqUxLdzsE43oM2wf1dgspHblrJYqv6Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPey4zKw5zOlHIl3jkTnnZBVOgPwE6maJLJTlXk81ipIQBhY5XQj57tBGDJM4CyLMAF5fmvPvRspIIhDLOnnNJP0FgcGmf7hHV3VkD7voTnuXckRQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:31:48.859Z",
-    "updated_at": "2026-01-15T07:31:48.860Z"
+    "created_at": "2026-01-15T11:20:45.572Z",
+    "updated_at": "2026-01-15T11:20:45.572Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 40,
+  "pk": 107,
   "fields": {
     "property_id": "7950",
     "presentation_date": "2026-01-14",
@@ -835,15 +843,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1eOBpt03LdxaoQTxv-17erZciJbTQ1NpF/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1LrKZ7vr-UyeOHWu_ZEdJg3iDMvWPagMl/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1kkFsP_Ur_7lX7GpracV8-D59rXYb9EXg/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPoGHyocxW4wbOrVdzj54TN24ByufbyH1434_EYLqAi20K-uiYUSpLavGrZ3r-J-0XY53m8ly16RzPkXwsUCUmtgdWXcp3ClMnryudbOJStdSC-LQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMxBpDkb1Qy0cCHPjz-gDFQri0lKzHBBH16m2Ppl7O_v-ICaxW4ssYM6sfkZwBNoTy7nLk1eDRiPn2Y-J6vfbSj29sRXBWSLbE2nXAgf9eLUxGGWw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:32:04.583Z",
-    "updated_at": "2026-01-15T07:32:04.583Z"
+    "created_at": "2026-01-15T11:20:59.936Z",
+    "updated_at": "2026-01-15T11:20:59.936Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 41,
+  "pk": 108,
   "fields": {
     "property_id": "7952",
     "presentation_date": "2026-01-14",
@@ -860,15 +868,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1aF1TrW6krJ8VkZ4KV2aIlc1Gv1fBPKt7/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1Xe7xpzOO9Lmyo1yRhXrmKIAQ9wOh4jYY/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1j8VPjpN67dvUAKd7uAhPDTbL1e4okYgn/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNhvIyvrjVFgHM38EpCZzCnvK8Vv2J0vZok0x9eTdq6CzrbhtfgekEnAdPVGRwO3bQCSeNIJlu08yxadGsUoBS079fui-mQ__nMoCYxWJQAdQ2DuQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMhB18QYMDG28WOP6zcvUnY-8TpCc_MgBmeazaHK_H6uDnGF-N9nS76eSrhB2i8t2fSg9MwhM7Z3MzT8zhgAbFjuT7MHZZ0IpUjVy243HNKSQxGQA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:32:19.760Z",
-    "updated_at": "2026-01-15T07:32:19.760Z"
+    "created_at": "2026-01-15T11:21:11.215Z",
+    "updated_at": "2026-01-15T11:21:11.215Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 42,
+  "pk": 109,
   "fields": {
     "property_id": "7913",
     "presentation_date": "2026-01-14",
@@ -885,15 +893,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1r_XSP-5FQ2MPXsGyuCQmO-o1Y07fmyAi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1dReCkogRThr3uUO2tXO7I-c0-EnJ1qAg/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1D81rCT2Ky-ZTkgJIThvPFcOJ25dDR62Y/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPoyOHa145zbqog9otb-D-ccmZZ8FivRrxEMHr1-7YLlnO5SzuBUo9b4klC1CLN8CkKYBd9SZz2Jhj4poojVUvSEYj7iz2liwmrwHMGfmHCdY9xhw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOIvLOUY4wKOLAw5__U7NNNB3kg3Qd6zD387v5KPrflc8edYXtq3H_adkcTnXShAlo8DJuu7HRKnPn7vDbKvIu3Z9rzfSjQt5a4LxGB7gJsL4L4cg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:32:31.111Z",
-    "updated_at": "2026-01-15T07:32:31.111Z"
+    "created_at": "2026-01-15T11:21:24.528Z",
+    "updated_at": "2026-01-15T11:21:24.528Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 43,
+  "pk": 110,
   "fields": {
     "property_id": "7880",
     "presentation_date": "2026-01-14",
@@ -910,15 +918,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1dMkD40qBf84ZY57g06Q31P9Gg4iURC2K/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1SKm-wOAeaMkAB_mtXPtSpRzEwx3r5kHj/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1W5UqH8zV7eaXnzWCui8Gn7g6UTvf8mtw/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPysuSkl8LtuBPCatzFqYCx2vN68zPkKde85fraWriKN-BVTdTZkOXk7m53Npg03Cq9HTk8i88PceFgjw7SWR1PeKA_NHZxyfv3m4mWSV4jm_9RoA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMw36_RcyKhkFsoHZW9vDxMLBYQDxntTwmgI0Z8IeklvB11HlCxTz4xo3wlZuqV1YPeI88L1Ky42gMogBlBfCmsnPuMLBrpxyrfIkUfdHwBJ6yJDw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:32:44.954Z",
-    "updated_at": "2026-01-15T07:32:44.954Z"
+    "created_at": "2026-01-15T11:21:36.285Z",
+    "updated_at": "2026-01-15T11:21:36.285Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 44,
+  "pk": 111,
   "fields": {
     "property_id": "7880",
     "presentation_date": "2026-01-14",
@@ -935,15 +943,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1rHxV56nJq33DdwPeZebkjo3VWiVF308C/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1Qtk_K1xjyB2epveNvt5UupW8ONVeIvNp/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/11ER3Tls0Q4NPgvqhUcedD9C26PW74dKX/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOLlQ01W2Npwe8usHRz3FezP8zHJU477c0dRhnWsprIo9hiPGqjfYAGr7qcXjkSv_OXum7-8TLljL5v3vRce9JHdbpJgZXGgMZfumRrvLkBS1IDCA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN5yKuU7RK_oi587L7_8Np2VxNUl828ih6wU7oa0wJXLhV5VaE86r7inHdLE5czbB-Z1vjlObXEoK8yg6GIFVg9OPWPyszvYNQWDpQudhBOJx6asw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:33:02.204Z",
-    "updated_at": "2026-01-15T07:33:02.204Z"
+    "created_at": "2026-01-15T11:21:49.861Z",
+    "updated_at": "2026-01-15T11:21:49.861Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 45,
+  "pk": 112,
   "fields": {
     "property_id": "7926",
     "presentation_date": "2026-01-14",
@@ -960,15 +968,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1rDfVNmkqv3lp4vQfa9hUFVS5jyEuP4-H/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1NNvvSLDd0kdAZnPY75QaR_JJMRJZO-8V/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1Kbh66jMhDFlfWNxab1FtBzx69xCFP0sO/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMBXxiD7C7wI5idNdxI_jkNdiJyd0X5M9RmPjI3PwDtgNePEqZHLmYJjatygAbfjgrnUXSIAah-rKDzd2LDtL3j4rgmFaTSxQ9luDNEBPM1PNzRhw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPOPEymsatNU65perGo1z6o9CNusNEDjLEVK9eLJpavZu4HJ-v_nFgMLcwNKA1MyjUAbKmYuCIum3Xun7rjXYEtPQkwiGaI5di0ITXu8rq2266CYw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:33:18.845Z",
-    "updated_at": "2026-01-15T07:33:18.845Z"
+    "created_at": "2026-01-15T11:22:05.059Z",
+    "updated_at": "2026-01-15T11:22:05.059Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 46,
+  "pk": 113,
   "fields": {
     "property_id": "7930",
     "presentation_date": "2026-01-14",
@@ -985,15 +993,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1X4iW-QYPEgOg-6cjZ4mp_hBOx-L-78iy/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1pnJAdastUqWgauiJv0LP3YfYpzuXdTnz/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1HQryhgI10s_KgTdm9y5yKihOxR3wncXF/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNaHqLxJ3LMmnW0DeRYi4XJWJ9yVSLA2S5gma6k9DsJ_T3zlebueo_Zw9_Ot9jep3o6umnwKZRZ3TN_qeno8Jq2MJSTnx07W3h7t2G1Llx6WkoGtQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMNhb8qQevm43eAYNiTFDfafYNwykO08IpRowguQMDXh05b05KpktVMYCoxSPYf2BykwH652MEdUBuWfFy7ht6lGZVm3_FsIfgrUW6r0Dj6dpxVwA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:33:33.333Z",
-    "updated_at": "2026-01-15T07:33:33.333Z"
+    "created_at": "2026-01-15T11:22:20.938Z",
+    "updated_at": "2026-01-15T11:22:20.938Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 47,
+  "pk": 114,
   "fields": {
     "property_id": "7954",
     "presentation_date": "2026-01-14",
@@ -1010,15 +1018,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/10sOavCh6Ae6IKdW5T7XuXczxWKI5gRWw/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1kUNmd55-QJp2Z2eyc7mnB4iiGZuFOW2Z/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/18x6lRMvhEO-psEh9yDdcVhC7_e0GfUPz/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPhhtW1bqy0wirjAvRKaJlZsKWz476JcdiRtIuKe9Lv5i0XPfkoi7EDnjqPai3vFWNV4q3BSqAh4T3Jh6On41864N_INyxns4GasvZxNYI6bB9AIw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPaLCknmOaY9uk9pD7Q0ts8M5oswYx9ZB6SlGC3e10L65FIM00C6yS6fxsF4AmDWRh5znve455nWZtz9cqAEs-lrYDimYPTixnhhbZMZvd5Q03tGQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:33:54.809Z",
-    "updated_at": "2026-01-15T07:33:54.809Z"
+    "created_at": "2026-01-15T11:22:39.731Z",
+    "updated_at": "2026-01-15T11:22:39.731Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 48,
+  "pk": 115,
   "fields": {
     "property_id": "7849",
     "presentation_date": "2026-01-14",
@@ -1035,15 +1043,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1KYtuiaTei3Wj_gp0mSOEW_33EPId7JQ4/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1RX4mUAUJ3h8RrUxKZIeoPg3b_Ei_tvBF/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1lux84CwXAs5AJwrw_tiymLSLnFGkemG1/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOelfSLVAx63JhNzV89oQ8JetugrRFSftZitYU9Q9JK2Bj5g-NCAwKSJ4Qt-Q8gqAUN3-2WpsrP_D_OFc_8gAcNUpfaks8GmIXsAPzGHKnpgSnb9A=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzoQR5SRd3zHPSg81jXX7-oZOkjgZQVRqi1FDSWaZ_auc9TAIO3rP35KgfBajKaIOh0iSukVzt7C9QXLBh8rIUCX_AffHnro7K6XVgoMjXkcbiMg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:34:08.843Z",
-    "updated_at": "2026-01-15T07:34:08.843Z"
+    "created_at": "2026-01-15T11:22:53.248Z",
+    "updated_at": "2026-01-15T11:22:53.248Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 49,
+  "pk": 116,
   "fields": {
     "property_id": "7959",
     "presentation_date": "2026-01-14",
@@ -1060,15 +1068,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1vmz-HPHfiPO2KGZOkxWD5u2CrdMUsIIy/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1-kKxgvnRQ3njCc143Az4sF1t0oiG41KE/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1sVtpDefFvPz6iN9NNhC6ER6GjdYn71m4/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP0W_XMisZ3OocCH15T5f3XWxBH1K48QV7ELANVKqZvO4EL7Zl4gRG8-r1dtQtXq0prvVk2tor3LT5mL32yrmGPT4L7zdwANl9OnfACWwZ_fP10wQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMnz2qAt5L4FTpMXWI2uS_rm7CNbj0QlVChVEfF80-de0cKmYJaoYZZMMLvSQnyWlCJrrhYCaXvhZ64ztQXft4HasHUJHAL937T8RUXwBwpZJoi5A=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:34:18.848Z",
-    "updated_at": "2026-01-15T07:34:18.848Z"
+    "created_at": "2026-01-15T11:23:04.317Z",
+    "updated_at": "2026-01-15T11:23:04.317Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 50,
+  "pk": 117,
   "fields": {
     "property_id": "7804",
     "presentation_date": "2026-01-14",
@@ -1085,15 +1093,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1yiLJ-OiY92v4iiQ9uoX-qQZqbMKp-Rop/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1KWADPkojpw-W7cNRVq4Kd5dPg3U9CrbN/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1AG9PTWmuJyDTShSG0GasoucTfapJUn_N/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMZUx34x0yFu6C0nJDYzwwYSAKfwJrI_5SCjm6z9I0lx6_m6KciOrRh4SaZt-9DzKiGNgWxn8Izot3eTu_BwlvGKJbTRldv0FVqb4ancEynfKOUvA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPVNaRZAp4h-NAqHnf0pJaCTlUVyYlcRLOCP7TYhcmKp_7ISsATTXYTO4U9vjONJMa-FOtIWlG_0jFpd9I_T-8ZbQeUKqmTOX2qFJ2XBaU_heBzvw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:34:34.232Z",
-    "updated_at": "2026-01-15T07:34:34.232Z"
+    "created_at": "2026-01-15T11:23:19.129Z",
+    "updated_at": "2026-01-15T11:23:19.129Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 51,
+  "pk": 118,
   "fields": {
     "property_id": "7927",
     "presentation_date": "2026-01-14",
@@ -1110,15 +1118,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1cY9X2ZZEMYjYHlokHIX7VVPUilh3j-vf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1My7U2Jc6h6bOqtBhUDUfBlpsGWvL5Wdu/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1rWgL9NI7fkeouYzx98qra3KIWDV57L7w/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMd9xRuJiBS41Y_15pMZMDWppAshEVXua-nSle57i8sgZkf43FDDJzx27guKkok-hB47qz0RQw_xuWp0VbjNwdHqb4sEtC1GM-GycesK5pe8OO04Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNNYPUlhrHzJNVmzyZ2Bbn4SZeEYNKlnBz9ttqOg2kYf54ZlJEaSmynVqlSt6vtElooeCw0gFKbJd6dmAHNTvI4l-FBKeJR5b_jYxoUsGYgH6o9sQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:34:51.759Z",
-    "updated_at": "2026-01-15T07:34:51.759Z"
+    "created_at": "2026-01-15T11:23:37.790Z",
+    "updated_at": "2026-01-15T11:23:37.790Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 52,
+  "pk": 119,
   "fields": {
     "property_id": "7917",
     "presentation_date": "2026-01-14",
@@ -1135,15 +1143,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1xERyQts7EiUNeiiPTfzWi_MIWy9zfm5V/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/10W8ArNm-Is_7xmp2gKBlKZUCHi5jpXAq/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1PfS6iGw4vbTVTlQ_rF1JPZ2Fxl_fL4pK/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNyNwubZziMxcCz3AHmfpz2LZJBV7MrzWTmQ4IJDQrdNCwkpaNBK4AcV9nbO7LoR7WAM48AgFlG0icuunQ7XOqe786COSnB6WAaQvbmHSvlRYLUUw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNygxbX3us1e95YwBp3Uoc_-TaQM_R33kHxVStJXq4W8v6w-vVNnQjOhRIYliLl1mfQFeROJ1khdaBFVoXqJQHbxGgzmrlIR1kAYxrZdXEMYV6UDw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:35:06.065Z",
-    "updated_at": "2026-01-15T07:35:06.066Z"
+    "created_at": "2026-01-15T11:23:51.781Z",
+    "updated_at": "2026-01-15T11:23:51.781Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 53,
+  "pk": 120,
   "fields": {
     "property_id": "7921",
     "presentation_date": "2026-01-14",
@@ -1160,15 +1168,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1w17-xhgUQ27YqBsTbzIx7N0YRrzQITiI/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/12jMWwQSZODQNwPAf5zQ_MO23GmbyLx2q/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1CoNXbImZD5Hd5756MXvpvFMNiJJ26WvV/view?usp=drivesdk",
-    "first_slide_image_url": null,
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNH0S9eTUCCfiIraRfozVVrB7tjGsDUpxjvpMMfFPYouAmpQCZxBoGOEtE6YqHAGfKEVFwLk9NXPvjG-7pdgMsAfbHyWHM2bxxhCWRyUBPLKKKXHw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:35:26.394Z",
-    "updated_at": "2026-01-15T07:35:26.394Z"
+    "created_at": "2026-01-15T11:24:12.457Z",
+    "updated_at": "2026-01-15T11:24:12.457Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 54,
+  "pk": 121,
   "fields": {
     "property_id": "7940",
     "presentation_date": "2026-01-14",
@@ -1185,15 +1193,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1ZwRq7j7VUiynhOzDxdmy-5oIB3tsqCSi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1R1HAoMK4IGWI200214hH403irLxW0NWS/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/15N6Q7HA2TcFWBwaq7KndQo4lf34VjFC4/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNGn_qCmYNuoOaloRsDGVXvMyRcIbXXWDedMXOGgKsxAMyHpXjSCLRq31mS1ijGNiUY_ZYF9M6_LoInpSGQwEyezl796OhwMxNU62nL3FQtgZUwCg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMkW6bVY1ITJBm-CKUXODmscjY4CVXKHbdFfZycOqTRQP7O34ytgQfcwRmYA508hudiEdt9qwX1TNxT_5bBT8XrDNXSenREKVaL72ixhKKJdHkjNw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:35:39.088Z",
-    "updated_at": "2026-01-15T07:35:39.088Z"
+    "created_at": "2026-01-15T11:24:22.025Z",
+    "updated_at": "2026-01-15T11:24:22.025Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 55,
+  "pk": 122,
   "fields": {
     "property_id": "7939",
     "presentation_date": "2026-01-14",
@@ -1210,15 +1218,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1ghS7BaLHp7kWfL7FhRzZPYN8Boj0k2fp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1H8Pl6mnRDeBzdTEp4Mwz_FLNaSHjdHcf/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/16dLzYOyghlcmU2A0472vQzIcV89pcVSS/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOf5cZC1GoLpIA1ZR4ywsg6APOeC0IEj-DWY1k4xAf2_h8oKdoboHX7maO-jkoD2Av2AzhKOgao0EnMk4wIMHcbnSzjRPwculzjFwChrgoLmW0CKQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPwEpRNIJjsVYPcy2q7pEScqWJfelGS5i28o9abJk8qCyCz2ciuqd7j9yM66eu0S-NA5DjtGvMJE55VgF2AXE8hKSSse4aI6ju9T7f0VIdnWyQMNw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:35:52.886Z",
-    "updated_at": "2026-01-15T07:35:52.886Z"
+    "created_at": "2026-01-15T11:24:34.459Z",
+    "updated_at": "2026-01-15T11:24:34.459Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 56,
+  "pk": 123,
   "fields": {
     "property_id": "7918",
     "presentation_date": "2026-01-14",
@@ -1234,16 +1242,16 @@
     "total_rent_maintenance": "100000",
     "ppt_link": "https://docs.google.com/presentation/d/1lwt2ruUArUiAOZQvsfyLOg6MFSo3Vg6H/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/17wUy6kRYVvDaMAHPCZSsF4zHk2-phNeW/view?usp=drivesdk",
-    "recording_link": null,
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMOGQ3iy_yEnfg1fOan8P9GyN-NdGA3EGk6Sg9c-bYRdFTa61fHQLkPTncoaePZrTgQfpb3lCuxRu6CttcaCUzFpC1YnsIzawxQnuyR9gVxdz-eww=s1000",
+    "recording_link": "https://drive.google.com/file/d/1TwF4Mowru1kwXDcdbG60601fKqk8aqDE/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMTG-JB5N10mC_SQKk7zNb0ez-ckX9TFjIcFbqX6H0fYu7DVRjziglhEoyuHkrkStseVEq8NWodrBhArI6yuspkXrMGILH69JW1y-Dl-eu1DY6eSg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:36:04.530Z",
-    "updated_at": "2026-01-15T07:36:04.530Z"
+    "created_at": "2026-01-15T11:24:47.618Z",
+    "updated_at": "2026-01-15T11:24:47.618Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 57,
+  "pk": 124,
   "fields": {
     "property_id": "7934",
     "presentation_date": "2026-01-14",
@@ -1260,15 +1268,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/14_dS-1g5AFDyOYNMsm7N8MJe-0ZbFa3H/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1w4WxcITLQgNqdWPNoEPiTooN1fpsCdy5/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1SXppuLfM840fbUyFS2A2Wx9lYdW-ZgIq/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPVhqMWdMHfFIxjzG_B_68QEiQFhmNrhPytjOvQxW6BGGLnqedJSWMWHVfvdAV3vEL417TG1E_r5K88890lo8VWVliNRFeD8rK5JdCE1luNC5dduA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOLX9guPFRAAKOlytdxeSEhuGw0GFxxQJWJARfH2S_j2Yacd8NvrRsEzngnSuHhKDTbv5QIAnN4tBYp1XYcdFWV1JbckOP6ZFYWE2__YZd6dT_ikA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:36:16.102Z",
-    "updated_at": "2026-01-15T07:36:16.102Z"
+    "created_at": "2026-01-15T11:25:00.178Z",
+    "updated_at": "2026-01-15T11:25:00.178Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 58,
+  "pk": 125,
   "fields": {
     "property_id": "7906",
     "presentation_date": "2026-01-14",
@@ -1285,15 +1293,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1En0LpyUHV5eqlA6_K5q5gwbuYdTgSgAV/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/19VBUFyKwXQvflrbODwnHH63YYDtWUZJp/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1TlR_3oaE_kT6ZVj4hPnja5LPUfGRz3Ib/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMXiV_fHJZISCfF68gvsVbVFfZ0UsqkkOarBzMln2fJDa9jDR6lYkWg_nhfNwWr12PybQRU2_GPPPMtoxUDhzp-KuNbnr8nJTsvpZR3wdhuh2yyhA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNgzgNqDo6UPWs3b5g1Gt4TjoN2BNyAD0WASlkCXZu2ey1e2l0g74BVSekzw6xM3Lt0ILfXnmSRN53Jkz3zYae8FM_jivdOu-3k5ccWsDjbbyXyhw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:36:30.730Z",
-    "updated_at": "2026-01-15T07:36:30.730Z"
+    "created_at": "2026-01-15T11:25:13.718Z",
+    "updated_at": "2026-01-15T11:25:13.718Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 59,
+  "pk": 126,
   "fields": {
     "property_id": "7557",
     "presentation_date": "2026-01-14",
@@ -1310,15 +1318,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1TJM77P_Y0dCWFiqcRLtzdZXoATtbxCQ-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1vnnN0JchfNKpokaWjAD0X7pQeTW_WL-X/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1jGPoAJaqr91FMUyaqv0Ldpa7sENVDnEw/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOxuXwzKjLPy98enC5cAzGuZdWmTUvihL-fNd2q_20nlGR9a6ASSLUKtny4eRAjA3vtsngnW5-qTY_D8mzAFwq7Wb0MSJzUYN9ft5LWdc3P9LZMNQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNt15_bHClOP6w43ADVIdlOVpZ029Ga9hw3_q0CkKvCObg80DZ6urSZNTy4Cg9WiQmoMZsq3hP2rPJZ4FhuN7gBUSInNkEPj2DMp3H6kRl5Y8dXew=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:36:45.481Z",
-    "updated_at": "2026-01-15T07:36:45.481Z"
+    "created_at": "2026-01-15T11:25:27.063Z",
+    "updated_at": "2026-01-15T11:25:27.063Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 60,
+  "pk": 127,
   "fields": {
     "property_id": "7911",
     "presentation_date": "2026-01-14",
@@ -1334,16 +1342,16 @@
     "total_rent_maintenance": "100000",
     "ppt_link": "https://docs.google.com/presentation/d/19Wjo6dOu7YdZh0QjZ9lB9t-wS1WVYChH/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1IBCFiWm5AKzP2LSNjmlTJQmACTFXyJAI/view?usp=drivesdk",
-    "recording_link": null,
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP-jScvYV5O3reT2cdTh02yu_EB2QzkmMYhbBrW-sBcFxoJ1pb7V0vQGG2rxKAigKMcASJF_fK1hiPnKeNsNRjC5-_iCSgDUzTO9ZsGnlMYclXhCg=s1000",
+    "recording_link": "https://drive.google.com/file/d/10o4cf6yqQto9M2zXQqjqgFrEkF1Ulx0a/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOiGEjigtSb6VvsDQGFfq__obJlqlHML-AICHqG4F3s0lGs0bn1GXwDXvpvPxzc8esPUY_Ybu040TIOcXfjs7SoA29xqyDB8T9SWInQ0oj3DGiDNw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:37:01.298Z",
-    "updated_at": "2026-01-15T07:37:01.298Z"
+    "created_at": "2026-01-15T11:25:37.245Z",
+    "updated_at": "2026-01-15T11:25:37.245Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 61,
+  "pk": 128,
   "fields": {
     "property_id": "7938",
     "presentation_date": "2026-01-14",
@@ -1360,15 +1368,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1nBuHobB0bW-EfQ5Q3zjzY27w0PUJ-dY6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/12-t62r2BHIkySn48LtczqcAAakPRbHiu/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/10ckkEy3Dn5MdqyxgJ_Yk_A8mfslVCcD0/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMjhwrm75wsZw4AOU8vuP6x1oWQSWljiS3bPVKwe4jRyO3PSXffNdeTL59UvbDcj3sNgDYzmVP1DsAmYAB8DWVZ3vIBTFyDPGeRN3i3kn4pyCnsbg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMuKm-IJrTVQuuPqQZN-qYsWb38GbkpgHB3aQpaiimwuzcGT8e6Rc-DE1FN7rmt4uKv5FbHILZqyxxB12Dy99sG5lrg8fqwogSgUwKqZ8qD0tiStg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:37:24.040Z",
-    "updated_at": "2026-01-15T07:37:24.040Z"
+    "created_at": "2026-01-15T11:25:57.689Z",
+    "updated_at": "2026-01-15T11:25:57.689Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 62,
+  "pk": 129,
   "fields": {
     "property_id": "7932",
     "presentation_date": "2026-01-14",
@@ -1385,15 +1393,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1P_uPCGyKiq9FBXOByUOjXQwm61NVJo-n/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1uHOBvWL19mTzGU0VFAZuRwWXY_Lx5EKn/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1Ds6RVdwqBbGmsocZEDjBqCimACMwyzff/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNaswhZdO04cveAlA5lT3YddL7yB6M0RBG79bVKrfD5LHiz6HWimztMYaO4oNwnB55QYqdp_0lwhMHh84hg46kNRoE8XnggTFX9ClIf2d4zeGivrQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPDFBGfodBSwrtTjt_QdxCjmJEortVOuQEvVK-uY-zNLjH0qKY8KlbzuOg0QwX30z0YWYdORwFEp1uUrbztD177Qa8jVm2fPAEWTh7uGjxG4n8HNA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:37:35.164Z",
-    "updated_at": "2026-01-15T07:37:35.164Z"
+    "created_at": "2026-01-15T11:26:08.750Z",
+    "updated_at": "2026-01-15T11:26:08.750Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 63,
+  "pk": 130,
   "fields": {
     "property_id": "7467",
     "presentation_date": "2026-01-14",
@@ -1410,15 +1418,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1OBJCH6pZcs3zhbDN6e6uixUNXHGiXibt/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/15alntJl6HJ-0gHLKXV4c83Rf-Lwggh_v/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1CliDNYpodDYoYZ6fSCdy_PH4UxevZbJs/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP0-9hXsMtuMv8wJlZacrtinc7ZP2kS2C1izIuW52UPBymI3RPX0HrCcXaDX9Cug9IDdkbonJ6WOAIKRLAU3KaMnUPqGOt2roxQJtADZdxPNjaeSQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM4WFcLNIlJn2THrhzItL9037_oc42FyUxilY9sKve_HSbgMKTZY8lA7sYzygf2jCmEF9M8btHQQdB2PeoewsEaJMN1mZsTJRmsuNOIexpxLEfaKA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:37:48.770Z",
-    "updated_at": "2026-01-15T07:37:48.770Z"
+    "created_at": "2026-01-15T11:26:22.469Z",
+    "updated_at": "2026-01-15T11:26:22.469Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 64,
+  "pk": 131,
   "fields": {
     "property_id": "7935",
     "presentation_date": "2026-01-14",
@@ -1435,15 +1443,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1CuOd6ztgBwAzvAYHKU5-jvGJ2ZEkKh3W/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/14RNGy-FBcPJmXP_RtuMoozP0JiNFu5Fj/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1fXsUZizjHjj3XCbf5o4TtZbme4wgw_eX/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMPPuzc-bVa861phDxWUi8_lWsrgaxic5ZVQ43tUSB0xttA2qfzD8EWzN4BONSUm5ipnnB9bPDwdnwE6v6ZKkm5Poc5QH6UGR9Ub4zsbYp3FySMhw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOydm94j6I_IvwZ5lRZSLzybmLz1J29iX3d_tnPcfufOaAl2zJCQtsEkA3AO-bQOb2ng3MOU5mocbg88z4Mn83m2R9yk-7xDsXKh-YrKgJgZrkixg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:38:03.548Z",
-    "updated_at": "2026-01-15T07:38:03.548Z"
+    "created_at": "2026-01-15T11:26:39.264Z",
+    "updated_at": "2026-01-15T11:26:39.264Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 65,
+  "pk": 132,
   "fields": {
     "property_id": "7761",
     "presentation_date": "2026-01-14",
@@ -1459,16 +1467,16 @@
     "total_rent_maintenance": "100000",
     "ppt_link": "https://docs.google.com/presentation/d/1_5v_m2zVdDvAy405ebNJ8DR9qV0Itrjy/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1Okg2Su6iJSf05VW3gEPVRnH6lreGGTSp/view?usp=drivesdk",
-    "recording_link": null,
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPObEnGDAQFeRv-Gcng7fR9x0YhOyMEMyqYSkeXGFNir5ugQQYkiSm9Yi_NQCtHj5ksHJsn5RXRVVEBJyuduF_oyBMjCJIxJ4W2WhVAvJ4o3XvCPA=s1000",
+    "recording_link": "https://drive.google.com/file/d/10VVYhEEuJLwVBZRApeLE5FuwoFAz0KDR/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPPtDuWu7VKDuoMSr0-VmnWzy6emW-AIHTVTq1w4TV0QUPufuBEnU_-ht-wjExTe8K-8pHYWnaz2BFR5fTZpbyndJWQOghfzGZdhZyli58Tb5Zr7Q=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:38:17.813Z",
-    "updated_at": "2026-01-15T07:38:17.813Z"
+    "created_at": "2026-01-15T11:26:55.220Z",
+    "updated_at": "2026-01-15T11:26:55.220Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 66,
+  "pk": 133,
   "fields": {
     "property_id": "7955",
     "presentation_date": "2026-01-14",
@@ -1485,15 +1493,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1J4BpxqHkeA1Ga_BQcNg4XOEkLQ8LcEY4/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1R4FkuDyD-odxi6XJAHGe-HovR39e06bo/view?usp=drivesdk",
     "recording_link": null,
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPllAbhjsB9gBdLcoProDDtScEfmb5YzsF5003RcKRTBHkzYtIjVQvLocepir77JQuFj6KAXNeejMMiEjWMcjaXje_xLZ-Usg0L8qu-CRnOmy-ARA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP9-AKF0DOrrgwQ2m6W_GvUMo4gocFS-STtoQmqtu-fKRumQVuCMCYReyy_XMydOjlamhSNFi8_TVODZCkTDy8rsGiAVykxjuF21g5_5p7HYDAMuw=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:38:30.959Z",
-    "updated_at": "2026-01-15T07:38:30.959Z"
+    "created_at": "2026-01-15T11:27:10.292Z",
+    "updated_at": "2026-01-15T11:27:10.292Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 67,
+  "pk": 134,
   "fields": {
     "property_id": "7944",
     "presentation_date": "2026-01-14",
@@ -1510,15 +1518,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/14v7ertfcmsfVaasen2wMsOuu9mcGUpNS/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/17E0hiscK7KOesTrXQtRI0MdTmWbcC4vw/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1AFIC_-veBOFzObqlrtm1CKVShEIq-ut0/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzjGiU8zW12FlITLQmsmo1j8Kqz7yNST5VSA2yskJi_nKExsz5_Xzvshq40gQuBPQhhDnqpuBSBgmesEAe4TM_Bf7GGlzyUIBLS7O2IOHEVLiIvA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOs1Obm2eJ2zHJfsHriZ3xscGIo8ACRjCWOMvKmFFjDTmPZMWdBcYIaQxkPzxdTRVuoqlU61sMBr5m86idNVkKSL8CnKkKJ9-utdyd14-2v8roEHA=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:38:41.298Z",
-    "updated_at": "2026-01-15T07:38:41.298Z"
+    "created_at": "2026-01-15T11:27:22.382Z",
+    "updated_at": "2026-01-15T11:27:22.382Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 68,
+  "pk": 135,
   "fields": {
     "property_id": "7838",
     "presentation_date": "2026-01-07",
@@ -1535,15 +1543,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1fRG7lhq0-GvtvjjYDFTvSuAJHDfcBHfk/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1v1Qj39lLN7_b9jF7Es-QNG04Elz9M0d8/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1E7QADpMiUtSj3K2w-wyVoUXi0Kp2AIGF/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN7lvyZKcQQxj4JKaSXJjuGu-BR3kUm_AJPG3AsWZsaGpDDuLTP7aOHtN2BE3k_ZzD0dsOEv8HGz5GhErAvImCWGes2n0QVRK1kV1PN3y5Rg6zjBw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPOdFRg9ra2TGm2DpUrM_GaskJ5GHMaiorOWEJ8dkHwx7RMUJzDuthBZaWGp4zhTFtungYN_vXG4mELma0y9Coack84LmTryxKBVn9SU2Nx17m9=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:38:55.948Z",
-    "updated_at": "2026-01-15T07:38:55.948Z"
+    "created_at": "2026-01-15T11:27:37.566Z",
+    "updated_at": "2026-01-15T11:27:37.566Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 69,
+  "pk": 136,
   "fields": {
     "property_id": "7798",
     "presentation_date": "2026-01-07",
@@ -1559,16 +1567,16 @@
     "total_rent_maintenance": "110000",
     "ppt_link": "https://docs.google.com/presentation/d/1hAEiBDqdQsxVDEqncUPHJyed2AeKeABB/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1hciBpLlU92b1AnzBt3jd7Y-XOUyqey8n/view?usp=drivesdk",
-    "recording_link": null,
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPB6hUcE8b5myzSjquzwM5HZ_6qTMetpbaEyXN2tjW-kgK314-3zFm0nXvZ2d3qYBAt6EEQktku9Jb0P-454JhBFgsPTjEW9VDqOp98HY8ODQ2lkw=s1000",
+    "recording_link": "https://drive.google.com/file/d/1uQ6rhNXy0l3QZxGQz7I4YH_Uy6OP07cK/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMGU_CZaNQGrLOpkRdW9sII-s8mWr3DUxUbhxgSUz6JGyikBNU7Yq83YSRdbjZXRAinArAMUo_TNnHPahYH_S4YeGkfm0BrKT8tKBiwSij3yi2c=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:39:12.312Z",
-    "updated_at": "2026-01-15T07:39:12.312Z"
+    "created_at": "2026-01-15T11:27:50.504Z",
+    "updated_at": "2026-01-15T11:27:50.504Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 70,
+  "pk": 137,
   "fields": {
     "property_id": "7696",
     "presentation_date": "2026-01-07",
@@ -1585,15 +1593,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/17tpS6tPMahefn4vItdjaMRd0BpPGIu8Q/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/17JNiXamikQ--Dn7CCqF2dLhNdibxriNf/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/16sAICRjfqVf5YgCohZrhfNVyeGr064rI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMNvgM8uiNYbu_6zwuITvdzi5i8--TcAN2QlMjwzJ2g_gj8p-CnTTgw8CovMnffP-Yj5KDeI8NtiZivwwegnjivgADNuSzLbruNdqvad8wPZrFCBQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNXALXMtkDCI16QUkz2bGTJ2CDFjwHrzMcuHSjaw3hoT3PNCd-zarcZQLePMt3NsGz3XVAxyshOWpr6PC42uN0U1i45uvZBY2XClLYHbd9GgafQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:39:29.423Z",
-    "updated_at": "2026-01-15T07:39:29.423Z"
+    "created_at": "2026-01-15T11:28:03.904Z",
+    "updated_at": "2026-01-15T11:28:03.904Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 71,
+  "pk": 138,
   "fields": {
     "property_id": "7718",
     "presentation_date": "2026-01-07",
@@ -1610,15 +1618,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1OIfzygN7frLKcRS385ikAo47xYCd6kY6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1pyGX00qst3XfAX_Ktu8S7zfvOuQ1bLk6/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1SLSJh7S5N4yccBQryiKdgAEN10nZmtbc/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOHJJT_Jk8Bt4E_bPirCNrVgHD2D6ObTjcGhxJlHf159FVuXXuW9LXZf4hTd9GxgSzhIhSc21rvhhafvvzTX3O4ut3rBjb-cqm2-Gj8kBTPPmC5nw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMXZF8gMk8wONyRuY5CrL8wM6dcDD7oqYVtzjH66K4l2AAh50t7gCc-0jlPMgeJTHXkDrcEtaAXOU8QQyoONhlgz2tHZ2EoiqUjZuzwJiiFcLiq=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:39:44.600Z",
-    "updated_at": "2026-01-15T07:39:44.600Z"
+    "created_at": "2026-01-15T11:28:20.282Z",
+    "updated_at": "2026-01-15T11:28:20.282Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 72,
+  "pk": 139,
   "fields": {
     "property_id": "7637",
     "presentation_date": "2026-01-07",
@@ -1635,15 +1643,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1L4fwHWePvEGRxjO-cusRiIfHZKw_HjYv/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1keXPFDwSRxlES0FEaTBnfw5aHhnMyoDF/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1Idd9cpUJS_C_SrEVEzcobvzg4V-mZus-/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMQYVflGqcNIPerhs7ro9lYO6OpXnASpKnOH0WtIkqsRdMDFVLCf6-FqcWXBjfLS35k9bhW4mzR9XseOAK75V_tQGQe6IFuktNa211Yg_G13EwbSw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNhH2tEKPs4aVxCx21SFFxh0S0njvMtrxsA-PfszX528_BPn9JjbIQbGvIxfN4JMBfCO0jJklK97BK6j0-pfzZqEZpdIcxfQ0Z-_0_LhO_q5IrG=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:39:55.682Z",
-    "updated_at": "2026-01-15T07:39:55.682Z"
+    "created_at": "2026-01-15T11:28:31.966Z",
+    "updated_at": "2026-01-15T11:28:31.966Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 73,
+  "pk": 140,
   "fields": {
     "property_id": "7823",
     "presentation_date": "2026-01-07",
@@ -1660,15 +1668,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1Xk3J2gOhwqUGv_OL93O4QOEjBEqpjk7G/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1g0ql8FyWCugtH8XbG7YbOWi7uZEc_dk1/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1toZKdti0xqoHCoVDgiJRTDSYft5B-v4z/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNANZ0zyR7s7yw0WpV9vRh4CaDEmfrW8H_GIIyH2KXkE-dbq_SZHFaSYCgEQNguH1_lY5xvpDzgcicgNlF9gvMJfQOrmjkPQKbHjqp_PueJ1Z4QdA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOFCNZjFW8G8PmLQNBzPjX40u8bhwLzYDze-qT83Jv3m-Whjo8532p0vhZehptel-PiFttvTL0BjSh1iSoucmx0cQKOaHA-iSalXySKQApJAM1NgQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:40:10.258Z",
-    "updated_at": "2026-01-15T07:40:10.258Z"
+    "created_at": "2026-01-15T11:28:45.336Z",
+    "updated_at": "2026-01-15T11:28:45.336Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 74,
+  "pk": 141,
   "fields": {
     "property_id": null,
     "presentation_date": "2026-01-07",
@@ -1685,15 +1693,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1tjdrRmkLX69NXb9dRCx0T6qSb4DllXRP/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1pXdfgcgu0b_-xLrpzSfAodFq5kvGPODL/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1soA9PkgzDdnMcv3fXGaa68fhCXk1lNdn/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPClQlVXpKSiP0W0uUWQ31Zzc3S5cpiDqs_c2MXW59jwSyi1J9MnyfIESFB5zQZtOWmMylF7MnwmGh7GbX56utyMXP8wkjCOLZdqwemjJ6_o-pLuQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNNxB6KGTPr0ESAX5sqwoy6VxhrvRkEo6WxOh3jDyP_RyIjMpdnrxk1v2vnu2yjNs-H8JSMT2n614zLwwSi_-8-vUdUa-qUSLpRb4sykJQ6vB_k=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:40:16.941Z",
-    "updated_at": "2026-01-15T07:40:16.941Z"
+    "created_at": "2026-01-15T11:28:51.893Z",
+    "updated_at": "2026-01-15T11:28:51.893Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 75,
+  "pk": 142,
   "fields": {
     "property_id": "7807",
     "presentation_date": "2026-01-07",
@@ -1710,15 +1718,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1_QnotxYIGObJxethdxVUiKi2O0hqeGeQ/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/11QfQhuuGtCgrrJmFGGl2ula_DzpMjr28/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1PhYuNSAUl7tvHtaKxJ6ZExp6lwlOVdp_/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPcoWWMNmr4v_fbm2KflhUDQGUV0Km8icqAo5aBvPY14XQ8IfbnrnEEwq7vF83vxozvBjGqLMJDYM9txcERJEPc11TPT1XVEYFRGLvfyE-hPhUmmQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNpfGnPzYkPx9aQERBbwuj5HTqzRzlWlySnjRVjOBI9-8tFHmGbED_EMTs8Lk5yEihvTHz3HfEMzJ9-eVWemaqYxVo7EshQ65N4vhWQLN5vfeE1=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:40:25.359Z",
-    "updated_at": "2026-01-15T07:40:25.359Z"
+    "created_at": "2026-01-15T11:29:01.532Z",
+    "updated_at": "2026-01-15T11:29:01.532Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 76,
+  "pk": 143,
   "fields": {
     "property_id": "7842",
     "presentation_date": "2026-01-07",
@@ -1735,15 +1743,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1CZErNHaSquGYa1_AigsrULXcjYAVrXZ_/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1SDtfP1R37aPLuuWgxCnb7ztcG8yfiIkA/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1n86HqlZ-CZ7Yx_WKTLZdDzQZjEmOK_wd/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNxlTaWZUerrda5AXJZMVRZtmYnU8aLLXxIwrwlsTtEFTlUFrOje-a8hDyJJqMmhClVAWTH4m5Nzgm2jEpI5blcXNB0HpGN-4B9aTpnw31iZxk-YQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN7iYJQWAeMReNKvdgl3sOZ-mOFOwuNd8TJ6kBFQVnWG1dt0uxg9rTt1s357dyW9k-tWYwHL2XnUYwWmCI2PuI87j2otaqx50_X5E_CFzpJHQuX=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:40:43.034Z",
-    "updated_at": "2026-01-15T07:40:43.034Z"
+    "created_at": "2026-01-15T11:29:20.599Z",
+    "updated_at": "2026-01-15T11:29:20.599Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 77,
+  "pk": 144,
   "fields": {
     "property_id": "7810",
     "presentation_date": "2026-01-07",
@@ -1760,15 +1768,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1an3n0oFf9svivYmAu4chTNBn7AkXAcq6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1lK3fF6OJ4PfjkLWxROI_xmK8AHyRRtdT/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/18bPpvqkDSAMHTzRS8BWQE9E8tgE-7E9V/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPNS77ciCXa-MTn_NnINEEfNPruE7vELBvsHC5h_Ls6VyCRAh4-aEt7VENuE_CHx-CiICctHYoTqIgSH7cTeEYyEDywOZ4-adGOkjNYeBwEoAP7kA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNVXPE5EnTy5vTKo0yuBdQTOSKsWCCQdPVvSKRnrLKJkQ2IfRby2nmOeDF0sYdBtHn5ZFAZt0KTLRHe1KTg8fpaR83vG2w0X4df8GARSBlc4kMF=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:40:55.458Z",
-    "updated_at": "2026-01-15T07:40:55.458Z"
+    "created_at": "2026-01-15T11:29:34.670Z",
+    "updated_at": "2026-01-15T11:29:34.670Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 78,
+  "pk": 145,
   "fields": {
     "property_id": "4914",
     "presentation_date": "2026-01-07",
@@ -1785,15 +1793,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1MZIhSvQn_h34yZ61XsRnDlv3ytFtwkEf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1a0hmYTtMMu-jK_ll4LNEvI1XisbsDEKt/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1b633BNFTi_kTn8xQQlAC9MYauExZXPei/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPDHm1u0CS-LdC-VmrMXRrIZaESIQelIk-a27FkGI5FkqQS_DrHVFYLdolgoWPuzV1w3T3o9F0WR0NUZCRh-91XQeOeJH0BVfdNbx9ErrHcT28A8Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPhK6YSm3AdT627xCqg_a2wa0069kaLvEW5f9DHHHf4Kr7agFpXA6v5PmOW-5NPgaNe9RMWuW8nqutehcf3tFSzxhTwjIOignjjQhtO8dlxYkul=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:41:15.440Z",
-    "updated_at": "2026-01-15T07:41:15.440Z"
+    "created_at": "2026-01-15T11:29:52.814Z",
+    "updated_at": "2026-01-15T11:29:52.814Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 79,
+  "pk": 146,
   "fields": {
     "property_id": "7833",
     "presentation_date": "2026-01-07",
@@ -1810,15 +1818,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1ZivSnSD59AwL4o5LL0uwhyrRlVnufRC-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1U5nZOkoDTPL4JZmeqmmYwV9-hE4Hje7T/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1OP1VyOPQXxxbLmosD6lb5suvZDINRxnv/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMJrKuBwC55nktlKFW8Iuug9V3Cev3wgCbD-2Wmi_D_STS3D4XbGO7Z8DrYWB-sKp9MWVXuCFyz7G3uOHOYL39IPF3yhpj48kzi3HFXkI1b16_f4g=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOeE54EVTl-BkUTh8QBn16M76-bTmG3XtVjKcoSZuQLKtuaQRHYUX1jHtnh8glMzV6WcTILjig5Q0QuArJkINhCmUsZtAT4Fc5Ga3Mk58Z5mAJO=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:41:32.324Z",
-    "updated_at": "2026-01-15T07:41:32.324Z"
+    "created_at": "2026-01-15T11:30:08.845Z",
+    "updated_at": "2026-01-15T11:30:08.845Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 80,
+  "pk": 147,
   "fields": {
     "property_id": "7780",
     "presentation_date": "2026-01-07",
@@ -1835,15 +1843,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1B7G0iSDV46tIsRrMBvv4lU5xfONQbrRi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1iyo3tyzishm-RRCh7uj_tMHd8FM5Ak5J/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/19uapDBuRVwSzrqme9kLZHgMu5lMBYPjo/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMCOeVEOpY9tg9IpxzFo1GoRjTPgQW0Gewmtec6Kf_90Gw6JBtGlH5Ajem1oSJ6NJZYyg0XOGBpEHjO4OtHQEp2Is_eXSymahEK5ZCiai04ofnKMg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNCkxQqvY9pycMIVDP9gWrIcOx-HNsPkHTkIM44yBJhl5m0MwqC7SYUG6imnIv9dqzdl3ee4BJMI9Wrek9-SSs1A50oYyG44UbOv3vmZHpF9byI=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:41:47.449Z",
-    "updated_at": "2026-01-15T07:41:47.449Z"
+    "created_at": "2026-01-15T11:30:23.791Z",
+    "updated_at": "2026-01-15T11:30:23.791Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 81,
+  "pk": 148,
   "fields": {
     "property_id": "7796",
     "presentation_date": "2026-01-07",
@@ -1860,15 +1868,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1aHw3KQGlCmstMKUDBKC7VS1WZzHRpDdO/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/10Lw8dIXvWt5pGRNVt7-EDTFXqP7bAqp8/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1CdSwPQIPspf8x3DPlxDi_fDAt2-RAbAa/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzpJ3n-B-pRZcmIyIPxaiuJgIdxcbCkwFRzBYHx_YcMddd6XJtyicFOAWQRFzgJkhweTK0HYKcSeToD79DcR3bHjLR_islUNVkhOUFHnOQ-EEAHQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMXOKm850e0ArSkWXKKVf_-hoRbZdjzlicU_4sM6d78Hw-KyGwPyer828NpRwJWYR3yfolXPTGSJBcGfHuX9kXGbtwAxn2YwwzsF0DMiCrSXJqZ=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:42:04.186Z",
-    "updated_at": "2026-01-15T07:42:04.186Z"
+    "created_at": "2026-01-15T11:30:37.779Z",
+    "updated_at": "2026-01-15T11:30:37.779Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 82,
+  "pk": 149,
   "fields": {
     "property_id": "7690",
     "presentation_date": "2026-01-07",
@@ -1885,15 +1893,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/114EVk6-dE91sEbstwWxAOPpJvy4Ht4R5/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1dfCdohfui1hqC3aU2wn7mX3i_rTm1k9A/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1CJT412YfeYbDW0Bv4TF0_m3q-26xYQb-/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMuE_VVfr5WZId9hRcfBDlSYOsv3yUo3TSxPBDpmsSZSnXZDJE_3GKnNHf7Yb3BpUX8fNWvDg6-ErJzVWFLLTvoJAL8yVLIfs5Ov3zfY4aN-AurFg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOHJ8marNREofCBqJA7i3t5dVc1qdAaAq8_5M2bJmZCAjAsSaLVPzsVIN9-BjyaUyg6UAVxxniLPz7t8vuB6n_t0yWVaLn2myWhkF3lRtduq_n7=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:42:17.811Z",
-    "updated_at": "2026-01-15T07:42:17.811Z"
+    "created_at": "2026-01-15T11:30:56.442Z",
+    "updated_at": "2026-01-15T11:30:56.442Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 83,
+  "pk": 150,
   "fields": {
     "property_id": "7801",
     "presentation_date": "2026-01-07",
@@ -1910,15 +1918,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1pnJkHXiHrGe67KInUqVBxk10OUFpJ1e-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1BaXYjClv9RjnqmTnvctqG_pN60nNuxfB/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1o4fszngFHHNDxFHiF5uhuNtYV6GuRrMW/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMtzbVkolUsCC4fR9E2tHxswVqjnLtBdYnIDuIabT4tKWtDafugoQfgisDwCDxYGU2YDYCmyt0iYyto5_RMhAXv00eVrvVeoYdSvRbCBnJcTxQc4g=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNNXqLCdor37s5bVOAhWi4sGGS7gkeuKesiAJAlYuOnROBTNcvpe_i2hzMrOBWWpNc7rPd-ovXfwdeJfpNAc70-_wtQnCPjUeM_RCnDE3560n1A=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:42:31.555Z",
-    "updated_at": "2026-01-15T07:42:31.555Z"
+    "created_at": "2026-01-15T11:31:11.075Z",
+    "updated_at": "2026-01-15T11:31:11.075Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 84,
+  "pk": 151,
   "fields": {
     "property_id": "7765",
     "presentation_date": "2026-01-07",
@@ -1935,15 +1943,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1_u4uubBuPgSIJjExKlvXD0LSjnMrwE2c/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1KWR8YkCEeZVxbmGvbUWVVGKzpDWsNIXw/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1WtScEjU_JgUM7wXj2pv2afqrGWtpz7_K/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNjCNxPb4NuhEDQJmEFe_fRWtv2E-XBGiRnjExigW4q51cVSPmup6WbsWrjpGUuhfnkW0uZYXF-f4_0CNMzphgKvMFJUcBDy2JjeFfCNjo7SEEK9Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPHA-5vhd545avQUGr013gE6j8Wq9C-WbWpwCfkC5wYKV4hBPoTHekmfQgYLfOq8KFcXWDYhYgUJtOgEB2KmBdo9WAgO4RCGigdtJI9E2j2O0mu=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:42:48.768Z",
-    "updated_at": "2026-01-15T07:42:48.768Z"
+    "created_at": "2026-01-15T11:31:30.728Z",
+    "updated_at": "2026-01-15T11:31:30.728Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 85,
+  "pk": 152,
   "fields": {
     "property_id": "7811",
     "presentation_date": "2026-01-07",
@@ -1960,15 +1968,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1mAIKbjW3xxVzf6dECmb8Y2aWI1ZEE6SQ/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1DiTPHIfcBYfeCTvUNwO0iPb8Tu1VChsT/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1POw0m1I3fk5IsCRz7Orj6R2yk8uHTY-o/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP5-lL2d6As_QKvLmZcMgLQShYIz7lRzgYuMSBt2T61epTTBrb4CPb0vNaIVznZbkzb-r-0kn34EZxQtEYTgZTXe6tMzh_mxIDg9-MDzBjNxoL0OQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP2Scn9aQoB9Z63wRlbXqwuPlbUODvZcYxI9bCe3RJC5kzRMvOTht6QQtGy98Q5UaLoz-mBqlR8fH8Z45SmZ_wkIS3AfzBITjYo9PD_4gGoJoqX=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:43:02.992Z",
-    "updated_at": "2026-01-15T07:43:02.992Z"
+    "created_at": "2026-01-15T11:31:47.512Z",
+    "updated_at": "2026-01-15T11:31:47.512Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 86,
+  "pk": 153,
   "fields": {
     "property_id": "7832",
     "presentation_date": "2026-01-07",
@@ -1985,15 +1993,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1sStSpqyAwGS1Qz8wTDRjHIgDEjJz8ltW/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1ekRkCZMPLlzocbRd9SJRwEsk_e2VJkA7/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1ExS3xZbFsTiS6dR3NR9L8kIzgQZtFnz_/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzplmvsmemA4LguQuUHrjWKihidoqFHG8N3nlMiy4NJ9m_R3_Jn5Hpk5RLqWANrJeQIj2nKCi-3GCcnDBWUEzgJo5Pw82cLahCprb1jttY2hws9Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNZDTiPJQHvSobKZshM0Zcn2KxoUARFy5XMUiGoz2oUSwxYHfqkcgLX-JptRtscFq7YqLdk6x5X8UQI8Zg0JVVEUKFveGFUU3zaKId01RuOR5xa=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:43:16.322Z",
-    "updated_at": "2026-01-15T07:43:16.322Z"
+    "created_at": "2026-01-15T11:31:59.831Z",
+    "updated_at": "2026-01-15T11:31:59.831Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 87,
+  "pk": 154,
   "fields": {
     "property_id": "7335",
     "presentation_date": "2026-01-07",
@@ -2010,15 +2018,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/16N_vMc0eunBopuvgQl-4cgu95mYu33j2/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/15dSXXQYMnZC_tbS67F2RA9ncQYyG42cE/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/133HwjgNRUJmbQS2srWGmiHU5fUWm-g7k/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOKxvXEaecrwvKwqVwVr_kII0hg99uyAZ7Jcc5BOSeDfBzYeYm6lEelO7TeB31aqI7syDOVoqD8qpZNlWYq_kiFRzquTcgKIsY2zz2bw4UyYvX9Mw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMgbdXN6CaRTy9MuTPd9T61YSbaz1Gae_3GPkhJOV1t8ROMjiEiOdnDeEFYOAFBY_0fK1WAkLioVqy34siUnsyRmDtD3Vki2qZSr03G3V7Wxpks=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:43:31.484Z",
-    "updated_at": "2026-01-15T07:43:31.484Z"
+    "created_at": "2026-01-15T11:32:16.902Z",
+    "updated_at": "2026-01-15T11:32:16.902Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 88,
+  "pk": 155,
   "fields": {
     "property_id": "7831",
     "presentation_date": "2026-01-07",
@@ -2035,15 +2043,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1JoyF9AlPjetMcv4CqlImOAFZZEW3iOBI/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1wQutm-nKsaHoyv2jyIQhFkFMpr_m8Zr2/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1I8wS2gsx8GNX9htJp1m43GYMBtnh7mov/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMrrb5CiGIP1ItWl8IhpINHOfxAR_eXheLH0NWQAm6x09JtLbCKw5CuWOJPhpGsKLs5VhBUSXe-eActhgHGyajFRdJ5oy2Vs0Yb3Wi_odMWA0X_-A=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN4DRhZ4Sr1DrlmEkTcNmRmFRYyHuBF0WNgkueg9sk2_znuef1ZIv7RbJm-S1fNLtUDAD1j3AUQP1B6i_ESoK0oEuAU4IKeU3P3rqdUaQyoxK3e=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:43:41.260Z",
-    "updated_at": "2026-01-15T07:43:41.260Z"
+    "created_at": "2026-01-15T11:32:26.754Z",
+    "updated_at": "2026-01-15T11:32:26.754Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 89,
+  "pk": 156,
   "fields": {
     "property_id": "7676",
     "presentation_date": "2026-01-07",
@@ -2060,15 +2068,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1c22Qwd7XRO_3eoDNbbkHgbQ75GzQ8PRf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1v3eanNHoZdRSomLPJ-2iHJbUvh-mibmq/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/19a045piE1PHe34ovlDQsCb-QhzcLaq5I/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMO0dH5tq-WSRP-96yfZBXYqiIcPx7NrWtR8Gr2wfoYB8463ys5Jj-4d6ZnQ-v5EHQEPOxsMJc0ewZr6sua0Ia1XabU4mUFRFyo1r5U-k2krh7YFw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOjUN7k3ZNW40qrSQEc8rU-fpM9pf5P71eQwTig3VeWabdNLnUjjT_R0RHJZ6aAzKnHyMLI9HFwqAxnzj0DdDetcmrrSad7oQqMF_OJ7uU2aWra=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:43:51.465Z",
-    "updated_at": "2026-01-15T07:43:51.465Z"
+    "created_at": "2026-01-15T11:32:37.903Z",
+    "updated_at": "2026-01-15T11:32:37.903Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 90,
+  "pk": 157,
   "fields": {
     "property_id": "7535",
     "presentation_date": "2026-01-07",
@@ -2085,15 +2093,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1aI2_j0G9HGxk0S_nYF-ljpc3uFgLaU90/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1xE-tO0KzsJjf0OjvSiENC6OAv1EH8aBe/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1j13oGsEG-zBWaEnXxyNRwCPiFljcGKYX/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOxp1g_fP3K2KkyFtWbb-3Tt_C0cI_RbCgn3WBX14NE3MrcchbhpjXZLDqIO4V-S-jvNkSV00TOcibBWn9IptN1q5VDlPEgE3nI7Hf4rz04FfYUeQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPWIJj2KLmQjBtxCiF03j8b1iGuSZrDKkOVMoF2uAo4Zp76i03CVqQGKvWGyejtEqUTqzBofe0PGWULQsqQfVNFPSdqpNHxbXfD9luAu5rYTEjI9Q=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:44:07.653Z",
-    "updated_at": "2026-01-15T07:44:07.653Z"
+    "created_at": "2026-01-15T11:32:55.366Z",
+    "updated_at": "2026-01-15T11:32:55.366Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 91,
+  "pk": 158,
   "fields": {
     "property_id": "7789",
     "presentation_date": "2026-01-07",
@@ -2110,15 +2118,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/15dwqebtmSu_9FPTsC6c0yIQ8wKjUkbRW/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1IbhMWSuVcwfXnQtCkwpLP_VjNHFUEFy9/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/13Q-SDF9QCTIeLNbzToS4fyoIibCSmwby/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPJy-E5I2m-kC55IIpoyL2frPuxj6Wbt2zOj10gZiF5UmyQtRTCPPSMktl1LkSQyfAV0AY9z301Ikol5CCcqOcNc-fiosI0fCw63zyJARmTV02g4w=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNjTXPO4r4hG5mwqC-vhSWo2tzXBla1TDvIDqw33eYFCZYg1Z5rjmQupIjR1EjXvRYeILyS-3Jw1c3TpkoN_4dj3YA4DI-3MW0i2G3pTxmMsN0t=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:44:20.880Z",
-    "updated_at": "2026-01-15T07:44:20.880Z"
+    "created_at": "2026-01-15T11:33:08.837Z",
+    "updated_at": "2026-01-15T11:33:08.837Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 92,
+  "pk": 159,
   "fields": {
     "property_id": "7618",
     "presentation_date": "2026-01-07",
@@ -2135,15 +2143,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1c3wSAvEzDqHdw9_9QXh3rkSPxA9LEO-7/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1xDrQdz5kC8jthW0kvD7PmQDImdqHKRDh/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1hFCL-pQqHuK_EJALrRKYxKomWzUjALQM/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPL_txFzUy6xWfqR5dv-pEi4UDOy0rpjj4DxEeYWFNjYhGkA1Kc0lE5DNnjkTTdev02XEY2NamTob_yZ2qNflBoNcWtEgcuwlVFwrSS8ZntIER57A=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNknTaLDpi9VnDFAbYHeWib_aHG_o0AaU6AxPRabC3dXeXdI5gUIAy5UDlycwILQvIsep2nnM1YHu6upcFtRcDOh62cHgudiA8Ucmt0fLRDlXZz=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:44:34.372Z",
-    "updated_at": "2026-01-15T07:44:34.372Z"
+    "created_at": "2026-01-15T11:33:23.040Z",
+    "updated_at": "2026-01-15T11:33:23.040Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 93,
+  "pk": 160,
   "fields": {
     "property_id": "7846",
     "presentation_date": "2026-01-07",
@@ -2160,15 +2168,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1XxfPBBij3BOV84QKzLgAaDZUqJN4GHIw/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1JXsdPQxZDYssAtUBNY32f-Y3DCQK1Bx2/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1NLvDYyJu-J9PpHohOzr5b_VBnRbKqfvI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPs4rmxrVrC2uPJa77FGheCfxxrpckpc1OBICz2Ox-jHvzLVlBJU8sAuIgX-k4RvmsweWzV4mJXeZH-B7stcLi1J-GqvYsUfI-xv_gd2hTDbuLBLw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMcvly17tK4aBMloELGipFOQ8WA6Dcs0TGIjkTTErNgL4VSw3RefcXELqwrTtZzfkkHxz19NFfmfELxK4LXFQab7--o_Qfn7FUrhy-tLIz4_HY1=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:44:47.977Z",
-    "updated_at": "2026-01-15T07:44:47.977Z"
+    "created_at": "2026-01-15T11:33:37.655Z",
+    "updated_at": "2026-01-15T11:33:37.655Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 94,
+  "pk": 161,
   "fields": {
     "property_id": "7830",
     "presentation_date": "2026-01-07",
@@ -2185,15 +2193,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1gyG6GfI4TYLjnRyIY_lr7A_Wn9q8z0bL/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1P0ZLXnu4SusGT09x5hbwNUaJwqWDG9WF/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1WbQbg3xLN34ecoR6cQ_Of1wGPjA9kaDI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNkM2lBhKqfslMnjEfBgM-RAqwrAyKBfYVnr1PsmmzMZF5WrQ2WkzBEHj0LbtJuOH_bFmn77q3RuR2hz5uTwjhahJSTACSwJY49YlTc22CSh7nIgQ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBO2-FQ8TPGLRFRqyvUDBc-3b37xzwcCA7tqB5pWah9-MBA3dmH-4e4YubrgNY3pC4O1zzUHlKF7R7NKrZvxq0n-T3SM1rjcBR1rVX-iyWKXe_uG=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:45:03.878Z",
-    "updated_at": "2026-01-15T07:45:03.878Z"
+    "created_at": "2026-01-15T11:33:52.809Z",
+    "updated_at": "2026-01-15T11:33:52.809Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 95,
+  "pk": 162,
   "fields": {
     "property_id": "7820",
     "presentation_date": "2026-01-07",
@@ -2210,15 +2218,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1bYfANYzTrjYXWhJ2qkS2xPyn8czTO0NN/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1q9h9xSsRHxg6_o1NkPGiCwx4E41J33OP/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1zt7MIWHY06ZSQY-CTDW_9YP_xdszXLNx/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOVr1bRjk0QYsnz6PxLgbuZPWVhIhkssxPz5waAmBynNN-cKf2bF8S9YtTSe5OPzm32gW4_-RrXOffbVqxha_g1q__HGrPDwtVxK0PWUikYyHYK7Q=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBO7as4lV4nhQ6FDqhsCrBp4URpAGI56EFRvfF-2CnXoSKjyZD4EjNoTIHd4a7k1uHJdcLIUIR3bFJINnxSrh_JvesrbakYYWV8BdG9crEeTUpP8=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:45:20.156Z",
-    "updated_at": "2026-01-15T07:45:20.156Z"
+    "created_at": "2026-01-15T11:34:06.250Z",
+    "updated_at": "2026-01-15T11:34:06.250Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 96,
+  "pk": 163,
   "fields": {
     "property_id": "7735",
     "presentation_date": "2026-01-07",
@@ -2235,15 +2243,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1MLU21z_WIaENI9bNMXK3fQLlnRCy1dVp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1TM0ekSDJLYppeU7QTjqCf2DRYx-BJ7Ca/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1m2sxf00QE22KmjV6KNsdg_tn3aMitUWl/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP_ZzwwNxUuqM7VFpao0dNHCIRIfN6dujAOedtfGJtOPjDyJazDKY2VZpM3rUNpA2P12-QTrEp1h-m80U73MQuW2FZ1uag-iobAW75fyW80nfuOFw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBObioX8yxt2JwleUBhGR15Ku8iSha1GureFZETKU9aafageuwpVGpD86j7ZTCASU3f6avC0GWHl6nHurApGCZ4Cv3AZ0jYawA50GjWxA2mvDFTz=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:45:32.091Z",
-    "updated_at": "2026-01-15T07:45:32.091Z"
+    "created_at": "2026-01-15T11:34:20.494Z",
+    "updated_at": "2026-01-15T11:34:20.494Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 97,
+  "pk": 164,
   "fields": {
     "property_id": "7814",
     "presentation_date": "2026-01-07",
@@ -2260,15 +2268,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1sGZPt_tDsJWjzsV8p4pblRoYO6ajlIJt/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1cbWR7vHuDVdHX5ikTzBNn9kuTv-hJp1c/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1yYESuGd5KZ4wx3jB9b-8vBTbagPbZEnT/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM1QsM0fDaSkJSm3KbEZSNFzSpoJN7U5pll9ZhJYTxqukM4W0hty_Ck-lp2x3E188vHu0qAmtzyxlPVbgWP_ieBbL7sYMh68Ssb9jwObMOk_SlkPg=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPNP8Rl3h6SQ3_Q1kUizaGUdHy4dgLhWFsHeNsI2c2zy5T8xB0XVMNwte-KaGuW9Q1Y-sgeIuI3RvC32AK-D9Tt3xUD9XdeZMWujqZWWTsqaNDg=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:45:44.667Z",
-    "updated_at": "2026-01-15T07:45:44.667Z"
+    "created_at": "2026-01-15T11:34:33.124Z",
+    "updated_at": "2026-01-15T11:34:33.124Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 98,
+  "pk": 165,
   "fields": {
     "property_id": "7813",
     "presentation_date": "2026-01-07",
@@ -2285,15 +2293,15 @@
     "ppt_link": "https://docs.google.com/presentation/d/1GGUFkQQN4dcRU-cxZr_cyKIaqu-MwzDE/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1ZZ1VaqF4J4I4YRavMgKSxvKjUdSWBH28/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1AGAk9e3r--zAyOtFrSnO_2C410HodGFX/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN51vjwjJex17Cfn2nCY31p23YdbIaRsXBVcfqJcRrRe2I3hasCmT-yuA668aiTeOYTSeTz8z7Jevzu1cG6N4ssYExkiNWc2UZw9OuY--iUYdFyrw=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNsF9ksyp05mQiNUIfjjGGHt8hmOGOSCgW_0DwqjHIdyc1pCZDj2m63flUZRSV4USp6Hj9s2kvLAlJo-nweZgzKnTOU4CQYmUl6HrppWFinSb5G=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:46:00.604Z",
-    "updated_at": "2026-01-15T07:46:00.604Z"
+    "created_at": "2026-01-15T11:34:48.500Z",
+    "updated_at": "2026-01-15T11:34:48.500Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 99,
+  "pk": 166,
   "fields": {
     "property_id": "7770",
     "presentation_date": "2026-01-07",
@@ -2310,10 +2318,10 @@
     "ppt_link": "https://docs.google.com/presentation/d/1pwVn_4b08rm_tEQVn2zflbCfg-w1pefp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1bxeaYVIFPJJO2YWEpgu6jw-rpedD3yOt/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1dB9gCnUyLS6DXb11VzkWpEldstWYqZj4/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOuPNkxv5fvui6OXyPPDBqHpe2M8az8PJhD9WO0EcojuNXaILFwnAG5e3HGse_Pyq6Fqv4Fa9a433HS0euqnbwlE3vpwbYZWoAP02EVfYccN3VHoA=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBODQS_FYoKWvOpU7-j2UUgpOm6YDFfatsdt29Otv9fu_rXTdf7nqwnYzGn1Lm-yIKjsL1NsYp0hCBbr9adoLRRCmb42fGfaZRfEMkMnUrWP2BKr=s1000",
     "remarks": null,
-    "created_at": "2026-01-15T07:46:13.630Z",
-    "updated_at": "2026-01-15T07:46:13.630Z"
+    "created_at": "2026-01-15T11:35:03.828Z",
+    "updated_at": "2026-01-15T11:35:03.828Z"
   }
 }
 ]
