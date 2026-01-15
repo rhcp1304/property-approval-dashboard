@@ -30,7 +30,7 @@ class PropertyDashboardView(LoginRequiredMixin, ListView):
     def get_queryset(self):
         # Added 'city' and 'city_rank' to the optimization list
         queryset = PropertyRecord.objects.all().only(
-            'presentation_date', 'zone_name', 'final_market_name',
+            'id','presentation_date', 'zone_name', 'final_market_name',
             'circle', 'hub', 'hub_rank', 'city', 'city_rank',
             'projected_revenue_lakhs', 'total_rent_maintenance',
             'status', 'ppt_link', 'ai_summary_link', 'recording_link', 'remarks'

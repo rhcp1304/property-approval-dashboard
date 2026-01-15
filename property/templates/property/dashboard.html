@@ -101,7 +101,6 @@
             }
 
             .slide-container { max-width: 100%; height: 210px; }
-            .col-sno { background: #000; color: #fff; text-align: left !important; }
         }
 
         @media (min-width: 769px) {
@@ -109,14 +108,15 @@
             .table { table-layout: fixed; width: 100%; border-collapse: collapse; }
             .table thead { background-color: #000000; color: #ffffff; }
             .table th, .table td { padding: 15px 10px; vertical-align: middle; }
-            .col-sno { width: 70px; text-align: center; }
-            .col-date { width: 160px; }
+
+            /* Adjusted Column Widths after S.No removal */
+            .col-date { width: 140px; }
             .col-slide { width: 340px; }
-            .col-market { width: 260px; }
-            .col-finance { width: 140px; }
-            .col-remarks { width: 280px; }
+            .col-market { width: 280px; }
+            .col-finance { width: 150px; }
+            .col-remarks { width: 300px; }
             .col-status { width: 150px; }
-            .col-resources { width: 150px; }
+            .col-resources { width: 160px; }
         }
     </style>
 </head>
@@ -195,7 +195,6 @@
                 <table class="table table-hover mb-0">
                     <thead>
                         <tr>
-                            <th class="col-sno text-center">S.No</th>
                             <th class="col-date">Presentation Date</th>
                             <th class="col-slide">Slide Preview</th>
                             <th class="col-market">Market Details</th>
@@ -208,11 +207,6 @@
                     <tbody>
                         {% for property in page_obj %}
                         <tr>
-                            <td class="col-sno text-center fw-bold">
-                                <span class="mobile-label" style="color: #aaa;">S.No</span>
-                                {{ page_obj.start_index|add:forloop.counter0 }}
-                            </td>
-
                             <td class="col-date">
                                 <span class="mobile-label">Presentation Date</span>
                                 <div class="fw-bold" style="font-size: 1rem;">
@@ -349,7 +343,7 @@
                             </td>
                         </tr>
                         {% empty %}
-                        <tr><td colspan="8" class="text-center py-5">No records found.</td></tr>
+                        <tr><td colspan="7" class="text-center py-5">No records found.</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>
