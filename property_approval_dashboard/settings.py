@@ -129,5 +129,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # ~/property-approval-dashboard/property_approval_dashboard/settings.py
 
-LOGIN_REDIRECT_URL = '/dashboard/'
-LOGOUT_REDIRECT_URL = '/dashboard/'
+# These match the 'name' attributes in your urls.py
+LOGIN_URL = 'login'
+LOGIN_REDIRECT_URL = 'property_dashboard'  # Or whatever the name is in property.urls
+LOGOUT_REDIRECT_URL = 'login'
