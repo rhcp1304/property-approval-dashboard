@@ -15,7 +15,8 @@
         /* Large & Zoomed Thumbnail */
         .slide-container {
             position: relative;
-            width: 320px;
+            width: 100%;
+            max-width: 320px;
             height: 180px;
             overflow: hidden;
             border-radius: 8px;
@@ -23,7 +24,6 @@
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             background-color: #000;
             transition: transform 0.2s ease-in-out;
-            margin-left: 0 !important;
         }
 
         .slide-preview {
@@ -45,44 +45,86 @@
             font-weight: bold; z-index: 2;
         }
 
-        /* Table Structure */
-        .table { table-layout: fixed; width: 100%; border-collapse: collapse; }
-        .table thead { background-color: #000000; color: #ffffff; }
-        .table th, .table td { padding: 15px 10px; vertical-align: middle; }
-
-        /* Typography */
+        /* Typography & Badges */
         .market-hierarchy { font-size: 0.9rem; line-height: 1.5; color: #000; }
         .text-label { font-size: 0.75rem; text-transform: uppercase; font-weight: bold; color: #000; }
         .rank-badge { font-size: 0.75rem; background: #e9ecef; padding: 1px 6px; border-radius: 4px; font-weight: 600; color: #333; }
         .financial-text { font-weight: bold; font-size: 1.1rem; color: #000; }
-
-        /* Status Badges */
         .badge { border: 1px solid #000000; font-weight: 600; font-size: 0.75rem; }
         .badge-hold { background-color: #6c757d; color: white; }
         .badge-conditional { background-color: #17a2b8; color: white; }
 
-        /* Remark Preview Box */
         .remark-preview {
             font-size: 0.85rem; background: #ffffff; border: 1px solid #000;
             padding: 10px; border-radius: 4px; min-height: 60px; color: #000;
         }
 
-        /* Column Widths */
-        .col-sno { width: 60px; text-align: center; }
-        .col-slide { width: 340px; text-align: left; }
-        .col-market { width: 260px; }
-        .col-finance { width: 160px; }
-        .col-remarks { width: 280px; }
-        .col-status { width: 160px; }
-        .col-resources { width: 180px; }
+        /* Filter Section Styling */
+        .filter-bar {
+            background-color: #fff;
+            padding: 15px 20px;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        /* Responsive Table Magic */
+        @media (max-width: 768px) {
+            .table-responsive { border: none; }
+            .table thead { display: none; }
+            .table, .table tbody, .table tr, .table td { display: block; width: 100% !important; }
+
+            .table tr {
+                margin-bottom: 2rem;
+                border: 2px solid #000;
+                border-radius: 12px;
+                background: #fff;
+                overflow: hidden;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            }
+
+            .table td {
+                text-align: left !important;
+                border: none;
+                padding: 12px 15px;
+                position: relative;
+                border-bottom: 1px solid #eee;
+            }
+
+            .table td:last-child { border-bottom: none; }
+
+            .mobile-label {
+                display: block;
+                font-size: 0.7rem;
+                text-transform: uppercase;
+                font-weight: 800;
+                color: #666;
+                margin-bottom: 4px;
+            }
+
+            .slide-container { max-width: 100%; height: 210px; }
+            .col-sno { background: #000; color: #fff; text-align: left !important; }
+        }
+
+        @media (min-width: 769px) {
+            .mobile-label { display: none; }
+            .table { table-layout: fixed; width: 100%; border-collapse: collapse; }
+            .table thead { background-color: #000000; color: #ffffff; }
+            .table th, .table td { padding: 15px 10px; vertical-align: middle; }
+            .col-sno { width: 60px; text-align: center; }
+            .col-slide { width: 340px; }
+            .col-market { width: 260px; }
+            .col-finance { width: 160px; }
+            .col-remarks { width: 280px; }
+            .col-status { width: 160px; }
+            .col-resources { width: 180px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="container-fluid py-5">
+<div class="container-fluid py-4 py-md-5">
 
     {% if messages %}
-    <div class="container-fluid mb-4">
+    <div class="mb-4">
         {% for message in messages %}
         <div class="alert alert-success alert-dismissible fade show border-0 shadow-sm" role="alert" style="background-color: #d1e7dd; color: #0f5132; border-left: 5px solid #198754 !important;">
             <strong>Success!</strong> {{ message }}
@@ -93,11 +135,11 @@
     {% endif %}
 
     <div class="card shadow-lg border-0">
-        <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center">
+        <div class="card-header bg-white py-3 border-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
             <h4 class="mb-0 fw-bold">Property Approval Inventory</h4>
 
-            <div class="d-flex align-items-center gap-3">
-                <span class="badge bg-dark rounded-pill px-3" style="color: white !important;">Total: {{ properties.count }}</span>
+            <div class="d-flex align-items-center gap-2">
+                <span class="badge bg-dark rounded-pill px-3" style="color: white !important;">Total Items: {{ total_count }}</span>
 
                 {% if user.is_authenticated %}
                     <form action="{% url 'logout' %}" method="post" class="m-0">
@@ -108,6 +150,34 @@
                     <a href="{% url 'login' %}?next={{ request.path }}" class="btn btn-sm btn-dark rounded-pill px-4 text-white">Login</a>
                 {% endif %}
             </div>
+        </div>
+
+        <div class="filter-bar">
+            <form method="GET" class="row g-2 align-items-end">
+                <div class="col-12 col-md-2">
+                    <label class="text-label mb-1">Zone</label>
+                    <select name="zone" class="form-select form-select-sm border-dark shadow-none">
+                        <option value="">All Zones</option>
+                        {% for zone in zones %}
+                            <option value="{{ zone }}" {% if current_zone == zone %}selected{% endif %}>{{ zone }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="col-6 col-md-2">
+                    <label class="text-label mb-1">From Date</label>
+                    <input type="date" name="start_date" class="form-control form-control-sm border-dark shadow-none" value="{{ request.GET.start_date }}">
+                </div>
+                <div class="col-6 col-md-2">
+                    <label class="text-label mb-1">To Date</label>
+                    <input type="date" name="end_date" class="form-control form-control-sm border-dark shadow-none" value="{{ request.GET.end_date }}">
+                </div>
+                <div class="col-12 col-md-auto">
+                    <button type="submit" class="btn btn-sm btn-dark px-4 rounded-pill">Apply Filters</button>
+                    {% if request.GET.zone or request.GET.start_date or request.GET.end_date %}
+                        <a href="{% url 'property_dashboard' %}" class="btn btn-sm btn-outline-secondary px-3 rounded-pill">Clear</a>
+                    {% endif %}
+                </div>
+            </form>
         </div>
 
         <div class="card-body p-0">
@@ -125,14 +195,18 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for property in properties %}
+                        {% for property in page_obj %}
                         <tr>
-                            <td class="col-sno fw-bold text-center">{{ forloop.counter }}</td>
+                            <td class="col-sno fw-bold">
+                                <span class="mobile-label" style="color: #aaa;">Item Number</span>
+                                {{ page_obj.start_index|add:forloop.counter0 }}
+                            </td>
 
                             <td class="col-slide">
+                                <span class="mobile-label">Property Slide</span>
                                 {% if property.ppt_link %}
                                     <a href="{{ property.ppt_link }}" target="_blank" class="text-decoration-none">
-                                        <div class="slide-container">
+                                        <div class="slide-container mx-auto mx-md-0">
                                             <img src="{% url 'slide_proxy' %}?url={{ property.ppt_link|urlencode }}"
                                                  class="slide-preview"
                                                  onerror="this.src='https://placehold.co/320x180?text=Slide+Preview';">
@@ -143,28 +217,35 @@
                             </td>
 
                             <td class="col-market">
+                                <span class="mobile-label">Market Details</span>
                                 <div class="market-hierarchy">
+                                    <div class="mb-1"><span class="text-label">Date:</span> <strong>{{ property.presentation_date|date:"d M Y"|default:"-" }}</strong></div>
+                                    <div class="mb-1"><span class="text-label">Zone:</span> <span class="badge bg-light text-dark border-dark">{{ property.zone_name|default:"-" }}</span></div>
                                     <div class="mb-1"><span class="text-label">Circle:</span> <strong>{{ property.circle|default:"-" }}</strong></div>
                                     <div class="mb-1">
                                         <span class="text-label">Hub:</span> <strong>{{ property.hub|default:"-" }}</strong>
                                         <span class="rank-badge">Rank: {{ property.hub_rank|default:"N/A" }}</span>
                                     </div>
-                                    <div class="mb-1">
-                                        <span class="text-label">City:</span> <strong>{{ property.city|default:"-" }}</strong>
-                                        <span class="rank-badge">Rank: {{ property.city_rank|default:"N/A" }}</span>
-                                    </div>
-                                    <div class="mt-2 text-decoration-underline fw-bold">{{ property.final_market_name }}</div>
+                                    <div class="mt-2 text-decoration-underline fw-bold" style="font-size: 1rem;">{{ property.final_market_name }}</div>
                                 </div>
                             </td>
 
                             <td class="col-finance">
-                                <div class="text-label">Proj. Revenue</div>
-                                <div class="financial-text">₹ {{ property.projected_revenue_lakhs }} L</div>
-                                <div class="text-label mt-3">Rent</div>
-                                <div class="fw-bold">₹ {{ property.total_rent_maintenance }}</div>
+                                <span class="mobile-label">Financials</span>
+                                <div class="row g-0">
+                                    <div class="col-6 col-md-12">
+                                        <div class="text-label">Proj. Revenue</div>
+                                        <div class="financial-text">₹ {{ property.projected_revenue_lakhs }} L</div>
+                                    </div>
+                                    <div class="col-6 col-md-12 mt-md-3">
+                                        <div class="text-label">Total Rent</div>
+                                        <div class="fw-bold">₹ {{ property.total_rent_maintenance }}</div>
+                                    </div>
+                                </div>
                             </td>
 
                             <td class="col-remarks">
+                                <span class="mobile-label">Founder Remarks</span>
                                 <div class="remark-preview mb-2">
                                     {{ property.remarks|default:"<span class='text-muted small italic'>No remarks yet...</span>"|safe }}
                                 </div>
@@ -199,7 +280,8 @@
                             </td>
 
                             <td class="col-status text-center">
-                                <div style="width: 140px;" class="mx-auto">
+                                <span class="mobile-label">Approval Status</span>
+                                <div style="width: 100%; max-width: 160px;" class="mx-auto mx-md-auto">
                                     {% if property.status == 'Approved' %}
                                         <span class="badge rounded-pill bg-success px-3 py-2 w-100" style="color: white !important;">Approved</span>
                                     {% elif property.status == 'pending' %}
@@ -217,16 +299,19 @@
                             </td>
 
                             <td class="col-resources text-center">
-                                <div class="d-grid gap-2 mx-auto" style="width: 140px;">
+                                <span class="mobile-label">Available Resources</span>
+                                <div class="d-flex d-md-grid gap-2 mx-auto justify-content-center" style="max-width: 200px;">
                                     {% if property.ai_summary_link %}
-                                        <a href="{{ property.ai_summary_link }}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill">AI Summary</a>
+                                        <a href="{{ property.ai_summary_link }}" target="_blank" class="btn btn-sm btn-outline-primary rounded-pill px-3">AI Summary</a>
                                     {% endif %}
                                     {% if property.recording_link %}
-                                        <a href="{{ property.recording_link }}" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill">Recording</a>
+                                        <a href="{{ property.recording_link }}" target="_blank" class="btn btn-sm btn-outline-dark rounded-pill px-3">Recording</a>
                                     {% endif %}
                                 </div>
                             </td>
                         </tr>
+                        {% empty %}
+                        <tr><td colspan="7" class="text-center py-5">No records found.</td></tr>
                         {% endfor %}
                     </tbody>
                 </table>

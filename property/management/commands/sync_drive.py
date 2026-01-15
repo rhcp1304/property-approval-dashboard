@@ -2,6 +2,8 @@ import os.path
 import io
 import re
 from urllib.parse import urlparse, parse_qs
+from datetime import datetime
+import dateutil.parser as dparser
 
 # Lightweight libraries
 from pptx import Presentation
@@ -23,7 +25,11 @@ SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 
 class Command(BaseCommand):
-    help = "Syncs properties; captures Google Drive thumbnails, PDF status, and granular Market info."
+    help = "Syncs properties; captures dates from parent folders and handles slashes in names."
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.folder_cache = {}  # To avoid hitting Drive API for the same parent multiple times
 
     def handle(self, *args, **options):
         # 1. Google Drive Authentication
@@ -63,6 +69,8 @@ class Command(BaseCommand):
             if item['mimeType'] == 'application/vnd.google-apps.folder':
                 folder_data[item['id']] = {
                     'name': item['name'],
+                    'id': item['id'],
+                    'parents': item.get('parents', []),
                     'ppt_id': None, 'ppt_link': None,
                     'pdf_id': None, 'pdf_link': None,
                     'mp4_link': None, 'thumb_link': None
@@ -92,36 +100,39 @@ class Command(BaseCommand):
 
         for f_id, data in folder_data.items():
             if data['ppt_id'] and data['pdf_id']:
-                safe_name = re.sub(r'[\\/*?:"<>|]', "_", data['name'])
-                local_pptx = os.path.join('downloads', f"{safe_name}.pptx")
-                local_pdf = os.path.join('downloads', f"{safe_name}_sum.pdf")
+                # --- FIX: RETAIN ACTUAL FILENAME WITH SLASHES ---
+                # We replace the illegal keyboard '/' with a visual '∕' (Unicode U+2215)
+                visual_slash_name = data['name'].replace('/', '∕')
+
+                local_pptx = os.path.join('downloads', f"{visual_slash_name}.pptx")
+                local_pdf = os.path.join('downloads', f"{visual_slash_name}_sum.pdf")
 
                 try:
                     self.stdout.write(f"Syncing: {data['name']}")
+
+                    # Search for date in hierarchy
+                    presentation_date = self.find_date_in_parents(service, f_id)
+
                     self.download_file(service, data['ppt_id'], local_pptx)
                     self.download_file(service, data['pdf_id'], local_pdf)
 
-                    # A. Logic Extraction
                     retail_url = self.extract_retail_link(local_pptx)
                     prop_id = self.get_property_id(retail_url)
                     extracted_status = self.extract_status_from_pdf(local_pdf)
 
-                    # B. PPT Extraction (Now uses 'self' and wrapped in try/except)
                     try:
                         ppt_info = self.extract_all_ppt_info(local_pptx)
-                    except Exception as e:
-                        self.stdout.write(self.style.WARNING(f"  -> PPT Data parse failed for {data['name']}"))
+                    except Exception:
                         ppt_info = {}
 
-                    # C. Create Record (Safely using .get() to avoid KeyErrors)
                     PropertyRecord.objects.create(
                         property_id=prop_id,
+                        presentation_date=presentation_date,  # POPULATED FROM FOLDER HIERARCHY
                         circle=ppt_info.get('circle'),
                         hub=ppt_info.get('hub'),
                         hub_rank=ppt_info.get('hub_rank'),
                         city=ppt_info.get('city'),
                         city_rank=ppt_info.get('city_rank'),
-                        # Fallback to folder name if extraction fails
                         final_market_name=ppt_info.get('final_market_name') or data['name'],
                         zone_name=ppt_info.get('zone_name'),
                         ppt_link=data.get('ppt_link'),
@@ -133,71 +144,70 @@ class Command(BaseCommand):
                         total_rent_maintenance=ppt_info.get('rent', 'N/A')
                     )
 
-                    self.stdout.write(self.style.SUCCESS(f"  -> Saved Successfully."))
+                    self.stdout.write(self.style.SUCCESS(f"  -> Saved {data['name']} (Date: {presentation_date})"))
                     count += 1
 
                 except Exception as e:
-                    self.stdout.write(self.style.ERROR(f"  -> CRITICAL Error on {data['name']}: {e}"))
+                    self.stdout.write(self.style.ERROR(f"  -> Error on {data['name']}: {e}"))
 
-        self.stdout.write(self.style.SUCCESS(f"\nFinished! Processed {count} records."))
+    def find_date_in_parents(self, service, folder_id):
+        """Recursively walks up Drive parents to find a folder name that looks like a date."""
+        current_id = folder_id
+
+        while current_id:
+            # Check cache first to save API quota
+            if current_id in self.folder_cache:
+                folder_meta = self.folder_cache[current_id]
+            else:
+                folder_meta = service.files().get(fileId=current_id, fields="name, parents").execute()
+                self.folder_cache[current_id] = folder_meta
+
+            name = folder_meta.get('name', '')
+
+            # Try to parse date from folder name
+            try:
+                # fuzzy=True handles strings like "Meeting 25 Jan 2015"
+                parsed_date = dparser.parse(name, fuzzy=True).date()
+                # Sanity check: ensure it's a plausible year for Lenskart properties
+                if 2010 < parsed_date.year < 2030:
+                    return parsed_date
+            except (ValueError, OverflowError):
+                pass
+
+            # Move to next parent
+            parents = folder_meta.get('parents')
+            current_id = parents[0] if parents else None
+
+        return None
 
     def extract_all_ppt_info(self, path):
-        results = {
-            'circle': None, 'hub': None, 'hub_rank': None,
-            'city': None, 'city_rank': None, 'final_market_name': None,
-            'zone_name': None, 'revenue': "N/A", 'rent': "N/A"
-        }
+        results = {'circle': None, 'hub': None, 'hub_rank': None, 'city': None,
+                   'city_rank': None, 'final_market_name': None, 'zone_name': None,
+                   'revenue': "N/A", 'rent': "N/A"}
         try:
             prs = Presentation(path)
             if not prs.slides: return results
-
-            # --- 1. SLIDE 1: CONTEXT EXTRACTION ---
             first_slide = prs.slides[0]
-            slide1_text = ""
-            for shape in first_slide.shapes:
-                if hasattr(shape, "text"):
-                    slide1_text += shape.text + "\n"
+            slide1_text = "".join([shape.text + "\n" for shape in first_slide.shapes if hasattr(shape, "text")])
 
-            # Zone Extraction
-            zone_match = re.search(r"ZONE\s*:\s*(.*?)(?:\s*STATE|\s*CITY|\s*PIN CODE|$)",
-                                   slide1_text, re.IGNORECASE | re.DOTALL)
+            zone_match = re.search(r"ZONE\s*:\s*(.*?)(?:\s*STATE|\s*CITY|\s*PIN CODE|$)", slide1_text,
+                                   re.IGNORECASE | re.DOTALL)
             if zone_match:
                 results['zone_name'] = re.sub(r'\s*\[Image \d+\]\s*', '', zone_match.group(1)).strip()
 
-            # Market Hierarchy Extraction
-            # We look for the pattern containing the parentheses for ranks
             market_match = re.search(r".*?_.*?\(.*?\)_.*?\(.*?\)_.*", slide1_text, re.IGNORECASE)
-
             if market_match:
-                full_string = market_match.group(0).strip()
-
-                # Split the string by underscores
-                parts = full_string.split('_')
-
-                # We work backwards from the end to ensure we get the right fields
-                # regardless of how many prefixes (Add_, BD_) are at the start.
+                parts = market_match.group(0).strip().split('_')
                 if len(parts) >= 4:
-                    # The last 3 parts are always: Final Market, City, Hub
                     results['final_market_name'] = parts[-1].strip()
-
-                    city_part = parts[-2].strip()
-                    c_match = re.search(r"(.*?)\s*\((.*?)\)", city_part)
-                    results['city'] = c_match.group(1).strip() if c_match else city_part
-                    results['city_rank'] = c_match.group(2).strip() if c_match else None
-
-                    hub_part = parts[-3].strip()
-                    h_match = re.search(r"(.*?)\s*\((.*?)\)", hub_part)
-                    results['hub'] = h_match.group(1).strip() if h_match else hub_part
-                    results['hub_rank'] = h_match.group(2).strip() if h_match else None
-
-                    # The Circle is everything before the Hub, but we strip the prefixes
-                    # We take the part exactly before the hub index
-                    circle_raw = parts[-4].strip()
-                    # Strip "Add", "BD", "Presentation", etc.
-                    results['circle'] = re.sub(r'^(Add|BD|Presentation|PPT)\s*', '', circle_raw,
+                    for key, part_idx, rank_key in [('city', -2, 'city_rank'), ('hub', -3, 'hub_rank')]:
+                        p = parts[part_idx].strip()
+                        m = re.search(r"(.*?)\s*\((.*?)\)", p)
+                        results[key] = m.group(1).strip() if m else p
+                        results[rank_key] = m.group(2).strip() if m else None
+                    results['circle'] = re.sub(r'^(Add|BD|Presentation|PPT)\s*', '', parts[-4].strip(),
                                                flags=re.IGNORECASE).strip()
 
-            # --- 2. GLOBAL SCAN: FINANCIALS ---
             for slide in prs.slides:
                 txt = ""
                 for shape in slide.shapes:
@@ -205,19 +215,17 @@ class Command(BaseCommand):
                     if shape.shape_type == MSO_SHAPE_TYPE.TABLE:
                         for row in shape.table.rows:
                             for cell in row.cells: txt += cell.text + " "
-
                 if results['revenue'] == "N/A":
                     rev_m = re.search(r'GeoIQ Revenue Projection 2025.*?\n?([\d,.]+)', txt, re.IGNORECASE | re.DOTALL)
                     if rev_m: results['revenue'] = rev_m.group(1).replace(',', '')
-
                 if results['rent'] == "N/A":
                     rent_m = re.search(r'Total Rent \+ Maintenance.*?\n?([\d,.]+)', txt, re.IGNORECASE | re.DOTALL)
                     if rent_m: results['rent'] = rent_m.group(1).replace(',', '')
+            return results
+        except Exception:
+            return results
 
-            return results
-        except Exception as e:
-            self.stdout.write(self.style.WARNING(f"    PPT Extraction failed: {e}"))
-            return results
+    # ... (extract_status_from_pdf, extract_retail_link, get_property_id, get_all_files, download_file remain the same) ...
 
     def extract_status_from_pdf(self, path):
         try:
@@ -271,11 +279,12 @@ class Command(BaseCommand):
         return items
 
     def download_file(self, service, file_id, destination):
-        request = service.files().get_media(fileId=file_id)
         meta = service.files().get(fileId=file_id, fields='mimeType').execute()
         if meta['mimeType'] == 'application/vnd.google-apps.presentation':
             request = service.files().export_media(fileId=file_id,
                                                    mimeType='application/vnd.openxmlformats-officedocument.presentationml.presentation')
+        else:
+            request = service.files().get_media(fileId=file_id)
         fh = io.BytesIO()
         downloader = MediaIoBaseDownload(fh, request)
         done = False
