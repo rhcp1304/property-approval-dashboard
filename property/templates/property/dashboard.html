@@ -171,9 +171,18 @@
                     <label class="text-label mb-1">To Date</label>
                     <input type="date" name="end_date" class="form-control form-control-sm border-dark shadow-none" value="{{ request.GET.end_date }}">
                 </div>
+                <div class="col-12 col-md-2">
+                    <label class="text-label mb-1">Status</label>
+                    <select name="status" class="form-select form-select-sm border-dark shadow-none">
+                        <option value="">All Statuses</option>
+                        {% for s in statuses %}
+                            <option value="{{ s }}" {% if current_status == s %}selected{% endif %}>{{ s }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
                 <div class="col-12 col-md-auto">
                     <button type="submit" class="btn btn-sm btn-dark px-4 rounded-pill">Apply Filters</button>
-                    {% if request.GET.zone or request.GET.start_date or request.GET.end_date %}
+                    {% if request.GET.zone or request.GET.status or request.GET.start_date or request.GET.end_date %}
                         <a href="{% url 'property_dashboard' %}" class="btn btn-sm btn-outline-secondary px-3 rounded-pill">Clear</a>
                     {% endif %}
                 </div>
@@ -221,11 +230,29 @@
                                 <div class="market-hierarchy">
                                     <div class="mb-1"><span class="text-label">Date:</span> <strong>{{ property.presentation_date|date:"d M Y"|default:"-" }}</strong></div>
                                     <div class="mb-1"><span class="text-label">Zone:</span> <span class="badge bg-light text-dark border-dark">{{ property.zone_name|default:"-" }}</span></div>
-                                    <div class="mb-1"><span class="text-label">Circle:</span> <strong>{{ property.circle|default:"-" }}</strong></div>
-                                    <div class="mb-1">
-                                        <span class="text-label">Hub:</span> <strong>{{ property.hub|default:"-" }}</strong>
-                                        <span class="rank-badge">Rank: {{ property.hub_rank|default:"N/A" }}</span>
-                                    </div>
+
+                                    {% if not property.circle and not property.hub and not property.city %}
+                                        <div class="mt-2">
+                                            <span class="badge bg-dark text-white px-2 py-1">BD CATCHMENT</span>
+                                        </div>
+                                    {% else %}
+                                        <div class="mb-1"><span class="text-label">Circle:</span> <strong>{{ property.circle|default:"-" }}</strong></div>
+
+                                        <div class="mb-1">
+                                            <span class="text-label">Hub:</span> <strong>{{ property.hub|default:"-" }}</strong>
+                                            {% if property.hub_rank and property.hub_rank != "N/A" %}
+                                                <span class="rank-badge">Hub Rank: {{ property.hub_rank }}</span>
+                                            {% endif %}
+                                        </div>
+
+                                        <div class="mb-1">
+                                            <span class="text-label">City:</span> <strong>{{ property.city|default:"-" }}</strong>
+                                            {% if property.city_rank and property.city_rank != "N/A" %}
+                                                <span class="rank-badge">City Rank: {{ property.city_rank }}</span>
+                                            {% endif %}
+                                        </div>
+                                    {% endif %}
+
                                     <div class="mt-2 text-decoration-underline fw-bold" style="font-size: 1rem;">{{ property.final_market_name }}</div>
                                 </div>
                             </td>
