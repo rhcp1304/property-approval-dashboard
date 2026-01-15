@@ -1,9 +1,1527 @@
 [
 {
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 3,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 3,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 3,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 3,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 2,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 2,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 2,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 2,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add property record",
+    "content_type": 7,
+    "codename": "add_propertyrecord"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change property record",
+    "content_type": 7,
+    "codename": "change_propertyrecord"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete property record",
+    "content_type": 7,
+    "codename": "delete_propertyrecord"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view property record",
+    "content_type": 7,
+    "codename": "view_propertyrecord"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add lenskart store",
+    "content_type": 10,
+    "codename": "add_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change lenskart store",
+    "content_type": 10,
+    "codename": "change_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete lenskart store",
+    "content_type": 10,
+    "codename": "delete_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view lenskart store",
+    "content_type": 10,
+    "codename": "view_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add approved lenskart store",
+    "content_type": 8,
+    "codename": "add_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change approved lenskart store",
+    "content_type": 8,
+    "codename": "change_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete approved lenskart store",
+    "content_type": 8,
+    "codename": "delete_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view approved lenskart store",
+    "content_type": 8,
+    "codename": "view_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add catchment",
+    "content_type": 9,
+    "codename": "add_catchment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change catchment",
+    "content_type": 9,
+    "codename": "change_catchment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete catchment",
+    "content_type": 9,
+    "codename": "delete_catchment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view catchment",
+    "content_type": 9,
+    "codename": "view_catchment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add approved lenskart store",
+    "content_type": 11,
+    "codename": "add_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change approved lenskart store",
+    "content_type": 11,
+    "codename": "change_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete approved lenskart store",
+    "content_type": 11,
+    "codename": "delete_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view approved lenskart store",
+    "content_type": 11,
+    "codename": "view_approvedlenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add lenskart store",
+    "content_type": 12,
+    "codename": "add_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change lenskart store",
+    "content_type": 12,
+    "codename": "change_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete lenskart store",
+    "content_type": 12,
+    "codename": "delete_lenskartstore"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view lenskart store",
+    "content_type": 12,
+    "codename": "view_lenskartstore"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$gJGn09kyV2OttZDeT8pU0I$864zzc7PjVRoYo4ZfTLTq5lHEB6jwQuvZOkZHVYcCBQ=",
+    "last_login": "2026-01-14T23:01:41.802Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-01-08T12:30:27.936Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "property",
+    "model": "propertyrecord"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "catchment",
+    "model": "approvedlenskartstore"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "catchment",
+    "model": "catchment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "catchment",
+    "model": "lenskartstore"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "store",
+    "model": "approvedlenskartstore"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "store",
+    "model": "lenskartstore"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0hw5cvcxliq2xdoj3vi8m2kk6cwetatj",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vdpA2:fnDEaNjE68sXwozur4o488tlrglwUGi63NNHSdq5H5w",
+    "expire_date": "2026-01-22T12:30:42.639Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1vjxca43llplmar0y5d0j8t3p36jd826",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vetWy:Tw3DMHBNB69lJ_WlpKRZMoucj1S-D8DDKhHkiI1I9_8",
+    "expire_date": "2026-01-25T11:22:48.718Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6g4xsaop5z3kroftl8c0tybtj9m4efs5",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vfBqD:rktiN7r6AUGWfVcyeppCbPTCzs9CHKXebhdhwyYMmDg",
+    "expire_date": "2026-01-26T06:55:53.715Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "h8a32kol90isjoalan8djisltue51e9f",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vewAz:OYB_7tcojYlAemzOnZSmMdnsbiZzOdO5MjiRx7OukB8",
+    "expire_date": "2026-01-25T14:12:17.259Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ikp8mtf6o2i3wquc34peejvlfp6yc6sf",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vfCDK:q4xFmQhOn1w1km9gguau7SOd-03EPppVB-7nIRXYcak",
+    "expire_date": "2026-01-26T07:19:46.929Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ja0cmbrr16u197cxkhyvc1xhkcy904m0",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vg9rx:jP7t4aBb--pXnmrDd0-07fIss1VDEU_j-i54d1w1dZY",
+    "expire_date": "2026-01-28T23:01:41.804Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "lfu6lw7hucxrkcktfjl82j1z5np1yhb1",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vevmZ:7twJAM4ewWS_JGD-LvsSgPsqmDK2W8Ter2LyqWAOTno",
+    "expire_date": "2026-01-25T13:47:03.817Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "miwraxg22dv4ev3tyw73w5i4ffgn2jaj",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vfydH:CNx5zUTXgW7DdDoM6ytUZo1dbRAf-agk8AW-HUAaL6s",
+    "expire_date": "2026-01-28T11:01:47.210Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "onleezimwdktkwkdpohhotb0x9codbkg",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vexHL:xRjSZIm4BdIgBCiVlNWqYapreBeTjGGexiO45ZXGyYY",
+    "expire_date": "2026-01-25T15:22:55.400Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p1h9myfvowz5nviovba9rddk5qbfjxwz",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vfBeK:7vJbF4LFsSlpKGq0wemsjaOYb4qebWmGv4f2IoJ8Fm0",
+    "expire_date": "2026-01-26T06:43:36.536Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "xq27jyunmdwvw8qx0pzype2znzz8m7bx",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vex25:9EhUkhUvhpLdKdZFEhtpBnnyxlcV91BJVAsTMd3yzBY",
+    "expire_date": "2026-01-25T15:07:09.732Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ywsrbucfdftvrpir37md0xp843u8yry3",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAQRf-FtSHyBpfu-w1kBgapGkhKuzL-uzbpQrf3nHNfLMK21rgNWuKc2YUJdvrdENKD2g7yHdqt89TbuszId4UfdPCpZ3peD_fvoMKo31pqF4qS2UoyhYLTyfqUSBoMmrzXZ6EQ0AM6Y4R1RIpIBCAQxga0hb0_4F84HA:1vfBor:-v35hXOw2wqIZNCjXxKpgbwSWSMW_eV33dNwR9tvCjY",
+    "expire_date": "2026-01-26T06:54:29.429Z"
+  }
+},
+{
   "model": "property.propertyrecord",
-  "pk": 20916,
+  "pk": 33,
+  "fields": {
+    "property_id": null,
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "FOFO LKST823",
+    "zone_name": null,
+    "status": "Approved",
+    "projected_revenue_lakhs": "N/A",
+    "total_rent_maintenance": "N/A",
+    "ppt_link": "https://docs.google.com/presentation/d/1b0n96VxSfgelqwehMjojxNeBk0JlVuKa/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1j62p9tl4NZodQa5sgOmwMDSZ09T2gWy5/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/116omBPzBi-5k5KDzTrtU4CVuImejc5tI/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPJ7ewU95M-FBajHTm2QxHg7MvWB8rtMgnk1POXWiAOWSaYtE9yJYuMeh3mXUnCKwRc9JSMyevrRgiD_dywtQd6BAtYkXNwJ-kXe6KIInm3OJxigA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:30:35.826Z",
+    "updated_at": "2026-01-15T07:30:35.826Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 34,
+  "fields": {
+    "property_id": null,
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "FOFO_Seegehalli",
+    "zone_name": null,
+    "status": "Conditionally Approved",
+    "projected_revenue_lakhs": "N/A",
+    "total_rent_maintenance": "N/A",
+    "ppt_link": "https://docs.google.com/presentation/d/14RcXwYowh4v55tRyYRRum5QF5SuHP6Cp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1cBHv9LNoYA9kaVHT-qs2xnxisaVlTVrO/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1X52dk--FaT2KonvydyfJGRKkkY82YsDZ/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPx8MEBWPiJd680lasMjgwrktw7xLF6Mb_XhLnO-bANqqu8WnBqURzivIKfZNV8ZsUjnwMtfZCKpNna-uvu-ELZRpJVegIEMn3ErgYidpl_-VPN4g=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:30:42.580Z",
+    "updated_at": "2026-01-15T07:30:42.580Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 35,
+  "fields": {
+    "property_id": null,
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "FOFO_Kasavahalli",
+    "zone_name": null,
+    "status": "Hold",
+    "projected_revenue_lakhs": "N/A",
+    "total_rent_maintenance": "N/A",
+    "ppt_link": "https://docs.google.com/presentation/d/1py6U7tN3Rav1cRfliinIKXop3uQx5zct/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1WlH4y6ni8UGlwkAoEtX_9NXWXld7VZfo/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/136uRv9uRjLZFviturqlwNp6YYiIftRNU/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOrfg2puObl9txgyZUp6VLH5Gab9mQqFUb2vmQbcITOd6saaEiJwoCF0vzA51rb80BjsYihmaWVB3zi1Hyq_DaMX5Z1gKKo_1x1uTkn9h2d1QleyA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:30:48.524Z",
+    "updated_at": "2026-01-15T07:30:48.524Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 36,
+  "fields": {
+    "property_id": "7936",
+    "presentation_date": "2026-01-14",
+    "circle": "East 2",
+    "hub": "Bhubaneswar",
+    "hub_rank": "55/101",
+    "city": "Bhubaneswar",
+    "city_rank": "22/36",
+    "final_market_name": "Rajiv Nagar",
+    "zone_name": "East",
+    "status": "Approved",
+    "projected_revenue_lakhs": "13.13",
+    "total_rent_maintenance": "60000",
+    "ppt_link": "https://docs.google.com/presentation/d/1lIIx0SXWmzRNzDEW3DV2njvd44pomVHH/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1ENOLmOitCjQH2kKrHTcw9LejoF7kj37H/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1JzRQqRIL4cStWt9Yi4ZghrqsjY4klH85/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN1GCBKqNuxJYrMCMQEN6WO1_JOLNf2BwzHGt5XSeEdF1pw5z1HHwgZrSx7S2m8EaMHHyygFNgMvEAUSzRPzvumpb5zM4AD4hXIPCXqgZCocr3dKg=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:31:04.349Z",
+    "updated_at": "2026-01-15T07:31:04.349Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 37,
+  "fields": {
+    "property_id": "7953",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "Sector 20 Rd, Sector 20, Panchkula, Haryana",
+    "zone_name": "North",
+    "status": "Conditionally Approved",
+    "projected_revenue_lakhs": "15.03",
+    "total_rent_maintenance": "300000",
+    "ppt_link": "https://docs.google.com/presentation/d/1V2feoadSZmGpzQErmkcvj0x4BSaXHCLq/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1olZ1MyjNNze_x44vd9XReJ-4CUzkZkV5/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/126ZuQagN5zd6Qz7xSaWJeqDywjflf7kJ/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM3bBaWvn_h6mOahpo0cpvoZW9EGagekL_jzKIISL2WflZD00mosb0QCGnCjwQ18WjTKgBEg3pkPO-845scqCRoxchYMPs-Q0ZGrfbVZ0SaBuD97Q=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:31:19.907Z",
+    "updated_at": "2026-01-15T07:31:19.907Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 38,
+  "fields": {
+    "property_id": "7673",
+    "presentation_date": "2026-01-14",
+    "circle": "North3",
+    "hub": "Haldwani",
+    "hub_rank": "8/13",
+    "city": "Haldwani",
+    "city_rank": "1/1",
+    "final_market_name": "Bajpur Road",
+    "zone_name": "North",
+    "status": "Approved",
+    "projected_revenue_lakhs": "9.86",
+    "total_rent_maintenance": "85000",
+    "ppt_link": "https://docs.google.com/presentation/d/149LzqR_ytbuKmEzQk1FSRok5Bh7szlvc/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1HSoZelDB_jOfb12v7fIuSwfwQHas5_sr/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1AKWMm0uwbPOfioZo_cPdl2Fj_ui02uCt/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM1FznMjgzK6TWMOT-5jWbShayRcFGwgquxYPNbYjELp4p7ea9N-s_-GRfoqVxKR5Zpg_5O1L2kxRCK-TXvLDu43Ia6dJ6Lb0RQlrFHWDB9pKU1Xg=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:31:36.491Z",
+    "updated_at": "2026-01-15T07:31:36.492Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 39,
+  "fields": {
+    "property_id": "7915",
+    "presentation_date": "2026-01-14",
+    "circle": "North 2",
+    "hub": "Agra",
+    "hub_rank": "13/29",
+    "city": "Jhansi",
+    "city_rank": "3/3",
+    "final_market_name": "Medical Road",
+    "zone_name": "North",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "11.75",
+    "total_rent_maintenance": "90000",
+    "ppt_link": "https://docs.google.com/presentation/d/12hyN9Cwv9r3p9CSNDPur4LhS3h_qluOM/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1OwBZvrwzNGwNPzP05Yp6JkqysfrwHtTn/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1eyk9hXWkyg29JiP_Alh-3M0dHKmKoI1X/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPEscZK1YUcrS3GiZgIefLVY9FiQgwHRMHevkS0OFdf--Vd0RDCd2VPFb2MWRV_EG2H2L-jsomfepz3OgfqqUxLdzsE43oM2wf1dgspHblrJYqv6Q=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:31:48.859Z",
+    "updated_at": "2026-01-15T07:31:48.860Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 40,
+  "fields": {
+    "property_id": "7950",
+    "presentation_date": "2026-01-14",
+    "circle": "South 3",
+    "hub": "Hyderabad",
+    "hub_rank": "55/290",
+    "city": "Hyderabad",
+    "city_rank": "46/215",
+    "final_market_name": "Moosarambagh Dilsukhnagar",
+    "zone_name": "South",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "12.93",
+    "total_rent_maintenance": "100000",
+    "ppt_link": "https://docs.google.com/presentation/d/1eOBpt03LdxaoQTxv-17erZciJbTQ1NpF/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1LrKZ7vr-UyeOHWu_ZEdJg3iDMvWPagMl/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1kkFsP_Ur_7lX7GpracV8-D59rXYb9EXg/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPoGHyocxW4wbOrVdzj54TN24ByufbyH1434_EYLqAi20K-uiYUSpLavGrZ3r-J-0XY53m8ly16RzPkXwsUCUmtgdWXcp3ClMnryudbOJStdSC-LQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:32:04.583Z",
+    "updated_at": "2026-01-15T07:32:04.583Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 41,
+  "fields": {
+    "property_id": "7952",
+    "presentation_date": "2026-01-14",
+    "circle": "South 3",
+    "hub": "Hyderabad",
+    "hub_rank": "222/290",
+    "city": "Sathupalli",
+    "city_rank": "1/1",
+    "final_market_name": "Sathupally Main Rd Sathupally",
+    "zone_name": "South",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "12.26",
+    "total_rent_maintenance": "95000",
+    "ppt_link": "https://docs.google.com/presentation/d/1aF1TrW6krJ8VkZ4KV2aIlc1Gv1fBPKt7/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1Xe7xpzOO9Lmyo1yRhXrmKIAQ9wOh4jYY/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1j8VPjpN67dvUAKd7uAhPDTbL1e4okYgn/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNhvIyvrjVFgHM38EpCZzCnvK8Vv2J0vZok0x9eTdq6CzrbhtfgekEnAdPVGRwO3bQCSeNIJlu08yxadGsUoBS079fui-mQ__nMoCYxWJQAdQ2DuQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:32:19.760Z",
+    "updated_at": "2026-01-15T07:32:19.760Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 42,
+  "fields": {
+    "property_id": "7913",
+    "presentation_date": "2026-01-14",
+    "circle": "South 3",
+    "hub": "Hyderabad",
+    "hub_rank": "125/290",
+    "city": "Hyderabad",
+    "city_rank": "102/215",
+    "final_market_name": "B.N Reddy Nagar.",
+    "zone_name": "South",
+    "status": "Approved",
+    "projected_revenue_lakhs": "13.16",
+    "total_rent_maintenance": "135000",
+    "ppt_link": "https://docs.google.com/presentation/d/1r_XSP-5FQ2MPXsGyuCQmO-o1Y07fmyAi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1dReCkogRThr3uUO2tXO7I-c0-EnJ1qAg/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1D81rCT2Ky-ZTkgJIThvPFcOJ25dDR62Y/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPoyOHa145zbqog9otb-D-ccmZZ8FivRrxEMHr1-7YLlnO5SzuBUo9b4klC1CLN8CkKYBd9SZz2Jhj4poojVUvSEYj7iz2liwmrwHMGfmHCdY9xhw=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:32:31.111Z",
+    "updated_at": "2026-01-15T07:32:31.111Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 43,
+  "fields": {
+    "property_id": "7880",
+    "presentation_date": "2026-01-14",
+    "circle": "Kochi (66/75)",
+    "hub": "Koothattukullam",
+    "hub_rank": null,
+    "city": "",
+    "city_rank": "1/2",
+    "final_market_name": "Kottayam Koothattukulam",
+    "zone_name": "SOUTH",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "11.74",
+    "total_rent_maintenance": "85000",
+    "ppt_link": "https://docs.google.com/presentation/d/1dMkD40qBf84ZY57g06Q31P9Gg4iURC2K/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1SKm-wOAeaMkAB_mtXPtSpRzEwx3r5kHj/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1W5UqH8zV7eaXnzWCui8Gn7g6UTvf8mtw/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPysuSkl8LtuBPCatzFqYCx2vN68zPkKde85fraWriKN-BVTdTZkOXk7m53Npg03Cq9HTk8i88PceFgjw7SWR1PeKA_NHZxyfv3m4mWSV4jm_9RoA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:32:44.954Z",
+    "updated_at": "2026-01-15T07:32:44.954Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 44,
+  "fields": {
+    "property_id": "7880",
+    "presentation_date": "2026-01-14",
+    "circle": "Kochi (66/75)",
+    "hub": "Koothattukullam",
+    "hub_rank": null,
+    "city": "",
+    "city_rank": "1/2",
+    "final_market_name": "Kottayam Koothattukulam",
+    "zone_name": "SOUTH",
+    "status": "Approved",
+    "projected_revenue_lakhs": "11.74",
+    "total_rent_maintenance": "85000",
+    "ppt_link": "https://docs.google.com/presentation/d/1rHxV56nJq33DdwPeZebkjo3VWiVF308C/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1Qtk_K1xjyB2epveNvt5UupW8ONVeIvNp/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/11ER3Tls0Q4NPgvqhUcedD9C26PW74dKX/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOLlQ01W2Npwe8usHRz3FezP8zHJU477c0dRhnWsprIo9hiPGqjfYAGr7qcXjkSv_OXum7-8TLljL5v3vRce9JHdbpJgZXGgMZfumRrvLkBS1IDCA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:33:02.204Z",
+    "updated_at": "2026-01-15T07:33:02.204Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 45,
+  "fields": {
+    "property_id": "7926",
+    "presentation_date": "2026-01-14",
+    "circle": "North 1",
+    "hub": "New Delhi",
+    "hub_rank": "156/194",
+    "city": "Delhi",
+    "city_rank": "145/181",
+    "final_market_name": "Chander Nagar Ghaziabad",
+    "zone_name": "North",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "11.97",
+    "total_rent_maintenance": "115000",
+    "ppt_link": "https://docs.google.com/presentation/d/1rDfVNmkqv3lp4vQfa9hUFVS5jyEuP4-H/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1NNvvSLDd0kdAZnPY75QaR_JJMRJZO-8V/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1Kbh66jMhDFlfWNxab1FtBzx69xCFP0sO/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMBXxiD7C7wI5idNdxI_jkNdiJyd0X5M9RmPjI3PwDtgNePEqZHLmYJjatygAbfjgrnUXSIAah-rKDzd2LDtL3j4rgmFaTSxQ9luDNEBPM1PNzRhw=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:33:18.845Z",
+    "updated_at": "2026-01-15T07:33:18.845Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 46,
+  "fields": {
+    "property_id": "7930",
+    "presentation_date": "2026-01-14",
+    "circle": "North 2",
+    "hub": "Udaipur",
+    "hub_rank": "6/14",
+    "city": "Rajsamand",
+    "city_rank": "1/3",
+    "final_market_name": "100 Feet Road Meera Nagar",
+    "zone_name": "North",
+    "status": "Approved",
+    "projected_revenue_lakhs": "13.07",
+    "total_rent_maintenance": "85000",
+    "ppt_link": "https://docs.google.com/presentation/d/1X4iW-QYPEgOg-6cjZ4mp_hBOx-L-78iy/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1pnJAdastUqWgauiJv0LP3YfYpzuXdTnz/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1HQryhgI10s_KgTdm9y5yKihOxR3wncXF/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNaHqLxJ3LMmnW0DeRYi4XJWJ9yVSLA2S5gma6k9DsJ_T3zlebueo_Zw9_Ot9jep3o6umnwKZRZ3TN_qeno8Jq2MJSTnx07W3h7t2G1Llx6WkoGtQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:33:33.333Z",
+    "updated_at": "2026-01-15T07:33:33.333Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 47,
+  "fields": {
+    "property_id": "7954",
+    "presentation_date": "2026-01-14",
+    "circle": "Hub - Chennai \u000bCity – Chennai\u000bMarket Name – South 2",
+    "hub": "Chennai",
+    "hub_rank": "33/134",
+    "city": "Chennai",
+    "city_rank": "31/123",
+    "final_market_name": "Annanagar East 3rd Avenue",
+    "zone_name": "SOUTH",
+    "status": "Hold",
+    "projected_revenue_lakhs": "16.15",
+    "total_rent_maintenance": "275000",
+    "ppt_link": "https://docs.google.com/presentation/d/10sOavCh6Ae6IKdW5T7XuXczxWKI5gRWw/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1kUNmd55-QJp2Z2eyc7mnB4iiGZuFOW2Z/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/18x6lRMvhEO-psEh9yDdcVhC7_e0GfUPz/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPhhtW1bqy0wirjAvRKaJlZsKWz476JcdiRtIuKe9Lv5i0XPfkoi7EDnjqPai3vFWNV4q3BSqAh4T3Jh6On41864N_INyxns4GasvZxNYI6bB9AIw=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:33:54.809Z",
+    "updated_at": "2026-01-15T07:33:54.809Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 48,
+  "fields": {
+    "property_id": "7849",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "BD-Punjab-Unknown City-Bus Stand Road, Anandpur Sahib",
+    "zone_name": "North",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "11.34",
+    "total_rent_maintenance": "75000",
+    "ppt_link": "https://docs.google.com/presentation/d/1KYtuiaTei3Wj_gp0mSOEW_33EPId7JQ4/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1RX4mUAUJ3h8RrUxKZIeoPg3b_Ei_tvBF/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1lux84CwXAs5AJwrw_tiymLSLnFGkemG1/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOelfSLVAx63JhNzV89oQ8JetugrRFSftZitYU9Q9JK2Bj5g-NCAwKSJ4Qt-Q8gqAUN3-2WpsrP_D_OFc_8gAcNUpfaks8GmIXsAPzGHKnpgSnb9A=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:34:08.843Z",
+    "updated_at": "2026-01-15T07:34:08.843Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 49,
+  "fields": {
+    "property_id": "7959",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "BD-Kerala-Unknown City-Perumpilavu",
+    "zone_name": "South",
+    "status": "Approved",
+    "projected_revenue_lakhs": "13.75",
+    "total_rent_maintenance": "89320",
+    "ppt_link": "https://docs.google.com/presentation/d/1vmz-HPHfiPO2KGZOkxWD5u2CrdMUsIIy/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1-kKxgvnRQ3njCc143Az4sF1t0oiG41KE/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1sVtpDefFvPz6iN9NNhC6ER6GjdYn71m4/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP0W_XMisZ3OocCH15T5f3XWxBH1K48QV7ELANVKqZvO4EL7Zl4gRG8-r1dtQtXq0prvVk2tor3LT5mL32yrmGPT4L7zdwANl9OnfACWwZ_fP10wQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:34:18.848Z",
+    "updated_at": "2026-01-15T07:34:18.848Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 50,
+  "fields": {
+    "property_id": "7804",
+    "presentation_date": "2026-01-14",
+    "circle": "West 1",
+    "hub": "Mumbai",
+    "hub_rank": "147/201",
+    "city": "Mumbai",
+    "city_rank": "122/168",
+    "final_market_name": "Gokul Township Virar West",
+    "zone_name": "West",
+    "status": "Approved",
+    "projected_revenue_lakhs": "15.01",
+    "total_rent_maintenance": "115000",
+    "ppt_link": "https://docs.google.com/presentation/d/1yiLJ-OiY92v4iiQ9uoX-qQZqbMKp-Rop/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1KWADPkojpw-W7cNRVq4Kd5dPg3U9CrbN/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1AG9PTWmuJyDTShSG0GasoucTfapJUn_N/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMZUx34x0yFu6C0nJDYzwwYSAKfwJrI_5SCjm6z9I0lx6_m6KciOrRh4SaZt-9DzKiGNgWxn8Izot3eTu_BwlvGKJbTRldv0FVqb4ancEynfKOUvA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:34:34.232Z",
+    "updated_at": "2026-01-15T07:34:34.232Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 51,
+  "fields": {
+    "property_id": "7927",
+    "presentation_date": "2026-01-14",
+    "circle": "West 2",
+    "hub": "Nashik",
+    "hub_rank": "34/35",
+    "city": "Nashik",
+    "city_rank": "18/19",
+    "final_market_name": "Ashok Stambh, Panchavati",
+    "zone_name": "West",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "9.80",
+    "total_rent_maintenance": "225000",
+    "ppt_link": "https://docs.google.com/presentation/d/1cY9X2ZZEMYjYHlokHIX7VVPUilh3j-vf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1My7U2Jc6h6bOqtBhUDUfBlpsGWvL5Wdu/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1rWgL9NI7fkeouYzx98qra3KIWDV57L7w/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMd9xRuJiBS41Y_15pMZMDWppAshEVXua-nSle57i8sgZkf43FDDJzx27guKkok-hB47qz0RQw_xuWp0VbjNwdHqb4sEtC1GM-GycesK5pe8OO04Q=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:34:51.759Z",
+    "updated_at": "2026-01-15T07:34:51.759Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 52,
+  "fields": {
+    "property_id": "7917",
+    "presentation_date": "2026-01-14",
+    "circle": "West 1",
+    "hub": "Mumbai",
+    "hub_rank": "72/201",
+    "city": "Mumbai",
+    "city_rank": "64/168",
+    "final_market_name": "Shell Colony Chembur",
+    "zone_name": "West",
+    "status": "Hold",
+    "projected_revenue_lakhs": "16.06",
+    "total_rent_maintenance": "345000",
+    "ppt_link": "https://docs.google.com/presentation/d/1xERyQts7EiUNeiiPTfzWi_MIWy9zfm5V/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/10W8ArNm-Is_7xmp2gKBlKZUCHi5jpXAq/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1PfS6iGw4vbTVTlQ_rF1JPZ2Fxl_fL4pK/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNyNwubZziMxcCz3AHmfpz2LZJBV7MrzWTmQ4IJDQrdNCwkpaNBK4AcV9nbO7LoR7WAM48AgFlG0icuunQ7XOqe786COSnB6WAaQvbmHSvlRYLUUw=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:35:06.065Z",
+    "updated_at": "2026-01-15T07:35:06.066Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 53,
+  "fields": {
+    "property_id": "7921",
+    "presentation_date": "2026-01-14",
+    "circle": "West 2",
+    "hub": "Pune",
+    "hub_rank": "108/112",
+    "city": "Pune",
+    "city_rank": "85/89",
+    "final_market_name": "Alandi-Markal Rd, Alandi",
+    "zone_name": "West",
+    "status": "Approved",
+    "projected_revenue_lakhs": "11.17",
+    "total_rent_maintenance": "125000",
+    "ppt_link": "https://docs.google.com/presentation/d/1w17-xhgUQ27YqBsTbzIx7N0YRrzQITiI/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/12jMWwQSZODQNwPAf5zQ_MO23GmbyLx2q/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1CoNXbImZD5Hd5756MXvpvFMNiJJ26WvV/view?usp=drivesdk",
+    "first_slide_image_url": null,
+    "remarks": null,
+    "created_at": "2026-01-15T07:35:26.394Z",
+    "updated_at": "2026-01-15T07:35:26.394Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 54,
+  "fields": {
+    "property_id": "7940",
+    "presentation_date": "2026-01-14",
+    "circle": "East 1",
+    "hub": "Kolkata",
+    "hub_rank": "13/202",
+    "city": "Asansol",
+    "city_rank": "3/11",
+    "final_market_name": "Sentrum Mall Kanyapur",
+    "zone_name": "East",
+    "status": "Approved",
+    "projected_revenue_lakhs": "19.90",
+    "total_rent_maintenance": "N/A",
+    "ppt_link": "https://docs.google.com/presentation/d/1ZwRq7j7VUiynhOzDxdmy-5oIB3tsqCSi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1R1HAoMK4IGWI200214hH403irLxW0NWS/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/15N6Q7HA2TcFWBwaq7KndQo4lf34VjFC4/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNGn_qCmYNuoOaloRsDGVXvMyRcIbXXWDedMXOGgKsxAMyHpXjSCLRq31mS1ijGNiUY_ZYF9M6_LoInpSGQwEyezl796OhwMxNU62nL3FQtgZUwCg=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:35:39.088Z",
+    "updated_at": "2026-01-15T07:35:39.088Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 55,
+  "fields": {
+    "property_id": "7939",
+    "presentation_date": "2026-01-14",
+    "circle": "East 2",
+    "hub": "Ranchi",
+    "hub_rank": "19/78",
+    "city": "Ranchi",
+    "city_rank": "7/25",
+    "final_market_name": "Arghora Chowk",
+    "zone_name": "East",
+    "status": "Approved",
+    "projected_revenue_lakhs": "16.86",
+    "total_rent_maintenance": "175000",
+    "ppt_link": "https://docs.google.com/presentation/d/1ghS7BaLHp7kWfL7FhRzZPYN8Boj0k2fp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1H8Pl6mnRDeBzdTEp4Mwz_FLNaSHjdHcf/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/16dLzYOyghlcmU2A0472vQzIcV89pcVSS/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOf5cZC1GoLpIA1ZR4ywsg6APOeC0IEj-DWY1k4xAf2_h8oKdoboHX7maO-jkoD2Av2AzhKOgao0EnMk4wIMHcbnSzjRPwculzjFwChrgoLmW0CKQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:35:52.886Z",
+    "updated_at": "2026-01-15T07:35:52.886Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 56,
+  "fields": {
+    "property_id": "7918",
+    "presentation_date": "2026-01-14",
+    "circle": "East 2",
+    "hub": "Ranchi",
+    "hub_rank": "67/78",
+    "city": "Ranchi",
+    "city_rank": "18/25",
+    "final_market_name": "Kathitand",
+    "zone_name": "East",
+    "status": "Approved",
+    "projected_revenue_lakhs": "11.16",
+    "total_rent_maintenance": "100000",
+    "ppt_link": "https://docs.google.com/presentation/d/1lwt2ruUArUiAOZQvsfyLOg6MFSo3Vg6H/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/17wUy6kRYVvDaMAHPCZSsF4zHk2-phNeW/view?usp=drivesdk",
+    "recording_link": null,
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMOGQ3iy_yEnfg1fOan8P9GyN-NdGA3EGk6Sg9c-bYRdFTa61fHQLkPTncoaePZrTgQfpb3lCuxRu6CttcaCUzFpC1YnsIzawxQnuyR9gVxdz-eww=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:36:04.530Z",
+    "updated_at": "2026-01-15T07:36:04.530Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 57,
+  "fields": {
+    "property_id": "7934",
+    "presentation_date": "2026-01-14",
+    "circle": "East 2",
+    "hub": "Ranchi",
+    "hub_rank": "56/78",
+    "city": "Khunti",
+    "city_rank": "1/2",
+    "final_market_name": "Subhash Chowk",
+    "zone_name": "East",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "11.40",
+    "total_rent_maintenance": "58000",
+    "ppt_link": "https://docs.google.com/presentation/d/14_dS-1g5AFDyOYNMsm7N8MJe-0ZbFa3H/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1w4WxcITLQgNqdWPNoEPiTooN1fpsCdy5/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1SXppuLfM840fbUyFS2A2Wx9lYdW-ZgIq/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPVhqMWdMHfFIxjzG_B_68QEiQFhmNrhPytjOvQxW6BGGLnqedJSWMWHVfvdAV3vEL417TG1E_r5K88890lo8VWVliNRFeD8rK5JdCE1luNC5dduA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:36:16.102Z",
+    "updated_at": "2026-01-15T07:36:16.102Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 58,
+  "fields": {
+    "property_id": "7906",
+    "presentation_date": "2026-01-14",
+    "circle": "East 2",
+    "hub": "Bhubaneswar",
+    "hub_rank": "42/101",
+    "city": "Bhubaneswar",
+    "city_rank": "17/36",
+    "final_market_name": "Sailashree Vihar",
+    "zone_name": "East",
+    "status": "Approved",
+    "projected_revenue_lakhs": "25.07",
+    "total_rent_maintenance": "120000",
+    "ppt_link": "https://docs.google.com/presentation/d/1En0LpyUHV5eqlA6_K5q5gwbuYdTgSgAV/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/19VBUFyKwXQvflrbODwnHH63YYDtWUZJp/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1TlR_3oaE_kT6ZVj4hPnja5LPUfGRz3Ib/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMXiV_fHJZISCfF68gvsVbVFfZ0UsqkkOarBzMln2fJDa9jDR6lYkWg_nhfNwWr12PybQRU2_GPPPMtoxUDhzp-KuNbnr8nJTsvpZR3wdhuh2yyhA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:36:30.730Z",
+    "updated_at": "2026-01-15T07:36:30.730Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 59,
+  "fields": {
+    "property_id": "7557",
+    "presentation_date": "2026-01-14",
+    "circle": "South 1",
+    "hub": "Bengaluru",
+    "hub_rank": "54/159",
+    "city": "Chikkaballapur",
+    "city_rank": "2/3",
+    "final_market_name": "Sir MV Road",
+    "zone_name": "South",
+    "status": "Approved",
+    "projected_revenue_lakhs": "13.52",
+    "total_rent_maintenance": "130000",
+    "ppt_link": "https://docs.google.com/presentation/d/1TJM77P_Y0dCWFiqcRLtzdZXoATtbxCQ-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1vnnN0JchfNKpokaWjAD0X7pQeTW_WL-X/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1jGPoAJaqr91FMUyaqv0Ldpa7sENVDnEw/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOxuXwzKjLPy98enC5cAzGuZdWmTUvihL-fNd2q_20nlGR9a6ASSLUKtny4eRAjA3vtsngnW5-qTY_D8mzAFwq7Wb0MSJzUYN9ft5LWdc3P9LZMNQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:36:45.481Z",
+    "updated_at": "2026-01-15T07:36:45.481Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 60,
+  "fields": {
+    "property_id": "7911",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "Chhindwara_Parasia Road",
+    "zone_name": "West",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "10.95",
+    "total_rent_maintenance": "100000",
+    "ppt_link": "https://docs.google.com/presentation/d/19Wjo6dOu7YdZh0QjZ9lB9t-wS1WVYChH/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1IBCFiWm5AKzP2LSNjmlTJQmACTFXyJAI/view?usp=drivesdk",
+    "recording_link": null,
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP-jScvYV5O3reT2cdTh02yu_EB2QzkmMYhbBrW-sBcFxoJ1pb7V0vQGG2rxKAigKMcASJF_fK1hiPnKeNsNRjC5-_iCSgDUzTO9ZsGnlMYclXhCg=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:37:01.298Z",
+    "updated_at": "2026-01-15T07:37:01.298Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 61,
+  "fields": {
+    "property_id": "7938",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "BD-Karnataka-Bengaluru-Thambu Chetty Palya Main Rd, Ramamurthy Nagar",
+    "zone_name": "South",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "13.31",
+    "total_rent_maintenance": "110000",
+    "ppt_link": "https://docs.google.com/presentation/d/1nBuHobB0bW-EfQ5Q3zjzY27w0PUJ-dY6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/12-t62r2BHIkySn48LtczqcAAakPRbHiu/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/10ckkEy3Dn5MdqyxgJ_Yk_A8mfslVCcD0/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMjhwrm75wsZw4AOU8vuP6x1oWQSWljiS3bPVKwe4jRyO3PSXffNdeTL59UvbDcj3sNgDYzmVP1DsAmYAB8DWVZ3vIBTFyDPGeRN3i3kn4pyCnsbg=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:37:24.040Z",
+    "updated_at": "2026-01-15T07:37:24.040Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 62,
+  "fields": {
+    "property_id": "7932",
+    "presentation_date": "2026-01-14",
+    "circle": "North 3",
+    "hub": "Amritsar",
+    "hub_rank": "16/21",
+    "city": "Jalandhar",
+    "city_rank": "5/5",
+    "final_market_name": "66ft",
+    "zone_name": "North",
+    "status": "Approved",
+    "projected_revenue_lakhs": "11.05",
+    "total_rent_maintenance": "80000",
+    "ppt_link": "https://docs.google.com/presentation/d/1P_uPCGyKiq9FBXOByUOjXQwm61NVJo-n/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1uHOBvWL19mTzGU0VFAZuRwWXY_Lx5EKn/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1Ds6RVdwqBbGmsocZEDjBqCimACMwyzff/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNaswhZdO04cveAlA5lT3YddL7yB6M0RBG79bVKrfD5LHiz6HWimztMYaO4oNwnB55QYqdp_0lwhMHh84hg46kNRoE8XnggTFX9ClIf2d4zeGivrQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:37:35.164Z",
+    "updated_at": "2026-01-15T07:37:35.164Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 63,
+  "fields": {
+    "property_id": "7467",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "BD-Gujarat-Unknown City-Unknown Market",
+    "zone_name": "West",
+    "status": "Approved",
+    "projected_revenue_lakhs": "14.34",
+    "total_rent_maintenance": "110000",
+    "ppt_link": "https://docs.google.com/presentation/d/1OBJCH6pZcs3zhbDN6e6uixUNXHGiXibt/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/15alntJl6HJ-0gHLKXV4c83Rf-Lwggh_v/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1CliDNYpodDYoYZ6fSCdy_PH4UxevZbJs/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP0-9hXsMtuMv8wJlZacrtinc7ZP2kS2C1izIuW52UPBymI3RPX0HrCcXaDX9Cug9IDdkbonJ6WOAIKRLAU3KaMnUPqGOt2roxQJtADZdxPNjaeSQ=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:37:48.770Z",
+    "updated_at": "2026-01-15T07:37:48.770Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 64,
+  "fields": {
+    "property_id": "7935",
+    "presentation_date": "2026-01-14",
+    "circle": null,
+    "hub": null,
+    "hub_rank": null,
+    "city": null,
+    "city_rank": null,
+    "final_market_name": "BD-Chhattisgarh-Unknown City-Agrasen Chowk, Bilaspur",
+    "zone_name": "West",
+    "status": "Dropped/Rejected",
+    "projected_revenue_lakhs": "14.11",
+    "total_rent_maintenance": "150000",
+    "ppt_link": "https://docs.google.com/presentation/d/1CuOd6ztgBwAzvAYHKU5-jvGJ2ZEkKh3W/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/14RNGy-FBcPJmXP_RtuMoozP0JiNFu5Fj/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1fXsUZizjHjj3XCbf5o4TtZbme4wgw_eX/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMPPuzc-bVa861phDxWUi8_lWsrgaxic5ZVQ43tUSB0xttA2qfzD8EWzN4BONSUm5ipnnB9bPDwdnwE6v6ZKkm5Poc5QH6UGR9Ub4zsbYp3FySMhw=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:38:03.548Z",
+    "updated_at": "2026-01-15T07:38:03.548Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 65,
+  "fields": {
+    "property_id": "7761",
+    "presentation_date": "2026-01-14",
+    "circle": "West 3",
+    "hub": "Indore",
+    "hub_rank": "7/44",
+    "city": "Indore",
+    "city_rank": "6/20",
+    "final_market_name": "Annapurna Road, Indore",
+    "zone_name": "West",
+    "status": "Approved",
+    "projected_revenue_lakhs": "12.09",
+    "total_rent_maintenance": "100000",
+    "ppt_link": "https://docs.google.com/presentation/d/1_5v_m2zVdDvAy405ebNJ8DR9qV0Itrjy/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1Okg2Su6iJSf05VW3gEPVRnH6lreGGTSp/view?usp=drivesdk",
+    "recording_link": null,
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPObEnGDAQFeRv-Gcng7fR9x0YhOyMEMyqYSkeXGFNir5ugQQYkiSm9Yi_NQCtHj5ksHJsn5RXRVVEBJyuduF_oyBMjCJIxJ4W2WhVAvJ4o3XvCPA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:38:17.813Z",
+    "updated_at": "2026-01-15T07:38:17.813Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 66,
+  "fields": {
+    "property_id": "7955",
+    "presentation_date": "2026-01-14",
+    "circle": "West 3",
+    "hub": "Ahmedabad",
+    "hub_rank": "7/115",
+    "city": "Ahmedabad",
+    "city_rank": "6/85",
+    "final_market_name": "One World West, Bopal",
+    "zone_name": "West",
+    "status": "Approved",
+    "projected_revenue_lakhs": "18.66",
+    "total_rent_maintenance": "200000",
+    "ppt_link": "https://docs.google.com/presentation/d/1J4BpxqHkeA1Ga_BQcNg4XOEkLQ8LcEY4/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/1R4FkuDyD-odxi6XJAHGe-HovR39e06bo/view?usp=drivesdk",
+    "recording_link": null,
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPllAbhjsB9gBdLcoProDDtScEfmb5YzsF5003RcKRTBHkzYtIjVQvLocepir77JQuFj6KAXNeejMMiEjWMcjaXje_xLZ-Usg0L8qu-CRnOmy-ARA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:38:30.959Z",
+    "updated_at": "2026-01-15T07:38:30.959Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 67,
+  "fields": {
+    "property_id": "7944",
+    "presentation_date": "2026-01-14",
+    "circle": "East 1",
+    "hub": "Dimapur",
+    "hub_rank": "39/54",
+    "city": "Pasighat",
+    "city_rank": "1/1",
+    "final_market_name": "Main Market",
+    "zone_name": "East",
+    "status": "Approved",
+    "projected_revenue_lakhs": "11.18",
+    "total_rent_maintenance": "80000",
+    "ppt_link": "https://docs.google.com/presentation/d/14v7ertfcmsfVaasen2wMsOuu9mcGUpNS/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
+    "ai_summary_link": "https://drive.google.com/file/d/17E0hiscK7KOesTrXQtRI0MdTmWbcC4vw/view?usp=drivesdk",
+    "recording_link": "https://drive.google.com/file/d/1AFIC_-veBOFzObqlrtm1CKVShEIq-ut0/view?usp=drivesdk",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzjGiU8zW12FlITLQmsmo1j8Kqz7yNST5VSA2yskJi_nKExsz5_Xzvshq40gQuBPQhhDnqpuBSBgmesEAe4TM_Bf7GGlzyUIBLS7O2IOHEVLiIvA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:38:41.298Z",
+    "updated_at": "2026-01-15T07:38:41.298Z"
+  }
+},
+{
+  "model": "property.propertyrecord",
+  "pk": 68,
   "fields": {
     "property_id": "7838",
+    "presentation_date": "2026-01-07",
     "circle": null,
     "hub": null,
     "hub_rank": null,
@@ -17,17 +1535,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1fRG7lhq0-GvtvjjYDFTvSuAJHDfcBHfk/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1v1Qj39lLN7_b9jF7Es-QNG04Elz9M0d8/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1E7QADpMiUtSj3K2w-wyVoUXi0Kp2AIGF/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPF_NsrmGvH4AlH05B1PDc-IZ8W9X9hRmQDMI2hKwhHYp6bJFhaOsdy6nsxNIz177qDHhw8LeRmE4apBMeOkByRAU3PIrXhO788MVIVD3NjYGFu=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN7lvyZKcQQxj4JKaSXJjuGu-BR3kUm_AJPG3AsWZsaGpDDuLTP7aOHtN2BE3k_ZzD0dsOEv8HGz5GhErAvImCWGes2n0QVRK1kV1PN3y5Rg6zjBw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:10:29.457Z",
-    "updated_at": "2026-01-13T19:10:29.457Z"
+    "created_at": "2026-01-15T07:38:55.948Z",
+    "updated_at": "2026-01-15T07:38:55.948Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20917,
+  "pk": 69,
   "fields": {
     "property_id": "7798",
+    "presentation_date": "2026-01-07",
     "circle": "North 2",
     "hub": "Bareilly",
     "hub_rank": "14/35",
@@ -41,17 +1560,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1hAEiBDqdQsxVDEqncUPHJyed2AeKeABB/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1hciBpLlU92b1AnzBt3jd7Y-XOUyqey8n/view?usp=drivesdk",
     "recording_link": null,
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPh3yttEMA_VUKqFDp5bHV1EoHeAh3EF9nVmqB1meJBo5pwx1PTIhH1dljosr2XHVQ6BIWOa4wljpeXGYp9iuphWyzLJFktDfm_UkCK6cMyZ-Zu=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPB6hUcE8b5myzSjquzwM5HZ_6qTMetpbaEyXN2tjW-kgK314-3zFm0nXvZ2d3qYBAt6EEQktku9Jb0P-454JhBFgsPTjEW9VDqOp98HY8ODQ2lkw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:10:42.169Z",
-    "updated_at": "2026-01-13T19:10:42.169Z"
+    "created_at": "2026-01-15T07:39:12.312Z",
+    "updated_at": "2026-01-15T07:39:12.312Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20918,
+  "pk": 70,
   "fields": {
     "property_id": "7696",
+    "presentation_date": "2026-01-07",
     "circle": "Circle - South 2\u000bHub - Salem \u000bCity - South 2",
     "hub": "Salem",
     "hub_rank": "19/19",
@@ -65,17 +1585,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/17tpS6tPMahefn4vItdjaMRd0BpPGIu8Q/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/17JNiXamikQ--Dn7CCqF2dLhNdibxriNf/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/16sAICRjfqVf5YgCohZrhfNVyeGr064rI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN1mCmidS9exbl_xeET4OiqmswJB8_sGuLPLFikZ3vErF3v2HHE_H1nivGjgNoF_hqbQg2XvdikuFJjmbYxa6jS2lA9GCpxKcZJicycNCGMVXTM=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMNvgM8uiNYbu_6zwuITvdzi5i8--TcAN2QlMjwzJ2g_gj8p-CnTTgw8CovMnffP-Yj5KDeI8NtiZivwwegnjivgADNuSzLbruNdqvad8wPZrFCBQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:10:54.772Z",
-    "updated_at": "2026-01-13T19:10:54.772Z"
+    "created_at": "2026-01-15T07:39:29.423Z",
+    "updated_at": "2026-01-15T07:39:29.423Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20919,
+  "pk": 71,
   "fields": {
     "property_id": "7718",
+    "presentation_date": "2026-01-07",
     "circle": null,
     "hub": null,
     "hub_rank": null,
@@ -89,17 +1610,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1OIfzygN7frLKcRS385ikAo47xYCd6kY6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1pyGX00qst3XfAX_Ktu8S7zfvOuQ1bLk6/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1SLSJh7S5N4yccBQryiKdgAEN10nZmtbc/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPfuMx6RzCCtbUhcexCrQ4gKy0xRcqDPlxIeTln1JVmnfD1n3D1yFI5YD16_Hruy1NIwi_YaWGNqFGtjmat6qcQ5OSlkH946wFVQYFACWJH2Vts=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOHJJT_Jk8Bt4E_bPirCNrVgHD2D6ObTjcGhxJlHf159FVuXXuW9LXZf4hTd9GxgSzhIhSc21rvhhafvvzTX3O4ut3rBjb-cqm2-Gj8kBTPPmC5nw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:11:09.654Z",
-    "updated_at": "2026-01-13T19:11:09.654Z"
+    "created_at": "2026-01-15T07:39:44.600Z",
+    "updated_at": "2026-01-15T07:39:44.600Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20920,
+  "pk": 72,
   "fields": {
     "property_id": "7637",
+    "presentation_date": "2026-01-07",
     "circle": "North 3",
     "hub": "Amritsar",
     "hub_rank": "16/21",
@@ -113,17 +1635,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1L4fwHWePvEGRxjO-cusRiIfHZKw_HjYv/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1keXPFDwSRxlES0FEaTBnfw5aHhnMyoDF/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1Idd9cpUJS_C_SrEVEzcobvzg4V-mZus-/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPrigTKmOWnzyQ1NGqQL6-nd2w5Zef0_jysUd2pOVh6rwFcLBq3J8NdmYAFw3EgJ8GflCy5Tj4zH6JkK5PEM2c--yIJo5siq8KCV2lRgvP5-VPT=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMQYVflGqcNIPerhs7ro9lYO6OpXnASpKnOH0WtIkqsRdMDFVLCf6-FqcWXBjfLS35k9bhW4mzR9XseOAK75V_tQGQe6IFuktNa211Yg_G13EwbSw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:11:20.363Z",
-    "updated_at": "2026-01-13T19:11:20.363Z"
+    "created_at": "2026-01-15T07:39:55.682Z",
+    "updated_at": "2026-01-15T07:39:55.682Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20921,
+  "pk": 73,
   "fields": {
     "property_id": "7823",
+    "presentation_date": "2026-01-07",
     "circle": "East 1",
     "hub": "Guwahati",
     "hub_rank": "32/78",
@@ -137,17 +1660,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1Xk3J2gOhwqUGv_OL93O4QOEjBEqpjk7G/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1g0ql8FyWCugtH8XbG7YbOWi7uZEc_dk1/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1toZKdti0xqoHCoVDgiJRTDSYft5B-v4z/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOthrrDY1eYjsqBT78n42UDhJDdX3FYmeyxOSe4XZf6ohCMwqlsIjgm4a_0IC6cInh1afZ_eJJoDVH95MKdIAKsyVKw88tWajetG_Y1lvSA2fhJ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNANZ0zyR7s7yw0WpV9vRh4CaDEmfrW8H_GIIyH2KXkE-dbq_SZHFaSYCgEQNguH1_lY5xvpDzgcicgNlF9gvMJfQOrmjkPQKbHjqp_PueJ1Z4QdA=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:11:30.007Z",
-    "updated_at": "2026-01-13T19:11:30.007Z"
+    "created_at": "2026-01-15T07:40:10.258Z",
+    "updated_at": "2026-01-15T07:40:10.258Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20922,
+  "pk": 74,
   "fields": {
     "property_id": null,
+    "presentation_date": "2026-01-07",
     "circle": null,
     "hub": null,
     "hub_rank": null,
@@ -161,17 +1685,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1tjdrRmkLX69NXb9dRCx0T6qSb4DllXRP/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1pXdfgcgu0b_-xLrpzSfAodFq5kvGPODL/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1soA9PkgzDdnMcv3fXGaa68fhCXk1lNdn/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMBDx2hADX1s_4-V-Eh3-Hd7f1AB55NYa3KfNulEmTTUFHrxRlPHMDigzVTJps_k38KGZSFMwWIY8Uj196r_Hhhl___MxHYchhKJBaXNJM_8TIB=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPClQlVXpKSiP0W0uUWQ31Zzc3S5cpiDqs_c2MXW59jwSyi1J9MnyfIESFB5zQZtOWmMylF7MnwmGh7GbX56utyMXP8wkjCOLZdqwemjJ6_o-pLuQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:11:35.113Z",
-    "updated_at": "2026-01-13T19:11:35.113Z"
+    "created_at": "2026-01-15T07:40:16.941Z",
+    "updated_at": "2026-01-15T07:40:16.941Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20923,
+  "pk": 75,
   "fields": {
     "property_id": "7807",
+    "presentation_date": "2026-01-07",
     "circle": "East 1",
     "hub": "Guwahati",
     "hub_rank": "42/78",
@@ -185,17 +1710,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1_QnotxYIGObJxethdxVUiKi2O0hqeGeQ/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/11QfQhuuGtCgrrJmFGGl2ula_DzpMjr28/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1PhYuNSAUl7tvHtaKxJ6ZExp6lwlOVdp_/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNDg1TBrWqWwsv5ugC4GNsAKLwytHeY80yiEsTOaX9W_Twn4c_b_2QgFoJGt_3e8PAUNrafrQCDKw_bCx1sOrb4F6nkHP_SszwfYLkk30sW-Yen=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPcoWWMNmr4v_fbm2KflhUDQGUV0Km8icqAo5aBvPY14XQ8IfbnrnEEwq7vF83vxozvBjGqLMJDYM9txcERJEPc11TPT1XVEYFRGLvfyE-hPhUmmQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:11:45.993Z",
-    "updated_at": "2026-01-13T19:11:45.993Z"
+    "created_at": "2026-01-15T07:40:25.359Z",
+    "updated_at": "2026-01-15T07:40:25.359Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20924,
+  "pk": 76,
   "fields": {
     "property_id": "7842",
+    "presentation_date": "2026-01-07",
     "circle": "Hub - Coimbatore \u000bCity – Coimbatore\u000bMarket Name – South 2",
     "hub": "Coimbatore",
     "hub_rank": "10/35",
@@ -209,17 +1735,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1CZErNHaSquGYa1_AigsrULXcjYAVrXZ_/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1SDtfP1R37aPLuuWgxCnb7ztcG8yfiIkA/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1n86HqlZ-CZ7Yx_WKTLZdDzQZjEmOK_wd/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN3h0-XeCy-ap4SEP3WCcxDTPiJaHj2mNWvVVHvX99qis1AaggsAqMaQ52ZCcI79XAe6hVLo62yUglmbAYUiIc04dtO4swnJz2I35vbXYhI3gz7=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNxlTaWZUerrda5AXJZMVRZtmYnU8aLLXxIwrwlsTtEFTlUFrOje-a8hDyJJqMmhClVAWTH4m5Nzgm2jEpI5blcXNB0HpGN-4B9aTpnw31iZxk-YQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:12:02.192Z",
-    "updated_at": "2026-01-13T19:12:02.192Z"
+    "created_at": "2026-01-15T07:40:43.034Z",
+    "updated_at": "2026-01-15T07:40:43.034Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20925,
+  "pk": 77,
   "fields": {
     "property_id": "7810",
+    "presentation_date": "2026-01-07",
     "circle": "North 2",
     "hub": "Varanasi",
     "hub_rank": "32/43",
@@ -233,17 +1760,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1an3n0oFf9svivYmAu4chTNBn7AkXAcq6/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1lK3fF6OJ4PfjkLWxROI_xmK8AHyRRtdT/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/18bPpvqkDSAMHTzRS8BWQE9E8tgE-7E9V/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNRuqzvMteZ643Mgyi4xCXBwkIO6cODRx0rwmS4Bu1ANxNKX5Ef_Mp3SdEH_ne3U-iAUBT8iTkYbOKOyHlpxG9xdvBFpbP_ITvk9ui1fQ6MehJL=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPNS77ciCXa-MTn_NnINEEfNPruE7vELBvsHC5h_Ls6VyCRAh4-aEt7VENuE_CHx-CiICctHYoTqIgSH7cTeEYyEDywOZ4-adGOkjNYeBwEoAP7kA=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:12:13.055Z",
-    "updated_at": "2026-01-13T19:12:13.055Z"
+    "created_at": "2026-01-15T07:40:55.458Z",
+    "updated_at": "2026-01-15T07:40:55.458Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20926,
+  "pk": 78,
   "fields": {
     "property_id": "4914",
+    "presentation_date": "2026-01-07",
     "circle": "West 1",
     "hub": "Mumbai",
     "hub_rank": "35/201",
@@ -257,17 +1785,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1MZIhSvQn_h34yZ61XsRnDlv3ytFtwkEf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1a0hmYTtMMu-jK_ll4LNEvI1XisbsDEKt/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1b633BNFTi_kTn8xQQlAC9MYauExZXPei/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN3YiEggR8zWQUWH_ErtzuiwyqNGe-hsS4vCvmU_0HO5SHdOfny2YszW9Dox7hpNBavhP8Kd_gUECtxvc4qr-wZJSViJlMD-FYhPQM0Rdcl9Xc0=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPDHm1u0CS-LdC-VmrMXRrIZaESIQelIk-a27FkGI5FkqQS_DrHVFYLdolgoWPuzV1w3T3o9F0WR0NUZCRh-91XQeOeJH0BVfdNbx9ErrHcT28A8Q=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:12:30.857Z",
-    "updated_at": "2026-01-13T19:12:30.857Z"
+    "created_at": "2026-01-15T07:41:15.440Z",
+    "updated_at": "2026-01-15T07:41:15.440Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20927,
+  "pk": 79,
   "fields": {
     "property_id": "7833",
+    "presentation_date": "2026-01-07",
     "circle": "West 1",
     "hub": "Mumbai",
     "hub_rank": "20/201",
@@ -281,17 +1810,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1ZivSnSD59AwL4o5LL0uwhyrRlVnufRC-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1U5nZOkoDTPL4JZmeqmmYwV9-hE4Hje7T/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1OP1VyOPQXxxbLmosD6lb5suvZDINRxnv/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMwHIyvHzp-ChhnSX_Op-qFofzRiiyIZrAh00Vf_B-J142jorH9VDr_PUYSkTtiOH8NEr1SMzpS8mO8C6HArTPpdaNMkkrjH1UoY-Csw2FFmFZs=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMJrKuBwC55nktlKFW8Iuug9V3Cev3wgCbD-2Wmi_D_STS3D4XbGO7Z8DrYWB-sKp9MWVXuCFyz7G3uOHOYL39IPF3yhpj48kzi3HFXkI1b16_f4g=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:12:47.520Z",
-    "updated_at": "2026-01-13T19:12:47.520Z"
+    "created_at": "2026-01-15T07:41:32.324Z",
+    "updated_at": "2026-01-15T07:41:32.324Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20928,
+  "pk": 80,
   "fields": {
     "property_id": "7780",
+    "presentation_date": "2026-01-07",
     "circle": "West 1",
     "hub": "Mumbai",
     "hub_rank": "24/201",
@@ -305,17 +1835,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1B7G0iSDV46tIsRrMBvv4lU5xfONQbrRi/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1iyo3tyzishm-RRCh7uj_tMHd8FM5Ak5J/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/19uapDBuRVwSzrqme9kLZHgMu5lMBYPjo/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPhz9ibFoDsCtf9TVAYi_-AGGbQEMr_RRmk4g_MqUNvKNHtRN-zEKl2oRSMeKsGmB4NZaoUzKCbj0SZWgVbFSHWXbCsfSl5VyCIFLDkMnpAzCMI=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMCOeVEOpY9tg9IpxzFo1GoRjTPgQW0Gewmtec6Kf_90Gw6JBtGlH5Ajem1oSJ6NJZYyg0XOGBpEHjO4OtHQEp2Is_eXSymahEK5ZCiai04ofnKMg=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:13:02.593Z",
-    "updated_at": "2026-01-13T19:13:02.593Z"
+    "created_at": "2026-01-15T07:41:47.449Z",
+    "updated_at": "2026-01-15T07:41:47.449Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20929,
+  "pk": 81,
   "fields": {
     "property_id": "7796",
+    "presentation_date": "2026-01-07",
     "circle": "West 1",
     "hub": "Mumbai",
     "hub_rank": "192/201",
@@ -329,17 +1860,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1aHw3KQGlCmstMKUDBKC7VS1WZzHRpDdO/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/10Lw8dIXvWt5pGRNVt7-EDTFXqP7bAqp8/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1CdSwPQIPspf8x3DPlxDi_fDAt2-RAbAa/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMYwBPjlVy42pBFxs2MjNGAWimR54rOV-5o0H-2bo6MzXn1h1B_TCzryx3gT7yywFe6Czh82K8YN7dyoJBTdv9C0TsHoZ9l-0LLuQkxqMX-qrsU=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzpJ3n-B-pRZcmIyIPxaiuJgIdxcbCkwFRzBYHx_YcMddd6XJtyicFOAWQRFzgJkhweTK0HYKcSeToD79DcR3bHjLR_islUNVkhOUFHnOQ-EEAHQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:13:18.567Z",
-    "updated_at": "2026-01-13T19:13:18.567Z"
+    "created_at": "2026-01-15T07:42:04.186Z",
+    "updated_at": "2026-01-15T07:42:04.186Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20930,
+  "pk": 82,
   "fields": {
     "property_id": "7690",
+    "presentation_date": "2026-01-07",
     "circle": "West 1",
     "hub": "Mumbai",
     "hub_rank": "119/201",
@@ -353,17 +1885,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/114EVk6-dE91sEbstwWxAOPpJvy4Ht4R5/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1dfCdohfui1hqC3aU2wn7mX3i_rTm1k9A/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1CJT412YfeYbDW0Bv4TF0_m3q-26xYQb-/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNjNcZjxJDSF1HCZKy88xjK_SYFXh1lb0S_kjcRTOD9MSw-ZwEzRH-ssnFZ8yBQcrgTVgNQvH6QQ-qnugborLmKm6_1mFP01Q5_O1Yo8YxCEU20=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMuE_VVfr5WZId9hRcfBDlSYOsv3yUo3TSxPBDpmsSZSnXZDJE_3GKnNHf7Yb3BpUX8fNWvDg6-ErJzVWFLLTvoJAL8yVLIfs5Ov3zfY4aN-AurFg=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:13:34.325Z",
-    "updated_at": "2026-01-13T19:13:34.325Z"
+    "created_at": "2026-01-15T07:42:17.811Z",
+    "updated_at": "2026-01-15T07:42:17.811Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20931,
+  "pk": 83,
   "fields": {
     "property_id": "7801",
+    "presentation_date": "2026-01-07",
     "circle": "Hub - Chennai \u000bCity – Chennai\u000bMarket Name – South 2",
     "hub": "Chennai",
     "hub_rank": "128/134",
@@ -377,17 +1910,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1pnJkHXiHrGe67KInUqVBxk10OUFpJ1e-/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1BaXYjClv9RjnqmTnvctqG_pN60nNuxfB/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1o4fszngFHHNDxFHiF5uhuNtYV6GuRrMW/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN1Hvf7HlQqwMzsgktdiWMhbSyy0UfLzipixIdFWFCHpP2GgjofU_1pXZqkaINP4rKiEOzaeWNJZYYpqzmwBuwTAyT6Il0YYOzm0uhKmvXePUj6=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMtzbVkolUsCC4fR9E2tHxswVqjnLtBdYnIDuIabT4tKWtDafugoQfgisDwCDxYGU2YDYCmyt0iYyto5_RMhAXv00eVrvVeoYdSvRbCBnJcTxQc4g=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:13:47.120Z",
-    "updated_at": "2026-01-13T19:13:47.120Z"
+    "created_at": "2026-01-15T07:42:31.555Z",
+    "updated_at": "2026-01-15T07:42:31.555Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20932,
+  "pk": 84,
   "fields": {
     "property_id": "7765",
+    "presentation_date": "2026-01-07",
     "circle": "South 4",
     "hub": "Calicut",
     "hub_rank": "9/30",
@@ -401,17 +1935,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1_u4uubBuPgSIJjExKlvXD0LSjnMrwE2c/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1KWR8YkCEeZVxbmGvbUWVVGKzpDWsNIXw/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1WtScEjU_JgUM7wXj2pv2afqrGWtpz7_K/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP9bSoF2NnlpKsU6-tExfo7pwsFLYjql2-hoLwJ5Kc2_JgOZijJVYUdbRxBIbO5n94fRxAK7kOgXWCYgNZPnkh7TeDJnWmhR0t5tLQTV0lf7mLf=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNjCNxPb4NuhEDQJmEFe_fRWtv2E-XBGiRnjExigW4q51cVSPmup6WbsWrjpGUuhfnkW0uZYXF-f4_0CNMzphgKvMFJUcBDy2JjeFfCNjo7SEEK9Q=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:14:02.189Z",
-    "updated_at": "2026-01-13T19:14:02.189Z"
+    "created_at": "2026-01-15T07:42:48.768Z",
+    "updated_at": "2026-01-15T07:42:48.768Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20933,
+  "pk": 85,
   "fields": {
     "property_id": "7811",
+    "presentation_date": "2026-01-07",
     "circle": "East 2",
     "hub": "Patna",
     "hub_rank": "14/94",
@@ -425,17 +1960,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1mAIKbjW3xxVzf6dECmb8Y2aWI1ZEE6SQ/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1DiTPHIfcBYfeCTvUNwO0iPb8Tu1VChsT/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1POw0m1I3fk5IsCRz7Orj6R2yk8uHTY-o/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPVaa-KIRlovH4pikK4N_2sVCm00MX8EAPC8UDcCf39qencwlzqDX9lPnAJAb9Tue_NkD0P5CUCC160uMxHjMIl2WEcCBFt9idxBEQd4mUcDuYB=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP5-lL2d6As_QKvLmZcMgLQShYIz7lRzgYuMSBt2T61epTTBrb4CPb0vNaIVznZbkzb-r-0kn34EZxQtEYTgZTXe6tMzh_mxIDg9-MDzBjNxoL0OQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:14:15.168Z",
-    "updated_at": "2026-01-13T19:14:15.168Z"
+    "created_at": "2026-01-15T07:43:02.992Z",
+    "updated_at": "2026-01-15T07:43:02.992Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20934,
+  "pk": 86,
   "fields": {
     "property_id": "7832",
+    "presentation_date": "2026-01-07",
     "circle": "East 2",
     "hub": "Bhubaneswar",
     "hub_rank": "6/101",
@@ -449,17 +1985,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1sStSpqyAwGS1Qz8wTDRjHIgDEjJz8ltW/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1ekRkCZMPLlzocbRd9SJRwEsk_e2VJkA7/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1ExS3xZbFsTiS6dR3NR9L8kIzgQZtFnz_/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBO_RRsW840nFJwyi2hqk7VFR-PYTuUCsJZ9PceWrNnqCfF_D7To41bpBo0ACPxxTPCpWaIn65h0KtZFxFtF9AWFmglfe2HKpW8lsqPs-oru4bjZ=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNzplmvsmemA4LguQuUHrjWKihidoqFHG8N3nlMiy4NJ9m_R3_Jn5Hpk5RLqWANrJeQIj2nKCi-3GCcnDBWUEzgJo5Pw82cLahCprb1jttY2hws9Q=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:14:28.556Z",
-    "updated_at": "2026-01-13T19:14:28.556Z"
+    "created_at": "2026-01-15T07:43:16.322Z",
+    "updated_at": "2026-01-15T07:43:16.322Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20935,
+  "pk": 87,
   "fields": {
     "property_id": "7335",
+    "presentation_date": "2026-01-07",
     "circle": "South 3",
     "hub": "Hyderabad",
     "hub_rank": "170/290",
@@ -473,17 +2010,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/16N_vMc0eunBopuvgQl-4cgu95mYu33j2/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/15dSXXQYMnZC_tbS67F2RA9ncQYyG42cE/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/133HwjgNRUJmbQS2srWGmiHU5fUWm-g7k/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBObRPotaCJ3w1W2S_xGabpX6wOwd7gbR5xvezqrT9h8eGAef2O45bnI-OuSs6ac1pJjeJSE6EfiV16MKWlwea6MiA_iaocuYVHQ6Raul_Y3dms9=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOKxvXEaecrwvKwqVwVr_kII0hg99uyAZ7Jcc5BOSeDfBzYeYm6lEelO7TeB31aqI7syDOVoqD8qpZNlWYq_kiFRzquTcgKIsY2zz2bw4UyYvX9Mw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:14:42.918Z",
-    "updated_at": "2026-01-13T19:14:42.918Z"
+    "created_at": "2026-01-15T07:43:31.484Z",
+    "updated_at": "2026-01-15T07:43:31.484Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20936,
+  "pk": 88,
   "fields": {
     "property_id": "7831",
+    "presentation_date": "2026-01-07",
     "circle": "East 1",
     "hub": "Kolkata",
     "hub_rank": "170/202",
@@ -497,17 +2035,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1JoyF9AlPjetMcv4CqlImOAFZZEW3iOBI/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1wQutm-nKsaHoyv2jyIQhFkFMpr_m8Zr2/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1I8wS2gsx8GNX9htJp1m43GYMBtnh7mov/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOgzWrub_wkECDy_nnjtj1O1uqFPBOvvWIl_VEX_y-_OzTHN64KCWisBJxbOc-kjJXQH_z9MYG8sBqbgOJ_VfiP3wnTRgpRVEtpen3EfdgvMvcf=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMrrb5CiGIP1ItWl8IhpINHOfxAR_eXheLH0NWQAm6x09JtLbCKw5CuWOJPhpGsKLs5VhBUSXe-eActhgHGyajFRdJ5oy2Vs0Yb3Wi_odMWA0X_-A=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:14:53.602Z",
-    "updated_at": "2026-01-13T19:14:53.602Z"
+    "created_at": "2026-01-15T07:43:41.260Z",
+    "updated_at": "2026-01-15T07:43:41.260Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20937,
+  "pk": 89,
   "fields": {
     "property_id": "7676",
+    "presentation_date": "2026-01-07",
     "circle": "North 2",
     "hub": "Agra",
     "hub_rank": "28/29",
@@ -521,17 +2060,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1c22Qwd7XRO_3eoDNbbkHgbQ75GzQ8PRf/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1v3eanNHoZdRSomLPJ-2iHJbUvh-mibmq/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/19a045piE1PHe34ovlDQsCb-QhzcLaq5I/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOR5xpSZrRxaIFx6kGOaauK2ut6DNN2TQ1ooSnCkwhttwKjd36gygvVM1HIliZ7V0InQTj-B2q2zxS6WAEeWdpYqnxRIRTsQw7EyPhNSjFrLkRt=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMO0dH5tq-WSRP-96yfZBXYqiIcPx7NrWtR8Gr2wfoYB8463ys5Jj-4d6ZnQ-v5EHQEPOxsMJc0ewZr6sua0Ia1XabU4mUFRFyo1r5U-k2krh7YFw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:15:04.618Z",
-    "updated_at": "2026-01-13T19:15:04.618Z"
+    "created_at": "2026-01-15T07:43:51.465Z",
+    "updated_at": "2026-01-15T07:43:51.465Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20938,
+  "pk": 90,
   "fields": {
     "property_id": "7535",
+    "presentation_date": "2026-01-07",
     "circle": "South 1",
     "hub": "Bengaluru",
     "hub_rank": "63/159",
@@ -545,17 +2085,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1aI2_j0G9HGxk0S_nYF-ljpc3uFgLaU90/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1xE-tO0KzsJjf0OjvSiENC6OAv1EH8aBe/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1j13oGsEG-zBWaEnXxyNRwCPiFljcGKYX/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMeB4Iqgx9lQef6r1EUty6_FDQTJoKdVqKRmGTmTKZcuOHCEbTewtrxcrNizVoMFevPY5LZUbKaxCN0lQooPbZ03Xgr3VRkxK0rnsrDFrm3G9Kp=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOxp1g_fP3K2KkyFtWbb-3Tt_C0cI_RbCgn3WBX14NE3MrcchbhpjXZLDqIO4V-S-jvNkSV00TOcibBWn9IptN1q5VDlPEgE3nI7Hf4rz04FfYUeQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:15:19.087Z",
-    "updated_at": "2026-01-13T19:15:19.087Z"
+    "created_at": "2026-01-15T07:44:07.653Z",
+    "updated_at": "2026-01-15T07:44:07.653Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20939,
+  "pk": 91,
   "fields": {
     "property_id": "7789",
+    "presentation_date": "2026-01-07",
     "circle": null,
     "hub": null,
     "hub_rank": null,
@@ -569,17 +2110,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/15dwqebtmSu_9FPTsC6c0yIQ8wKjUkbRW/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1IbhMWSuVcwfXnQtCkwpLP_VjNHFUEFy9/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/13Q-SDF9QCTIeLNbzToS4fyoIibCSmwby/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMgwlbscMQCj5FmkeQEHpDnI0j8WHKG1-S8ShmAQA7jpkWec2Gu3P4bD3tj0VKMs3g0yAPxoW0DGo5yO-tzIlsgObrDlMQq_HDkwlI9mfy1ztPt=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPJy-E5I2m-kC55IIpoyL2frPuxj6Wbt2zOj10gZiF5UmyQtRTCPPSMktl1LkSQyfAV0AY9z301Ikol5CCcqOcNc-fiosI0fCw63zyJARmTV02g4w=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:15:31.807Z",
-    "updated_at": "2026-01-13T19:15:31.807Z"
+    "created_at": "2026-01-15T07:44:20.880Z",
+    "updated_at": "2026-01-15T07:44:20.880Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20940,
+  "pk": 92,
   "fields": {
     "property_id": "7618",
+    "presentation_date": "2026-01-07",
     "circle": "West 3",
     "hub": "Surat",
     "hub_rank": "9/84",
@@ -593,17 +2135,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1c3wSAvEzDqHdw9_9QXh3rkSPxA9LEO-7/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1xDrQdz5kC8jthW0kvD7PmQDImdqHKRDh/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1hFCL-pQqHuK_EJALrRKYxKomWzUjALQM/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPAFN_IuZ_M54v09O-HMDWgHWBDPO4QUUTtQfXoTQLBAgTiyolMYbnCHK8aUEe2nj7boKgiey3M64QyBVtoHV7friJKI2EkSg6cCj01WadfhU8T=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPL_txFzUy6xWfqR5dv-pEi4UDOy0rpjj4DxEeYWFNjYhGkA1Kc0lE5DNnjkTTdev02XEY2NamTob_yZ2qNflBoNcWtEgcuwlVFwrSS8ZntIER57A=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:15:42.802Z",
-    "updated_at": "2026-01-13T19:15:42.802Z"
+    "created_at": "2026-01-15T07:44:34.372Z",
+    "updated_at": "2026-01-15T07:44:34.372Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20941,
+  "pk": 93,
   "fields": {
     "property_id": "7846",
+    "presentation_date": "2026-01-07",
     "circle": "West 3",
     "hub": "Rajkot",
     "hub_rank": "29/45",
@@ -617,17 +2160,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1XxfPBBij3BOV84QKzLgAaDZUqJN4GHIw/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1JXsdPQxZDYssAtUBNY32f-Y3DCQK1Bx2/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1NLvDYyJu-J9PpHohOzr5b_VBnRbKqfvI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPgaSqqKQ3ogEbZ2WLcM70O-dMQ5mNCS_YRc7yfAvTO72SjvS5P_vWRy1u-XCAznaZr7SkdSDOnRuKlNQVipxrPKJx0iPXArARYfW-lvX2kkmEF=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPs4rmxrVrC2uPJa77FGheCfxxrpckpc1OBICz2Ox-jHvzLVlBJU8sAuIgX-k4RvmsweWzV4mJXeZH-B7stcLi1J-GqvYsUfI-xv_gd2hTDbuLBLw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:15:54.808Z",
-    "updated_at": "2026-01-13T19:15:54.808Z"
+    "created_at": "2026-01-15T07:44:47.977Z",
+    "updated_at": "2026-01-15T07:44:47.977Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20942,
+  "pk": 94,
   "fields": {
     "property_id": "7830",
+    "presentation_date": "2026-01-07",
     "circle": "West 3",
     "hub": "Raipur",
     "hub_rank": "1/28",
@@ -641,17 +2185,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1gyG6GfI4TYLjnRyIY_lr7A_Wn9q8z0bL/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1P0ZLXnu4SusGT09x5hbwNUaJwqWDG9WF/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1WbQbg3xLN34ecoR6cQ_Of1wGPjA9kaDI/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP1lLVbaCp87dA8F27HYxFgRCn7NfExgpj6n4rCmi91208PaCOKYzKJkfXydLYrg7ToYEyMJ3FkkIL91LxP9yoeb0z44c1ICqDrprh0ReS7zcbe=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNkM2lBhKqfslMnjEfBgM-RAqwrAyKBfYVnr1PsmmzMZF5WrQ2WkzBEHj0LbtJuOH_bFmn77q3RuR2hz5uTwjhahJSTACSwJY49YlTc22CSh7nIgQ=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:16:09.272Z",
-    "updated_at": "2026-01-13T19:16:09.272Z"
+    "created_at": "2026-01-15T07:45:03.878Z",
+    "updated_at": "2026-01-15T07:45:03.878Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20943,
+  "pk": 95,
   "fields": {
     "property_id": "7820",
+    "presentation_date": "2026-01-07",
     "circle": "West 2",
     "hub": "Pune",
     "hub_rank": "13/112",
@@ -665,17 +2210,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1bYfANYzTrjYXWhJ2qkS2xPyn8czTO0NN/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1q9h9xSsRHxg6_o1NkPGiCwx4E41J33OP/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1zt7MIWHY06ZSQY-CTDW_9YP_xdszXLNx/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBMnQtZ60lsrOij4fyAc3UAcgaWM6ZGMEYhbJHl1UIxyQD7he5q-F9-PvBxhVmQP3bBeSjLd0ow-nsGgrB9IN6qvYZXQFhVKckXodvECldeIZ79v=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOVr1bRjk0QYsnz6PxLgbuZPWVhIhkssxPz5waAmBynNN-cKf2bF8S9YtTSe5OPzm32gW4_-RrXOffbVqxha_g1q__HGrPDwtVxK0PWUikYyHYK7Q=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:16:23.194Z",
-    "updated_at": "2026-01-13T19:16:23.194Z"
+    "created_at": "2026-01-15T07:45:20.156Z",
+    "updated_at": "2026-01-15T07:45:20.156Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20944,
+  "pk": 96,
   "fields": {
     "property_id": "7735",
+    "presentation_date": "2026-01-07",
     "circle": null,
     "hub": null,
     "hub_rank": null,
@@ -689,17 +2235,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1MLU21z_WIaENI9bNMXK3fQLlnRCy1dVp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1TM0ekSDJLYppeU7QTjqCf2DRYx-BJ7Ca/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1m2sxf00QE22KmjV6KNsdg_tn3aMitUWl/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPIV1cW1Cwepd6MuSMctp7MveJXornl74PcKdIyL0lGapjUHE0WpkycAzymg4jytWweNcMIv1cwVEwquLsfTtC1ugxe36wbtry3IhddQdkOcX26=s1000",
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBP_ZzwwNxUuqM7VFpao0dNHCIRIfN6dujAOedtfGJtOPjDyJazDKY2VZpM3rUNpA2P12-QTrEp1h-m80U73MQuW2FZ1uag-iobAW75fyW80nfuOFw=s1000",
     "remarks": null,
-    "created_at": "2026-01-13T19:16:38.467Z",
-    "updated_at": "2026-01-13T19:16:38.467Z"
+    "created_at": "2026-01-15T07:45:32.091Z",
+    "updated_at": "2026-01-15T07:45:32.091Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20945,
+  "pk": 97,
   "fields": {
     "property_id": "7814",
+    "presentation_date": "2026-01-07",
     "circle": "West 3",
     "hub": "Ahmedabad",
     "hub_rank": "102/115",
@@ -713,17 +2260,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1sGZPt_tDsJWjzsV8p4pblRoYO6ajlIJt/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1cbWR7vHuDVdHX5ikTzBNn9kuTv-hJp1c/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1yYESuGd5KZ4wx3jB9b-8vBTbagPbZEnT/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOYLXcoGmwR_SAKeyhhdRMRJNl-RCnO9aMyD1MhivRVK_0Qaq6NWC9wQsHNgolO3JU6SZgKlv6A2BiW7h2nXrnhq8Qfw6lSZ87gi-BDQpKfDcYJ=s1000",
-    "remarks": "done",
-    "created_at": "2026-01-13T19:16:51.495Z",
-    "updated_at": "2026-01-13T19:38:21.254Z"
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBM1QsM0fDaSkJSm3KbEZSNFzSpoJN7U5pll9ZhJYTxqukM4W0hty_Ck-lp2x3E188vHu0qAmtzyxlPVbgWP_ieBbL7sYMh68Ssb9jwObMOk_SlkPg=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:45:44.667Z",
+    "updated_at": "2026-01-15T07:45:44.667Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20946,
+  "pk": 98,
   "fields": {
     "property_id": "7813",
+    "presentation_date": "2026-01-07",
     "circle": "West 3",
     "hub": "Ahmedabad",
     "hub_rank": "91/115",
@@ -737,17 +2285,18 @@
     "ppt_link": "https://docs.google.com/presentation/d/1GGUFkQQN4dcRU-cxZr_cyKIaqu-MwzDE/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1ZZ1VaqF4J4I4YRavMgKSxvKjUdSWBH28/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1AGAk9e3r--zAyOtFrSnO_2C410HodGFX/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBPdm-HzC4owqQtV70aNi-q3g_05QSZnAnFCAFqR6XX_0nUdNQhXqcpiTdnXXbxf8eyicf_0G9tTZvpTIGn7R3sdWgT9VJErsayA0W5ELFls4zmS=s1000",
-    "remarks": "stop this asap",
-    "created_at": "2026-01-13T19:17:05.983Z",
-    "updated_at": "2026-01-13T19:34:06.597Z"
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBN51vjwjJex17Cfn2nCY31p23YdbIaRsXBVcfqJcRrRe2I3hasCmT-yuA668aiTeOYTSeTz8z7Jevzu1cG6N4ssYExkiNWc2UZw9OuY--iUYdFyrw=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:46:00.604Z",
+    "updated_at": "2026-01-15T07:46:00.604Z"
   }
 },
 {
   "model": "property.propertyrecord",
-  "pk": 20947,
+  "pk": 99,
   "fields": {
     "property_id": "7770",
+    "presentation_date": "2026-01-07",
     "circle": "East 2",
     "hub": "Patna",
     "hub_rank": "69/94",
@@ -761,10 +2310,10 @@
     "ppt_link": "https://docs.google.com/presentation/d/1pwVn_4b08rm_tEQVn2zflbCfg-w1pefp/edit?usp=drivesdk&ouid=118210495469683998860&rtpof=true&sd=true",
     "ai_summary_link": "https://drive.google.com/file/d/1bxeaYVIFPJJO2YWEpgu6jw-rpedD3yOt/view?usp=drivesdk",
     "recording_link": "https://drive.google.com/file/d/1dB9gCnUyLS6DXb11VzkWpEldstWYqZj4/view?usp=drivesdk",
-    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBNsMgRwjeC2f0EJ5NiVHLUONLFxnA06zD3F_YRIIMD9UdgkIhVCXsL82yotbWm1Oz5fIpXjMAs0xBzzR1N6mpqN7eytx6qezm-nDAK9OKVeX3zn=s1000",
-    "remarks": "ok",
-    "created_at": "2026-01-13T19:17:19.655Z",
-    "updated_at": "2026-01-13T19:31:07.397Z"
+    "first_slide_image_url": "https://lh3.googleusercontent.com/drive-storage/AJQWtBOuPNkxv5fvui6OXyPPDBqHpe2M8az8PJhD9WO0EcojuNXaILFwnAG5e3HGse_Pyq6Fqv4Fa9a433HS0euqnbwlE3vpwbYZWoAP02EVfYccN3VHoA=s1000",
+    "remarks": null,
+    "created_at": "2026-01-15T07:46:13.630Z",
+    "updated_at": "2026-01-15T07:46:13.630Z"
   }
 }
 ]
