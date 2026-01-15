@@ -3,16 +3,16 @@ import os
 import requests
 from django.conf import settings
 from django.views.generic import ListView
-from django.http import HttpResponse, HttpResponseForbidden
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-
-# Google API Imports
 from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
+from rest_framework import generics
+from .serializers import PropertyRecordSerializer
 
 # Local models
 from .models import PropertyRecord
@@ -122,3 +122,10 @@ def slide_proxy(request):
 
     except Exception as e:
         return HttpResponse(status=404)
+
+
+class PropertyRecordListAPIView(generics.ListAPIView):
+    queryset = PropertyRecord.objects.all().order_by('-presentation_date', '-id')
+    serializer_class = PropertyRecordSerializer
+    # This allows the Android app to use the same filters (?zone=...&status=...)
+    filterset_fields = ['zone_name', 'status']
