@@ -57,7 +57,8 @@ class Command(BaseCommand):
             "createdTime > '2025-01-01T00:00:00Z' and ("
             "mimeType = 'application/vnd.google-apps.folder' or "
             "mimeType contains 'presentation' or "
-            "name = 'ai_summary.pdf' or "
+            "mimeType contains 'powerpoint' or "
+            "name contains 'ai_summary' or "
             "name = 'recording.mp4'"
             ")"
         )
@@ -82,13 +83,13 @@ class Command(BaseCommand):
             p_id = parents[0]
             name = item.get('name', '').lower()
 
-            if 'presentation' in item.get('mimeType', ''):
+            if 'presentation' in item.get('mimeType', '') or 'powerpoint' in item.get('mimeType', ''):
                 folder_data[p_id]['ppt_id'] = item['id']
                 folder_data[p_id]['ppt_link'] = item.get('webViewLink')
                 t_link = item.get('thumbnailLink')
                 if t_link:
                     folder_data[p_id]['thumb_link'] = t_link.replace('=s220', '=s1000')
-            elif name == 'ai_summary.pdf':
+            elif 'ai_summary' in name and name.endswith('.pdf'):
                 folder_data[p_id]['pdf_id'] = item['id']
                 folder_data[p_id]['pdf_link'] = item.get('webViewLink')
             elif name == 'recording.mp4':
@@ -99,35 +100,35 @@ class Command(BaseCommand):
         count = 0
 
         for f_id, data in folder_data.items():
-            if data['ppt_id'] and data['pdf_id']:
-                # --- FIX: RETAIN ACTUAL FILENAME WITH SLASHES ---
-                # We replace the illegal keyboard '/' with a visual '∕' (Unicode U+2215)
+            # REMOVED strict condition: Now processes folder if at least PPT is found
+            if data['ppt_id']:
                 visual_slash_name = data['name'].replace('/', '∕')
-
                 local_pptx = os.path.join('downloads', f"{visual_slash_name}.pptx")
-                local_pdf = os.path.join('downloads', f"{visual_slash_name}_sum.pdf")
 
                 try:
                     self.stdout.write(f"Syncing: {data['name']}")
-
-                    # Search for date in hierarchy
                     presentation_date = self.find_date_in_parents(service, f_id)
 
+                    # Process PPT
                     self.download_file(service, data['ppt_id'], local_pptx)
-                    self.download_file(service, data['pdf_id'], local_pdf)
-
                     retail_url = self.extract_retail_link(local_pptx)
                     prop_id = self.get_property_id(retail_url)
-                    extracted_status = self.extract_status_from_pdf(local_pdf)
 
                     try:
                         ppt_info = self.extract_all_ppt_info(local_pptx)
                     except Exception:
                         ppt_info = {}
 
+                    # Process PDF (Summary) optionally
+                    extracted_status = 'pending'
+                    if data['pdf_id']:
+                        local_pdf = os.path.join('downloads', f"{visual_slash_name}_sum.pdf")
+                        self.download_file(service, data['pdf_id'], local_pdf)
+                        extracted_status = self.extract_status_from_pdf(local_pdf)
+
                     PropertyRecord.objects.create(
                         property_id=prop_id,
-                        presentation_date=presentation_date,  # POPULATED FROM FOLDER HIERARCHY
+                        presentation_date=presentation_date,
                         circle=ppt_info.get('circle'),
                         hub=ppt_info.get('hub'),
                         hub_rank=ppt_info.get('hub_rank'),
@@ -151,11 +152,8 @@ class Command(BaseCommand):
                     self.stdout.write(self.style.ERROR(f"  -> Error on {data['name']}: {e}"))
 
     def find_date_in_parents(self, service, folder_id):
-        """Recursively walks up Drive parents to find a folder name that looks like a date."""
         current_id = folder_id
-
         while current_id:
-            # Check cache first to save API quota
             if current_id in self.folder_cache:
                 folder_meta = self.folder_cache[current_id]
             else:
@@ -163,21 +161,15 @@ class Command(BaseCommand):
                 self.folder_cache[current_id] = folder_meta
 
             name = folder_meta.get('name', '')
-
-            # Try to parse date from folder name
             try:
-                # fuzzy=True handles strings like "Meeting 25 Jan 2015"
                 parsed_date = dparser.parse(name, fuzzy=True).date()
-                # Sanity check: ensure it's a plausible year for Lenskart properties
                 if 2010 < parsed_date.year < 2030:
                     return parsed_date
             except (ValueError, OverflowError):
                 pass
 
-            # Move to next parent
             parents = folder_meta.get('parents')
             current_id = parents[0] if parents else None
-
         return None
 
     def extract_all_ppt_info(self, path):
@@ -224,8 +216,6 @@ class Command(BaseCommand):
             return results
         except Exception:
             return results
-
-    # ... (extract_status_from_pdf, extract_retail_link, get_property_id, get_all_files, download_file remain the same) ...
 
     def extract_status_from_pdf(self, path):
         try:
